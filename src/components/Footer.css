@@ -1,0 +1,71 @@
+.footer-section {
+  background-color: #01b7db;
+}
+
+.footer-section a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.social-icon {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.social-icon:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-links a {
+  margin-left: 10px;
+}
+
+
+.sticky-buttons {
+position: fixed !important;
+bottom: 25px !important;
+right: 25px !important;
+z-index: 999999 !important;
+
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.sticky-btn {
+width: 55px;
+height: 55px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: #fff;
+text-decoration: none;
+
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+transition: transform 0.2s ease;
+}
+
+.sticky-btn:hover {
+transform: scale(1.1);
+background: #e60000;
+
+}
+
+.call-btn {
+background: #e60000;
+}
+
+.whatsapp-btn {
+background: #25d366;
+}

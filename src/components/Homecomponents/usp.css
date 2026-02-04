@@ -1,0 +1,77 @@
+.services-section {
+  background-color: #f8f9fa;
+}
+
+.services-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.services-subtitle {
+  max-width: 700px;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Card Styling */
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+/* Icon Styling */
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eaf4ff;
+  color: #01b7db;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/* List Styling */
+.service-card ul {
+  padding: 0;
+  margin: 0;
+}
+
+.service-card li {
+  font-size: 0.95rem;
+  color: #444;
+  display: flex;
+  align-items: center;
+}
+
+.bullet-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  /* background: #007bff; */
+  background: #01b7db;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .service-card {
+    text-align: center;
+  }
+  .service-card ul {
+    display: inline-block;
+    text-align: left;
+  }
+}

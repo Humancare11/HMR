@@ -1,0 +1,91 @@
+.hero-section {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url('your-image.jpg') center/cover no-repeat;
+  height: 90vh;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.info-icons {
+  display: flex;
+  gap: 30px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info-icons div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-icons i {
+  font-size: 1.5rem;
+  color: #0b3d2e;
+}
+
+.btn-custom {
+  background-color: #01b7db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  background-color: #01b7db;
+}
+
+.btn-outline-custom {
+  background-color: white;
+  color: #0b3d2e;
+  padding: 10px 20px;
+  border: 1px solid #0b3d2e;
+  border-radius: 5px;
+}
+
+.btn-outline-custom:hover {
+  background-color: #e6f2ee;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 50px 20px;
+  }
+}
+
+
+.hero-section {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+

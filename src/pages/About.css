@@ -1,0 +1,111 @@
+.mission-vision-section {
+  background: #f8f9fa;
+  color: #1e2022;
+}
+
+.section-title {
+    text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-text {
+ 
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.mission-list li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.mission-list li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: green;
+}
+
+.vision-box {
+  background: #f1f5f9;
+}
+
+.vision-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.vision-text {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.vision-stats h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.vision-stats p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+.vision-stats {
+  display: flex;
+  gap: 50px;
+}
+
+/* ====================== core values section ====================== */
+.cv-section {
+  background-color: #f0f4f8;
+  color: #374151;
+}
+
+.cv-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+}
+
+.cv-subtitle {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.cv-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cv-icon {
+  background: #0f172a;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.cv-card-title {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.cv-card-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+}

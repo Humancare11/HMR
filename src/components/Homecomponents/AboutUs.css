@@ -1,0 +1,40 @@
+.about-section {
+  background: linear-gradient(to bottom, #fdfdfd, #f6fdfb);
+}
+
+.about-title {
+  font-weight: 700;
+  color: #1e2d2b;
+}
+
+.about-text {
+  max-width: 700px;
+  font-size: 1.1rem;
+  color: #557b75;
+}
+
+.mission-box {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 900px;
+  margin: auto;
+}
+
+.mission-title {
+  font-weight: 700;
+  color: #1e2d2b;
+}
+
+.mission-text {
+  font-size: 1rem;
+  color: #557b75;
+}
+
+.mission-line {
+  width: 50px;
+  height: 3px;
+  background-color: #2d7c69;
+  margin: 15px auto 0;
+  border-radius: 2px;
+}

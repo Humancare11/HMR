@@ -1,0 +1,95 @@
+
+
+
+/* .section-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+} */
+.section-title-1 {
+  text-align: center !important;
+  display: block;
+  margin: 0 auto 10px auto; /* centers the block */
+  font-weight: bold;
+}
+
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.important-note {
+  background: #f7fdf9;
+  border-left: 4px solid #01b7db;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.transfer-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.transfer-icon {
+  font-size: 50px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.tag {
+  display: inline-block;
+  background: #eef5f0;
+  color: #2f6b4f;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.transfer-card ul {
+  padding-left: 20px;
+}
+
+.transfer-card ul li {
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.timeline-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  height: 100%;
+}
+
+.timeline-number {
+  background: #01b7db;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.duration {
+  display: inline-block;
+  background: #eef5f0;
+  color: #2f6b4f;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,686 @@
+
+/* ==================start hero section==================  */
+
+
+
+.air-repatriation {
+  background-color: #01b7db;
+  color: white;
+  padding: 50px 20px;
+}
+
+.text-section {
+  margin-bottom: 30px;
+}
+
+.text-section h1 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.text-section p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.btn-danger {
+  background-color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 768px) {
+  .air-repatriation {
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .text-section h1 {
+    font-size: 26px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+  }
+
+  .btn-danger {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .image-section {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h1 {
+    font-size: 22px;
+  }
+
+  .text-section p {
+    font-size: 14px;
+  }
+}
+
+/* ==================end hero section==================  */
+
+
+/* ===================start why choose us section================== */
+.why-choose {
+  background: #f5faff;
+  
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #002b5b;
+  position: relative;
+}
+
+.section-title .underline {
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #ff6600;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.feature-box {
+  display: flex;
+  align-items: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box .icon {
+  font-size: 24px;
+  padding: 15px;
+  border-radius: 12px;
+  margin-right: 15px;
+  color: #fff;
+}
+
+.feature-box .icon.blue {
+  background: #5aa9ff;
+}
+.feature-box .icon.pink {
+  background: #ff6fae;
+}
+.feature-box .icon.orange {
+  background: #ff9b42;
+}
+.feature-box .icon.green {
+  background: #4caf50;
+}
+
+.feature-box h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #002b5b;
+}
+
+.feature-box p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.image-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.image-box img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+/* ===================end why choose us section================== */
+
+
+/* ===================start steps section================== */
+
+
+.process-section {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.process-section-title {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.process-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.process-card {
+  flex: 1 1 calc(20% - 20px); /* 5 cards desktop */
+  max-width: 220px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrapper {
+  background-color: #e9f7ff;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #01b7db;
+}
+/* Desktop - 5 per row */
+.process-card {
+  flex: 1 1 calc(20% - 20px);
+  max-width: 220px;
+}
+
+/* Tablet - 3 per row */
+@media (max-width: 992px) {
+  .process-card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 300px;
+  }
+}
+
+/* ✅ Mobile - Force single column */
+@media (max-width: 768px) {
+  .process-grid {
+    flex-direction: column;   /* Row ko column bana do */
+    align-items: center;      /* Center align for neat look */
+  }
+
+  .process-card {
+    flex: 1 1 100% !important; /* Full width le */
+    max-width: 100% !important;
+  }
+}
+
+
+
+/* ===================end steps section================== */
+
+
+/* ===================start health section================== */
+
+.health-section {
+  background: #01b7db;
+}
+
+.health-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.health-desc {
+  color: #ebebeb;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.health-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.health-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.health-list .icon {
+  color: #ffffff;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.stat-card p {
+  color: #666;
+  margin: 0;
+  font-size: 0.95rem;
+}
+/* ==========================end health section==================  */
+
+/* ===================start experties section================== */
+
+
+.services-section {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.divider {
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.section-header p {
+  font-size: 18px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  transition: 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.service-card:hover {
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: rgba(0, 123, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .icon-box {
+  transform: scale(1.1);
+}
+
+.icon-box.red svg { color: red; }
+.icon-box.blue svg { color: blue; }
+.icon-box.green svg { color: green; }
+.icon-box.purple svg { color: purple; }
+.icon-box.orange svg { color: orange; }
+.icon-box.teal svg { color: teal; }
+
+.service-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.learn-btn {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.3s ease;
+}
+
+.learn-btn:hover {
+  color: #0056b3;
+}
+
+.learn-btn .arrow {
+  transition: transform 0.3s ease;
+}
+
+.learn-btn:hover .arrow {
+  transform: translateX(5px);
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Tablet (2 per row) */
+@media (max-width: 991px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (1 per row) */
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===================end experties section================== */  
+   /* =======================end Domestic & International Repatriation==================== */
+
+
+.custom-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.custom-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.list .item {
+  background: #f9fbff;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.icon-box.blue { background: #3b82f6; }
+.icon-box.pink { background: #ec4899; }
+.icon-box.orange { background: #f97316; }
+.icon-box.green { background: #22c55e; }
+
+.item-content strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.item-content span {
+  color: #4b5563;
+  font-size: 14px;
+  display: block;
+}
+
+/* =======================end Domestic & International Repatriation==================== */
+
+
+/* ==========================start Faqs Section========================== */
+.faq-section {
+  padding: 80px 20px;
+  background: #fff;
+  color: #0f172a;
+}
+
+#faqs-width {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.faq-header h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.faq-header p {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.faq-list .faq-item {
+
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 16px 20px;
+  background: #f9fafb;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  color: #3b82f6;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+.faq-contact {
+  text-align: center;
+  margin-top: 40px;
+  color: #6b7280;
+}
+
+.faq-contact .contact-number {
+  font-weight: 600;
+  color: #3b82f6;
+  margin-top: 8px;
+}
+/* ==========================end Faqs Section========================== */
+/* =================================start cta section========================== */
+/* CTA Section */
+.cta-section {
+  background: #01b7db;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.cta-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.cta-section p {
+  font-size: 16px;
+  color: 
+  #ffffff;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #01b7db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 60px 15px;
+  }
+
+  .cta-section h2 {
+    font-size: 28px;
+  }
+
+  .cta-section p {
+    font-size: 15px;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-section h2 {
+    font-size: 24px;
+  }
+
+  .cta-section p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+/* =================================end cta section========================== */
