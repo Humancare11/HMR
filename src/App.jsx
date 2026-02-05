@@ -33,10 +33,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/transferbymode/train" element={<Train />} />
-        <Route path="/transferbymode/air" element={<Air />} />
-        <Route path="/transferbymode/road" element={<Road />} />
-        <Route path="/transferbylocation" element={<TransferByLocation />} />
+        <Route path="/transfer-by-mode/train" element={<Train />} />
+        <Route path="/transfer-by-mode/air" element={<Air />} />
+        <Route path="/transfer-by-mode/road" element={<Road />} />
+        <Route path="/transfer-by-location" element={<TransferByLocation />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
 

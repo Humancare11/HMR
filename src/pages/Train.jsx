@@ -106,7 +106,7 @@ const Air = () => {
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://humanremainstransfer.com/transferbymode/train"
+          href="https://humanremainstransfer.com/transfer-by-mode/train"
         />
     </Helmet>
 

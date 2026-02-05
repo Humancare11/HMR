@@ -16,12 +16,12 @@ const Header = () => {
       // path: '/transferbymode',
       submenu: [
        
-        { name: 'Air', path: '/transferbymode/air' },
-        { name: 'Road', path: '/transferbymode/road' },
-         { name: 'Train', path: '/transferbymode/train' }
+        { name: 'Air', path: '/transfer-by-mode/air' },
+        { name: 'Road', path: '/transfer-by-mode/road' },
+         { name: 'Train', path: '/transfer-by-mode/train' }
       ]
     },
-    { name: 'Transfer by Location', path: '/transferbylocation' },
+    { name: 'Transfer by Location', path: '/transfer-by-location' },
     { name: 'Contact Us', path: '/contact' },
     
   ];

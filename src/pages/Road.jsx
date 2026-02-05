@@ -128,7 +128,7 @@ mortuary transport services
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://humanremainstransfer.com/transferbymode/road"
+          href="https://humanremainstransfer.com/transfer-by-mode/road"
         />
     </Helmet>
     
