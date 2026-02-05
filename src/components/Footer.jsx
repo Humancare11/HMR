@@ -1,7 +1,7 @@
 // Footer.js
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./footer.css";
+import "./Footer.css";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { BiInfoCircle } from "react-icons/bi";
 import { MdEmail, MdLocationOn } from "react-icons/md";

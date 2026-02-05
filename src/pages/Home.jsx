@@ -28,22 +28,18 @@ function Home() {
       <section className="keyword-section py-5 bg-light">
         <div className="container">
           <h2 className="section-title text-center mb-4">
-            Your Trusted Partner for Funeral, Cremation & Human Remains Transport Services
+            Reliable Dead Body Transportation Services Across India & International
           </h2>
           <p>
-            Human Remains Transfer offers full funeral services, cremation services, and dead body transfer services to families in India and across the world. Be it dead body transport by air, road, or mortuary transport services, we provide legal, safe, dignified transfer of the deceased.
+            We provide professional and compassionate dead body transportation services designed to support families during the most difficult moments of loss. Understanding the emotional and logistical challenges involved in the transportation of dead bodies, we offer complete end-to-end assistance for deceased body transport within cities, across states, and internationally. From documentation and permits to coordination with hospitals, mortuaries, airlines, and railways, every aspect of human remains transportation is handled with care, sensitivity, and full legal compliance.
           </p>
           <p>
-            We have 24/7 dead body transport services available in all major cities like Mumbai, Bangalore, Delhi, Hyderabad Chennai Kochi Bhopal Patna Faridabad among many more locations throughout India so that you can avail our services at any time irrespective of where assistance is required.
-
+           Our services include dead body transport by air, dead body transport by train, and dead body transport by road, allowing families to choose the most suitable option based on urgency and distance. For long-distance and overseas transfers, we manage human remains air cargo and human remains cargo handling, working closely with airlines to ensure smooth dead body transportation by air, including coffin preparation, embalming coordination, and clearance procedures. We also assist with shipping a deceased body to another state, transferring a dead body to another state, and transporting a deceased from state to state, ensuring safe and dignified movement at every stage. Local transfers are supported through our reliable dead body ambulance service between hospitals, residences, mortuaries, and cremation or burial grounds.
           </p>
           <p>
-            We are into human remains cargo handling for compliant dead body air transport in India as well as international repatriation from embalming documentation customs clearance airway bill preparation complete funeral shipping service; each step is taken care of by the experts. Families seeking to transfer a body to another state will be guided clearly about the procedure and how much it costs for transporting a dead body to another state or city.
+          In addition, we provide comprehensive professional mortuary services, working alongside licensed morticians and funeral directors to support necessary funeral director services and ceremonial requirements. For international cases, we manage the complete repatriation of human remains, including embassy approvals, consulate documentation, and airline coordination. We maintain full transparency regarding the deceased body transportation cost, with no hidden charges. Our mortuary transport services, corpse transportation service, and funeral transport services are delivered with dignity, cultural sensitivity, and respect, so families can focus on remembrance while we take care of the logistics.
           </p>
-          <p>
-            We provide cremation ceremony arrangements quick cremation service and burial services with respect according to their religious and cultural needs together with planning support. All details such as funeral home transport mortuary vehicle arrangements city-to-city dead body transfer are taken care of with utmost compliance.
-          </p>
-          <p>We help families with funeral home services embalming documentation assistance all domestic & international human remains transport needs from dead body transfer & funeral transport services till complete repatriation of the body; Human Remains Transfer is your trusted partner 24/7 ensuring dignity in every journey.</p>
+          
         </div>
       </section>
       <ContactUs />

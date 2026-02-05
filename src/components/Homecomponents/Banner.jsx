@@ -8,7 +8,7 @@ const Banner = () => {
     <section className="hero-section d-flex align-items-center justify-content-center text-center" id='home'>
       <div className="hero-content">
         <h1 className="hero-title">
-        Human Remains Transfer – 24/7 Domestic & International Mortal Remains Transport Services
+        Human Remains Transfer – 24/7 Domestic & International Dead Body Transportation Services
         </h1>
         <p className="hero-subtitle">
          Compassionate, certified, and complete assistance for cremation, funeral preparation, and the return of human remains in India and around the world.
