@@ -2,6 +2,7 @@ import React from 'react';
 import "./About.css";
 import doctorImg from "../assets/About-page.jpg";
 import { FaHeart, FaShieldAlt, FaClock, FaAward, FaPlane, FaMapMarkerAlt, FaPhoneAlt, FaBook } from "react-icons/fa";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const services = [

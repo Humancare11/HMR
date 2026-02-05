@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { FaCheckCircle } from "react-icons/fa";
 import ContactUs from '../components/ContactUs';
+import { Helmet } from "react-helmet";
 
 const Air = () => {
   const [openIndex, setOpenIndex] = useState(null);

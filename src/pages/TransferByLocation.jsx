@@ -23,6 +23,7 @@ import { FaRegCircle } from "react-icons/fa";
 import { FaCheckCircle } from "react-icons/fa";
 import { CgTab } from 'react-icons/cg';
 import ContactUs from '../components/ContactUs';
+import { Helmet } from "react-helmet";
 
 
 

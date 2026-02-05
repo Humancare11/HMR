@@ -14,7 +14,7 @@ import {
   FaGlobeAmericas,
   FaChurch,
 } from "react-icons/fa";
-
+import { Helmet } from "react-helmet";
 const Servicespage = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
