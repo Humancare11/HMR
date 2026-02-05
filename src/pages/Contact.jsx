@@ -6,12 +6,37 @@ import Contactus from '../components/ContactUs';
 function Contactpage() {
   return (
 <>
+ <Helmet>
+      <title>Contact Us | Dead Body & Funeral Transport Services</title>
+
+      <meta
+        name="description"
+        content="Need immediate dead body transportation services? Contact us for 24/7 funeral transport & human remains transfer support."
+      />
+
+      <meta
+        name="keywords"
+        content="dead body transportation services,
+        human remains transfer,
+        dead body transport by air,
+        dead body transportation services
+        deceased transportation services
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/contact"
+        />
+    </Helmet>
+
+    {/* ===================start banner section==================  */}
       <section className="air-repatriation">
   <div className="container">
     <div className="row align-items-center">
       {/* Left Side Text */}
       <div className="col-md-6 text-section">
-        <h1>Contact Humancare World Wide – Funeral & Repatriation Support</h1>
+        <h1>Contact Human Remains Transfer – Dead Body & Funeral Transport Support</h1>
         <p>Call or message us for immediate help with dead body transport, cremation, burial, and international repatriation.</p>
         <a href="tel: +919833444040">
         <button className="btn btn-danger">More Info</button></a>

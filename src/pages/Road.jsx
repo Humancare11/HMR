@@ -104,10 +104,34 @@ const [openIndex, setOpenIndex] = useState(null);
 
   return (
     <>
+
+     <Helmet>
+      <title>Dead Body Transport by Road | Ambulance & Vehicle Services</title>
+
+      <meta
+        name="description"
+        content="24/7 dead body ambulance service for road transportation. Transparent deceased body transportation cost across India."
+      />
+
+      <meta
+        name="keywords"
+        content="dead body ambulance service,
+        dead body transport by road,
+human remains transportation, 
+deceased body transportation, 
+funeral transport service
+transporting deceased from state to state,
+mortuary transport services
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/transferbymode/road"
+        />
+    </Helmet>
     
        {/* ===================start banner section==================  */}
-     
-
       <section className="air-repatriation">
   <div className="container">
     <div className="row align-items-center">

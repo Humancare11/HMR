@@ -33,14 +33,38 @@ const About = () => {
 
   return (
     <>
+     <Helmet>
+      <title>About Us | Human Remains Transfer & Repatriation Experts</title>
+
+      <meta
+        name="description"
+        content="Learn about our professional human remains transfer services. Trusted morticians & funeral directors ensuring dignified transport."
+      />
+
+      <meta
+        name="keywords"
+        content="human remains transfer,
+        transportation of dead bodies, 
+        deceased body transport, 
+        corpse transportation service,
+        repatriation of human remains,
+        professional mortuary services,
+        mortician and funeral director
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/about"
+        />
+    </Helmet>
       {/* ========================== Banner Section ======================== */}
       <section className="air-repatriation">
         <div className="container">
           <div className="row align-items-center">
             {/* Left Side Text */}
             <div className="col-md-6 text-section">
-              <h1>About Us – Human Care Worldwide
-</h1>
+              <h1>About Us – Experts in Human Remains Transfer </h1>
               <p>
                Trusted Partners in Safe & Dignified Repatriation
               </p>

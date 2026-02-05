@@ -17,6 +17,32 @@ import ContactUs from '../components/ContactUs'
 function Home() {
   return (
     <>
+ <Helmet>
+      <title>Dead Body Transportation Services in India | Human Remains Transfer</title>
+
+      <meta
+        name="description"
+        content="Professional dead body transportation services across India & abroad. Safe human remains transfer by air, train & road. 24/7 assistance."
+      />
+
+      <meta
+        name="keywords"
+        content="
+        dead body transportation services,
+        human remains transfer,
+        transportation of dead bodies,
+        deceased body transport,
+        corpse transportation service
+        "
+      />
+
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/"
+        />
+        
+    </Helmet>
 
       <Banner />
       <AboutUs />

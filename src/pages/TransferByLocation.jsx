@@ -107,16 +107,37 @@ const [openIndex, setOpenIndex] = useState(null);
 ];
   return (
   <>
-    
+     <Helmet>
+      <title>Deceased Body Transport Services Across India & International</title>
+
+      <meta
+        name="description"
+        content="Pan-India & international deceased body transport services. Safe human remains transportation across cities, states & countries."
+      />
+
+      <meta
+        name="keywords"
+        content="dead body transportation services,
+        human remains transfer,
+        deceased transportation services, 
+        human remains transportation, 
+        transportation of dead bodies,
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/transferbylocation"
+        />
+    </Helmet>
        {/* ===================start banner section==================  */}
      
-
       <section className="air-repatriation">
   <div className="container">
     <div className="row align-items-center">
       {/* Left Side Text */}
       <div className="col-md-6 text-section">
-        <h1>Dead Body Transport by Air – India & International</h1>
+        <h1>Dead Body Transfer Services Across India & International</h1>
         <p>Compassionate and reliable dead body transport by air in India and international repatriation services. Affordable, 24/7 support for human remains air transport, funeral planning, cremation, and repatriation worldwide.</p>
        <a href="tel: +919833444040">
         <button className="btn btn-danger">More Info</button></a>

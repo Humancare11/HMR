@@ -83,13 +83,39 @@ const Air = () => {
 
   return (
     <>
+     <Helmet>
+      <title>Dead Body Transport by Train in India | Affordable Rail Cargo Services</title>
+
+      <meta
+        name="description"
+        content="Affordable dead body transport by train across India. Safe rail cargo services for transferring deceased between states."
+      />
+
+      <meta
+        name="keywords"
+        content="dead body transport by train,
+        human remains transportation, 
+        deceased body transportation, 
+        funeral transport service
+        transporting deceased from state to state,
+        transferring dead body to another state,
+        shipping deceased body to another state
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/transferbymode/train"
+        />
+    </Helmet>
+
       {/* ===================start banner section==================  */}
       <section className="air-repatriation">
         <div className="container">
           <div className="row align-items-center">
             {/* Left Side Text */}
             <div className="col-md-6 text-section">
-              <h1>Dead Body Transport by Train in India – Affordable Rail Cargo Services</h1>
+              <h1>Human Remains Transfer by Train in India – Affordable Rail Transport Services</h1>
               <p>Secure and low-cost dead body transport by train in India. Complete railway documentation, coffin preparation, and human remains transfer via train cargo services.</p>
     <a href="tel: +919833444040">
         <button className="btn btn-danger">More Info</button></a>            </div>

@@ -81,6 +81,30 @@ const Air = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Dead Body Transport by Air | Human Remains Air Cargo Services</title>
+
+      <meta
+        name="description"
+        content="Reliable dead body transport by air with documentation & airline coordination. Human remains air cargo & repatriation services."
+      />
+
+      <meta
+        name="keywords"
+        content="dead body transport by air, 
+        deceased body transportation, 
+        funeral transport service
+        human remains air cargo, 
+        human remains cargo handling, 
+        repatriation of human remains
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/transferbymode/air"
+        />
+    </Helmet>
       {/* ===================start banner section==================  */}
       <section className="air-repatriation">
         <div className="container">

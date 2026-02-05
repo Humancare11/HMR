@@ -94,6 +94,31 @@ const Servicespage = () => {
 
   return (
     <>
+
+     <Helmet>
+      <title>Human Remains Transportation & Funeral Services in India</title>
+
+      <meta
+        name="description"
+        content="End-to-end Human Remains Corpse transportation services including ambulance, air cargo, train & road funeral transport across India."
+      />
+
+      <meta
+        name="keywords"
+        content="corpse transportation service,
+        dead body transportation services,
+        funeral transport services,
+        deceased transportation services,
+        dead body ambulance service,
+        mortuary transport services
+        "
+      />
+        {/* Canonical URL */}
+        <link
+          rel="canonical"
+          href="https://humanremainstransfer.com/services"
+        />
+    </Helmet>
       {/* ========================== Banner Section ======================== */}
       <section className="air-repatriation">
         <div className="container">
