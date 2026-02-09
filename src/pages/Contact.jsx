@@ -2,7 +2,7 @@ import React from 'react'
 import doctorImg from "../assets/Contact-banner.jpg";
 import { Contact } from 'lucide-react';
 import Contactus from '../components/ContactUs';
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 function Contactpage() {
   return (
