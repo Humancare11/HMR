@@ -128,7 +128,7 @@ const [openIndex, setOpenIndex] = useState(null);
         {/* Canonical URL */}
         <link
           rel="canonical"
-          href="https://humanremainstransfer.com/transferbylocation"
+          href="https://humanremainstransfer.com/transfer-by-location"
         />
     </Helmet>
        {/* ===================start banner section==================  */}
