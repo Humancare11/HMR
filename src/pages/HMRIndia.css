@@ -1,0 +1,624 @@
+/* ===== Global Reset Fix ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    background-color: #0f1e5a;
+    padding: 40px 0;
+}
+
+.hero-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-left h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #ff3c3c;
+    margin-bottom: 30px;
+}
+
+.hero-left p {
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.7;
+    max-width: 580px;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+    background-color: #e63946;
+    color: #ffffff;
+    border: none;
+    padding: 10px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #c92c39;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 40px;
+    }
+
+    .hero-left p {
+        margin: 0 auto 30px;
+    }
+
+    .hero-right {
+        justify-content: center;
+    }
+}
+
+/* =====================about section============================ */
+.about {
+    background-color: #f3f3f3;
+    padding: 100px 0;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.about-right {
+    flex: 1;
+}
+
+.about-right h2 {
+    color: #0f1e5a;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 30px;
+
+}
+
+.about-right p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-right strong {
+    font-weight: 700;
+    color: #333;
+}
+
+@media (max-width: 992px) {
+    .about-container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .about-right h2 {
+        font-size: 32px;
+    }
+}
+
+
+/* ========================service section=================================== */
+.services {
+    background-color: #f2f2f2;
+    /* padding: 100px 0; */
+}
+
+.services-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-title {
+    text-align: center;
+    color: #0f1e5a;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 90px;
+}
+
+.service-card {
+    background: #e9e9e9;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 18px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    line-height: 1.6;
+}
+
+.transfer-title {
+    text-align: center;
+    color: #0f1e5a;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.transfer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.transfer-box {
+    flex: 1;
+}
+
+.transfer-box h3 {
+    font-size: 26px;
+    color: #0f1e5a;
+    margin-bottom: 25px;
+}
+
+.transfer-box ol {
+    padding-left: 20px;
+}
+
+.transfer-box li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 992px) {
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .transfer-wrapper {
+        flex-direction: column;
+    }
+
+    .transfer-title {
+        font-size: 36px;
+    }
+}
+
+/* ======================trust section============================= */
+.trust {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+}
+
+.trust-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.trust-left {
+    flex: 1;
+}
+
+.section-title {
+    color: #0f1e5a;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin-bottom: 40px;
+}
+
+.trust-list {
+    list-style: disc;
+    padding-left: 22px;
+}
+
+.trust-list li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 18px;
+    line-height: 1.7;
+}
+
+.trust-list strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.trust-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.trust-right img {
+    width: 100%;
+    max-width: 580px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .trust-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trust-list {
+        text-align: left;
+    }
+
+    .trust-right {
+        justify-content: center;
+    }
+}
+
+/* ======================process============================ */
+.process {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+}
+
+.process-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.process-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.process-card {
+    background: #e9e9e9;
+    border-radius: 18px;
+    padding: 50px 30px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+}
+
+.process-number {
+    width: 70px;
+    height: 70px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+}
+
+.process-card p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.process-card strong {
+    color: #444;
+    font-weight: 600;
+}
+
+@media (max-width: 992px) {
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =======================serve data=============================== */
+.serve {
+    background-color: #f2f2f2;
+    padding: 100px 0;
+}
+
+.serve-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.serve-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.serve-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.serve-card {
+    background: #e9e9e9;
+    border-radius: 16px;
+    padding: 40px 25px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.serve-card h3 {
+    font-size: 28px;
+    color: #0f1e5a;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.serve-card p {
+    font-size: 17px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* CTA Section */
+
+.serve-cta {
+    background-color: #0f1e5a;
+    padding: 90px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.serve-cta-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.serve-cta h2 {
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.serve-cta p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.serve-highlight {
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+    .serve-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* --------------------------------FAQ Section -------------------------- */
+.faq-section {
+    background: #f8fafc;
+    padding: 25px 0;
+}
+
+.faq-container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0a1754;
+    margin-bottom: 36px;
+    font-weight: 700;
+}
+
+.faq-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 24px;
+}
+
+.faq-item {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(10, 23, 84, 0.06);
+    overflow: hidden;
+    border: 1px solid rgba(15, 30, 90, 0.06);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    color: #0a1754;
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.faq-question:hover {
+    background: rgba(10, 23, 84, 0.02);
+}
+
+.faq-question svg {
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #0a1754;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(10, 23, 84, 0.03);
+}
+
+.faq-item.open .faq-question svg {
+    transform: rotate(180deg);
+    background: rgba(59, 130, 246, 0.1);
+    color: #2563eb;
+}
+
+.faq-question span {
+    flex: 1;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background: transparent;
+    transition:
+        max-height 0.36s cubic-bezier(0.4, 0, 0.2, 1),
+        padding 0.28s ease,
+        opacity 0.25s ease;
+    opacity: 0;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 480px;
+    padding: 14px 22px 22px 22px;
+    opacity: 1;
+}
+
+.faq-answer p {
+    color: #475569;
+    font-size: 15.5px;
+    line-height: 1.7;
+    margin: 0;
+    padding-top: 6px;
+}
+
+/* FAQ bulleted points styling */
+.faq-points {
+    list-style-type: disc;
+    padding-left: 1.25rem;
+    margin: 12px 0 0 0;
+    color: #475569;
+}
+
+.faq-points li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+@media (max-width: 700px) {
+    .faq-title {
+        font-size: 26px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        padding: 14px 16px;
+        gap: 12px;
+    }
+
+    .faq-item.open .faq-answer {
+        padding: 0 18px 16px 44px;
+    }
+
+    @media (min-width: 900px) {
+        .faq-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .faq-item {
+            margin: 6px 0;
+        }
+    }
+
+    .faq-answer p {
+        font-size: 14px;
+    }
+}

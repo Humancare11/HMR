@@ -12,6 +12,8 @@ import Air from './pages/Air';
 import Road from './pages/Road';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
+import HMRuae from './pages/HMRuae';
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +40,9 @@ function App() {
         <Route path="/transfer-by-mode/road" element={<Road />} />
         <Route path="/transfer-by-location" element={<TransferByLocation />} />
         <Route path="/contact" element={<Contact />} />
+
+                <Route path="/hmruae" element={<HMRuae />} />
+
       </Routes>
 
       <Footer />

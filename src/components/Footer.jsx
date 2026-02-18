@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="col-md-3 mb-4">
             <h5 className="fw-bold">Human Remains Transfer</h5>
             <p>
-             Human Remains Transfer provides funeral planning, urn transfer, cremation, and burial services for the repatriation of mortal remains both domestically and abroad. We are certified, compliant, and caring, and we help families all over the world, day or night.
+             Human Remains Transfer, a Humancare World Wide Holdings company, provides funeral planning, urn transfer, cremation, and burial services for the repatriation of mortal remains both domestically and internationally. Certified, compliant, and compassionate, we support families around the world—24/7.
             </p>
             {/* <div className="d-flex gap-3 mt-3">
               <a href="#" className="social-icon"><FaFacebookF /></a>
