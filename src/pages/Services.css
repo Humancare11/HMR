@@ -1,0 +1,267 @@
+/* ====================== HC Services (page) styles ====================== */
+.hc-services-section {
+  background: #ffffff;
+  padding: 25px 20px;
+}
+
+.hc-services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.hc-services-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hc-services-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.hc-services-subtitle {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.hc-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.hc-services-item {
+  width: 100%;
+}
+
+.hc-service-card {
+  background: #efefef;
+  border-radius: 14px;
+  padding: 28px 20px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.hc-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+}
+
+.hc-service-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  flex-shrink: 0;
+}
+
+.hc-service-icon svg,
+.hc-service-icon svg * {
+  color: #ffffff;
+  fill: currentColor;
+  font-size: 22px;
+}
+
+.hc-service-icon.red {
+  background: #ef4444;
+}
+.hc-service-icon.blue {
+  background: #3b82f6;
+}
+.hc-service-icon.green {
+  background: #22c55e;
+}
+.hc-service-icon.orange {
+  background: #fb923c;
+}
+
+.hc-service-title {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.hc-service-desc {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 6px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hc-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .hc-services-section {
+    padding: 40px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hc-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .hc-service-card {
+    min-height: 280px;
+    padding: 22px 16px;
+  }
+  .hc-service-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .hc-service-title {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hc-services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .hc-services-section {
+    padding: 30px 12px;
+  }
+  .hc-service-card {
+    min-height: 240px;
+  }
+  .hc-service-icon {
+    width: 48px;
+    height: 48px;
+  }
+  .hc-service-title {
+    font-size: 16px;
+  }
+  .hc-service-desc {
+    font-size: 14px;
+  }
+}
+
+/* SECTION */
+.hmr-faq-section {
+  padding: 25px 20px;
+  background: #f4f6f9;
+  text-align: center;
+}
+
+.hmr-faq-header h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.hmr-faq-header p {
+  max-width: 750px;
+  margin: 0 auto 50px auto;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.hmr-faq-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ITEM */
+.hmr-faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 22px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.hmr-faq-item:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* QUESTION */
+.hmr-faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+/* ICON */
+.hmr-faq-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hmr-faq-icon.rotate {
+  transform: rotate(180deg);
+}
+
+/* ANSWER (SMOOTH ANIMATION) */
+.hmr-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.hmr-faq-answer.show {
+  max-height: 300px;
+  margin-top: 15px;
+}
+
+.hmr-faq-question{
+    font-size: 18px;
+    color: #0d1b2a;
+}
+
+.hmr-faq-answer p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hmr-faq-header h2 {
+    font-size: 26px;
+  }
+
+  .hmr-faq-header p {
+    font-size: 14px;
+  }
+
+  .hmr-faq-item {
+    padding: 16px;
+  }
+
+  .hmr-faq-answer p {
+    font-size: 13px;
+  }
+}

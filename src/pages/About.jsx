@@ -1,7 +1,16 @@
-import React from 'react';
+import React from "react";
 import "./About.css";
 import doctorImg from "../assets/About-page.jpg";
-import { FaHeart, FaShieldAlt, FaClock, FaAward, FaPlane, FaMapMarkerAlt, FaPhoneAlt, FaBook } from "react-icons/fa";
+import {
+  FaHeart,
+  FaShieldAlt,
+  FaClock,
+  FaAward,
+  FaPlane,
+  FaMapMarkerAlt,
+  FaPhoneAlt,
+  FaBook,
+} from "react-icons/fa";
 import { Helmet } from "react-helmet";
 
 const About = () => {
@@ -9,42 +18,46 @@ const About = () => {
     {
       icon: FaMapMarkerAlt,
       title: "India-Wide Coverage",
-      description: "Operations across all major cities with access to airports, railways, and highways.",
-      color: "red"
+      description:
+        "Operations across all major cities with access to airports, railways, and highways.",
+      color: "red",
     },
     {
       icon: FaPlane,
       title: "International Repatriation",
-      description: " Partnerships with airlines, embassies, and global agencies for smooth cross-border transfers.",
-      color: "blue" 
+      description:
+        " Partnerships with airlines, embassies, and global agencies for smooth cross-border transfers.",
+      color: "blue",
     },
     {
       icon: FaBook,
       title: "Medical & Legal Compliance",
-      description: " Adherence to WHO, IATA, and country-specific rules for embalming, coffin sealing, and permits.",
-      color: "green"
+      description:
+        " Adherence to WHO, IATA, and country-specific rules for embalming, coffin sealing, and permits.",
+      color: "green",
     },
     {
-    icon: FaPhoneAlt,
+      icon: FaPhoneAlt,
       title: "24/7 Support System",
-      description: "Real-time assistance for families and coordination with authorities round the clock.",
-      color: "purple"
-    }
+      description:
+        "Real-time assistance for families and coordination with authorities round the clock.",
+      color: "purple",
+    },
   ];
 
   return (
     <>
-     <Helmet>
-      <title>About Us | Human Remains Transfer & Repatriation Experts</title>
+      <Helmet>
+        <title>About Us | Human Remains Transfer & Repatriation Experts</title>
 
-      <meta
-        name="description"
-        content="Learn about our professional human remains transfer services. Trusted morticians & funeral directors ensuring dignified transport."
-      />
+        <meta
+          name="description"
+          content="Learn about our professional human remains transfer services. Trusted morticians & funeral directors ensuring dignified transport."
+        />
 
-      <meta
-        name="keywords"
-        content="human remains transfer,
+        <meta
+          name="keywords"
+          content="human remains transfer,
         transportation of dead bodies, 
         deceased body transport, 
         corpse transportation service,
@@ -52,13 +65,10 @@ const About = () => {
         professional mortuary services,
         mortician and funeral director
         "
-      />
-        {/* Canonical URL */}
-        <link
-          rel="canonical"
-          href="https://humanremainstransfer.com/about"
         />
-    </Helmet>
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://humanremainstransfer.com/about" />
+      </Helmet>
       {/* ========================== Banner Section ======================== */}
       <section className="air-repatriation">
         <div className="container">
@@ -66,15 +76,18 @@ const About = () => {
             {/* Left Side Text */}
             <div className="col-md-6 text-section">
               <h1>About Us – Experts in Human Remains Transfer </h1>
-              <p>
-               Trusted Partners in Safe & Dignified Repatriation
-              </p>
-               <a href="tel: +919833444040">
-        <button className="btn btn-danger">More Info</button></a>
+              <p>Trusted Partners in Safe & Dignified Repatriation</p>
+              <a href="tel: +919833444040">
+                <button className="btn btn-danger">More Info</button>
+              </a>
             </div>
             {/* Right Side Image */}
             <div className="col-md-6 image-section">
-              <img src={doctorImg} alt="Doctor with airplane" className="img-fluid" />
+              <img
+                src={doctorImg}
+                alt="Doctor with airplane"
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -92,33 +105,55 @@ const About = () => {
           <div className="row g-4">
             <div className="col-12 col-sm-6 col-md-3">
               <div className="cv-card p-4 h-100">
-                <div className="cv-icon mb-3"><FaHeart /></div>
+                <div className="cv-icon mb-3">
+                  <FaHeart />
+                </div>
                 <h5 className="cv-card-title mb-2">Integrity in Every Step</h5>
-                <p className="cv-card-text"> Transparent communication, legal compliance, and ethical practices in every transfer.</p>
+                <p className="cv-card-text">
+                  {" "}
+                  Transparent communication, legal compliance, and ethical
+                  practices in every transfer.
+                </p>
               </div>
             </div>
 
             <div className="col-12 col-sm-6 col-md-3">
               <div className="cv-card p-4 h-100">
-                <div className="cv-icon mb-3"><FaShieldAlt /></div>
+                <div className="cv-icon mb-3">
+                  <FaShieldAlt />
+                </div>
                 <h5 className="cv-card-title mb-2">Respect & Dignity</h5>
-                <p className="cv-card-text">Ensuring every departed soul is handled with the highest respect and cultural sensitivity.</p>
+                <p className="cv-card-text">
+                  Ensuring every departed soul is handled with the highest
+                  respect and cultural sensitivity.
+                </p>
               </div>
             </div>
 
             <div className="col-12 col-sm-6 col-md-3">
               <div className="cv-card p-4 h-100">
-                <div className="cv-icon mb-3"><FaClock /></div>
+                <div className="cv-icon mb-3">
+                  <FaClock />
+                </div>
                 <h5 className="cv-card-title mb-2">Reliability & Timeliness</h5>
-                <p className="cv-card-text">Rapid response with accurate coordination to minimize delays during critical moments.</p>
+                <p className="cv-card-text">
+                  Rapid response with accurate coordination to minimize delays
+                  during critical moments.
+                </p>
               </div>
             </div>
 
             <div className="col-12 col-sm-6 col-md-3">
               <div className="cv-card p-4 h-100">
-                <div className="cv-icon mb-3"><FaAward /></div>
+                <div className="cv-icon mb-3">
+                  <FaAward />
+                </div>
                 <h5 className="cv-card-title mb-2">Professional Expertise</h5>
-                <p className="cv-card-text"> Trained staff, certified doctors, and global experience to manage complex transfers smoothly.</p>
+                <p className="cv-card-text">
+                  {" "}
+                  Trained staff, certified doctors, and global experience to
+                  manage complex transfers smoothly.
+                </p>
               </div>
             </div>
           </div>
@@ -133,8 +168,11 @@ const About = () => {
             <div className="col-lg-6 mb-4 mb-lg-0">
               <h2 className="section-title">Our Mission</h2>
               <p className="section-text">
-               At Human Care Worldwide, our mission is to provide safe, reliable, and dignified dead body transport services across India and internationally.
- We strive to ease the challenges families face by offering end-to-end support — from documentation to final delivery — with utmost precision.
+                At Human Care Worldwide, our mission is to provide safe,
+                reliable, and dignified dead body transport services across
+                India and internationally. We strive to ease the challenges
+                families face by offering end-to-end support — from
+                documentation to final delivery — with utmost precision.
               </p>
               <ul className="mission-list list-unstyled">
                 <li>Quick response and 24/7 availability</li>
@@ -149,9 +187,13 @@ const About = () => {
               <div className="vision-box p-4 rounded">
                 <h3 className="vision-title">Our Expertise</h3>
                 <p className="vision-text">
-              With years of specialized experience, Human Care Worldwide has managed thousands of successful transfers across India and overseas.
- From air ambulance and road ambulance to train cargo and international repatriation, our team ensures seamless coordination, certified embalming, coffin services, and global clearances.
- We are trusted by families, hospitals, embassies, and insurance providers for our accuracy and professionalism.
+                  With years of specialized experience, Human Care Worldwide has
+                  managed thousands of successful transfers across India and
+                  overseas. From air ambulance and road ambulance to train cargo
+                  and international repatriation, our team ensures seamless
+                  coordination, certified embalming, coffin services, and global
+                  clearances. We are trusted by families, hospitals, embassies,
+                  and insurance providers for our accuracy and professionalism.
                 </p>
                 {/* <div className="vision-stats d-flex mt-4">
                   <div className="stat text-center me-4">
@@ -170,28 +212,22 @@ const About = () => {
         </div>
       </section>
 
-      {/* ================= Expertise Section ======================= */}
-      <section className="services-section py-5">
-        <div className="container">
-          {/* Section Header */}
-          <div className="section-header text-center mb-5">
-            <h2 className="mb-3">Our Global Network</h2>
-            {/* <p className="mx-auto" style={{ maxWidth: "700px" }}>
-              Comprehensive medical solutions designed to meet your every healthcare need,
-              delivered with excellence and compassion across the globe.
-            </p> */}
-          </div>
+      {/* ================= Our Global Network Section ======================= */}
+      <section className="global-network-section">
+        <div className="global-network-container">
+          <h2 className="global-network-title">Our Global Network</h2>
 
-          {/* Services Grid */}
-          <div className="row g-4">
+          <div className="network-cards-grid">
             {services.map((service, index) => (
-              <div key={index} className="col-lg-3 col-md-6 col-sm-12">
-                <div className="service-card h-100 text-center">
-                  <div className={`icon-box mx-auto ${service.color}`}>
-                    <service.icon size={32} />
+              <div className="network-card-wrapper" key={index}>
+                <div className="network-card">
+                  <div
+                    className={`network-icon-wrapper network-icon-${service.color}`}
+                  >
+                    <service.icon className="network-icon" />
                   </div>
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
+                  <h5 className="network-card-title">{service.title}</h5>
+                  <p className="network-card-text">{service.description}</p>
                 </div>
               </div>
             ))}

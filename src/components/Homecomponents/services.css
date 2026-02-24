@@ -75,7 +75,7 @@
 
 .service-subtitle {
   color: #555;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -84,7 +84,9 @@
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .service-card:hover {
@@ -110,3 +112,5 @@
   color: #2f4f4f;
   font-size: 15px;
 }
+
+

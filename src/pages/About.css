@@ -4,14 +4,13 @@
 }
 
 .section-title {
-    text-align: left;
+  text-align: left;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
 .section-text {
- 
   color: #4b5563;
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -79,7 +78,9 @@
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .cv-card:hover {
@@ -108,4 +109,171 @@
 .cv-card-text {
   color: #6b7280;
   font-size: 0.95rem;
+}
+/* ====================== Global Network Section ====================== */
+.global-network-section {
+  background-color: #ffffff;
+  padding: 25px 20px;
+}
+
+.global-network-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.global-network-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e2022;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.network-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.network-card-wrapper {
+  width: 100%;
+}
+
+.network-card {
+  background: #f4f4f5;
+  border-radius: 15px;
+  padding: 30px 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 320px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.network-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.network-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  flex-shrink: 0;
+}
+
+.network-icon {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.network-icon-red {
+  background-color: #ef4444;
+}
+
+.network-icon-blue {
+  background-color: #3b82f6;
+}
+
+.network-icon-green {
+  background-color: #22c55e;
+}
+
+.network-icon-purple {
+  background-color: #a855f7;
+}
+
+.network-card-title {
+  font-weight: 700;
+  color: #1e2022;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.network-card-text {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Responsive Tablets */
+@media (max-width: 1024px) {
+  .network-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .global-network-section {
+    padding: 50px 15px;
+  }
+}
+
+/* Responsive Mobile Landscape */
+@media (max-width: 768px) {
+  .global-network-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .network-cards-grid {
+    gap: 20px;
+  }
+
+  .network-card {
+    min-height: 280px;
+    padding: 25px 15px;
+  }
+
+  .network-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .network-icon {
+    font-size: 1.75rem;
+  }
+}
+
+/* Responsive Mobile Portrait */
+@media (max-width: 480px) {
+  .global-network-section {
+    padding: 40px 15px;
+  }
+
+  .global-network-title {
+    font-size: 1.75rem;
+    margin-bottom: 30px;
+  }
+
+  .network-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .network-card {
+    min-height: 260px;
+  }
+
+  .network-card-title {
+    font-size: 1rem;
+  }
+
+  .network-card-text {
+    font-size: 0.9rem;
+  }
 }

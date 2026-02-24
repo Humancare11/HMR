@@ -1,8 +1,4 @@
-
 /* ==================start hero section==================  */
-
-
-
 .air-repatriation {
   background-color: #01b7db;
   color: white;
@@ -75,11 +71,9 @@
 
 /* ==================end hero section==================  */
 
-
 /* ===================start why choose us section================== */
 .why-choose {
   background: #f5faff;
-  
 }
 
 .section-title {
@@ -106,7 +100,9 @@
   border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
@@ -163,97 +159,115 @@
 }
 /* ===================end why choose us section================== */
 
-
 /* ===================start steps section================== */
+/* Removed legacy .process-* rules (replaced by .hc-air-*) */
+/* ===================end steps section================== */
 
-
-.process-section {
-  text-align: center;
-  background-color: #f8f9fa;
+/* ====================== HC FAQ Section ====================== */
+.hc-faq-section {
+  background: #f8fafc;
   padding: 60px 20px;
 }
 
-.process-section-title {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #000;
-}
-
-.section-subtitle {
-  color: #666;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.process-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.process-card {
-  flex: 1 1 calc(20% - 20px); /* 5 cards desktop */
-  max-width: 220px;
-  background: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.process-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
-}
-
-.icon-wrapper {
-  background-color: #e9f7ff;
-  width: 70px;
-  height: 70px;
+.hc-faq-container {
+  max-width: 900px;
   margin: 0 auto;
-  border-radius: 50%;
+  padding: 0 12px;
+}
+
+.hc-faq-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.hc-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hc-faq-item {
+  width: 100%;
+}
+
+.hc-faq-question-btn {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.06);
+  cursor: pointer;
+  font-weight: 600;
+  color: #0f172a;
+  transition:
+    box-shadow 0.25s ease,
+    transform 0.18s ease;
+}
+
+.hc-faq-question-btn.open {
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.08);
+  transform: translateY(-2px);
+}
+
+.hc-faq-qtext {
+  text-align: left;
+  font-size: 18px;
+}
+
+.hc-faq-icon {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
+  color: #0f172a;
+  font-size: 18px;
 }
 
-.step-number {
-  font-size: 22px;
-  font-weight: bold;
-  color: #01b7db;
-}
-/* Desktop - 5 per row */
-.process-card {
-  flex: 1 1 calc(20% - 20px);
-  max-width: 220px;
-}
-
-/* Tablet - 3 per row */
-@media (max-width: 992px) {
-  .process-card {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: 300px;
-  }
+.hc-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.36s ease,
+    opacity 0.36s ease,
+    padding 0.28s ease;
 }
 
-/* ✅ Mobile - Force single column */
+.hc-faq-answer.open {
+  max-height: 240px; /* enough for typical answers */
+  opacity: 1;
+}
+
+.hc-faq-answer-inner {
+  background: #ffffff;
+  margin-top: 8px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  color: #475569;
+  line-height: 1.6;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.04);
+}
+
 @media (max-width: 768px) {
-  .process-grid {
-    flex-direction: column;   /* Row ko column bana do */
-    align-items: center;      /* Center align for neat look */
+  .hc-faq-section {
+    padding: 40px 14px;
   }
-
-  .process-card {
-    flex: 1 1 100% !important; /* Full width le */
-    max-width: 100% !important;
+  .hc-faq-title {
+    font-size: 24px;
+  }
+  .hc-faq-question-btn {
+    padding: 14px 16px;
+  }
+  .hc-faq-answer.open {
+    max-height: 400px;
   }
 }
-
-
-
-/* ===================end steps section================== */
-
 
 /* ===================start health section================== */
 
@@ -301,7 +315,9 @@
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
@@ -324,147 +340,277 @@
 
 /* ===================start experties section================== */
 
+/* Removed legacy .services-* rules (replaced by .hc-air-services-*) */
 
-.services-section {
-  padding: 80px 20px;
-  background: #f9fafb;
-}
-
+/* keep container util */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.section-header {
+/* ====================== HC Air Process Section ====================== */
+.hc-air-process-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
+}
+
+.hc-air-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.hc-air-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 }
 
-.section-header h2 {
-  font-size: 40px;
-  font-weight: bold;
-  color: #222;
-  margin-bottom: 15px;
+.hc-air-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
 }
 
-.divider {
-  width: 80px;
-  height: 4px;
-  background: #007bff;
-  margin: 0 auto 20px;
-  border-radius: 2px;
-}
-
-.section-header p {
-  font-size: 18px;
-  color: #555;
-  max-width: 700px;
+.hc-air-subtitle {
+  color: #6b7280;
+  max-width: 800px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
-.services-grid {
+.hc-air-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 48px;
+  justify-items: center;
 }
 
-.service-card {
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  transition: 0.3s ease;
-  border: 1px solid #eee;
+.hc-air-item {
+  width: 100%;
+  max-width: 425px;
 }
 
-.service-card:hover {
-  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+.hc-air-card {
+  background: #e9e9e9;
+  border-radius: 12px;
+  padding: 26px 18px;
+  min-height: 220px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
 }
 
-.icon-box {
-  width: 64px;
-  height: 64px;
-  border-radius: 16px;
+.hc-air-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(16, 24, 40, 0.08);
+}
+
+.hc-air-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #eaf8ff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  background: rgba(0, 123, 255, 0.1);
-  transition: transform 0.3s ease;
+  margin-bottom: 14px;
 }
 
-.service-card:hover .icon-box {
-  transform: scale(1.1);
+.hc-air-step {
+  display: inline-block;
+  font-weight: 700;
+  color: #01b7db;
+  font-size: 18px;
 }
 
-.icon-box.red svg { color: red; }
-.icon-box.blue svg { color: blue; }
-.icon-box.green svg { color: green; }
-.icon-box.purple svg { color: purple; }
-.icon-box.orange svg { color: orange; }
-.icon-box.teal svg { color: teal; }
-
-.service-card h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 15px;
+.hc-air-card-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 10px 0 8px;
+  color: #0f172a;
 }
 
-.service-card p {
-  color: #666;
-  font-size: 16px;
+.hc-air-card-desc {
+  color: #6b7280;
+  font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
-.learn-btn {
-  background: none;
-  border: none;
-  color: #007bff;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: color 0.3s ease;
+/* Responsive */
+@media (max-width: 1100px) {
+  .hc-air-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 36px;
+  }
 }
 
-.learn-btn:hover {
-  color: #0056b3;
+@media (max-width: 768px) {
+  .hc-air-process-section {
+    padding: 40px 16px;
+  }
+  .hc-air-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .hc-air-item {
+    max-width: 420px;
+  }
+  .hc-air-card {
+    min-height: 180px;
+    padding: 20px;
+  }
+  .hc-air-title {
+    font-size: 22px;
+  }
 }
 
-.learn-btn .arrow {
-  transition: transform 0.3s ease;
+/* Removed legacy service helpers and learn-btn */
+
+/* ====================== HC Air Services (cards) ====================== */
+.hc-air-services-section {
+  background: #f9fafb;
+  padding: 25px 20px;
 }
 
-.learn-btn:hover .arrow {
-  transform: translateX(5px);
+.hc-air-services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 12px;
 }
-.services-grid {
+
+.hc-air-services-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.hc-air-services-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+.hc-air-services-subtitle {
+  color: #6b7280;
+  max-width: 780px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hc-air-services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 28px;
+  align-items: stretch;
 }
 
-/* Tablet (2 per row) */
-@media (max-width: 991px) {
-  .services-grid {
+.hc-air-services-item {
+  display: flex;
+}
+
+.hc-air-service-card {
+  background: #e9e9e9;
+  border-radius: 14px;
+  padding: 28px 20px;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.06);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.hc-air-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(16, 24, 40, 0.08);
+}
+
+.hc-air-service-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.hc-air-service-icon svg {
+  font-size: 20px;
+  color: #fff;
+}
+
+.hc-color-red {
+  background: #ef4444;
+}
+.hc-color-blue {
+  background: #3b82f6;
+}
+.hc-color-green {
+  background: #22c55e;
+}
+.hc-color-purple {
+  background: #7c3aed;
+}
+
+.hc-air-service-title {
+  font-weight: 700;
+  color: #0f172a;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.hc-air-service-desc {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hc-air-services-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .hc-air-services-section {
+    padding: 48px 16px;
   }
 }
 
-/* Mobile (1 per row) */
-@media (max-width: 576px) {
-  .services-grid {
+@media (max-width: 640px) {
+  .hc-air-services-grid {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .hc-air-services-section {
+    padding: 36px 12px;
+  }
+  .hc-air-service-card {
+    padding: 20px 14px;
+  }
+  .hc-air-service-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .hc-air-service-title {
+    font-size: 15px;
+  }
+  .hc-air-service-desc {
+    font-size: 14px;
   }
 }
 
-/* ===================end experties section================== */  
-   /* =======================end Domestic & International Repatriation==================== */
-
+/* ===================end experties section================== */
+/* =======================end Domestic & International Repatriation==================== */
 
 .custom-card {
   background: #fff;
@@ -505,10 +651,18 @@
   flex-shrink: 0;
 }
 
-.icon-box.blue { background: #3b82f6; }
-.icon-box.pink { background: #ec4899; }
-.icon-box.orange { background: #f97316; }
-.icon-box.green { background: #22c55e; }
+.icon-box.blue {
+  background: #3b82f6;
+}
+.icon-box.pink {
+  background: #ec4899;
+}
+.icon-box.orange {
+  background: #f97316;
+}
+.icon-box.green {
+  background: #22c55e;
+}
 
 .item-content strong {
   display: block;
@@ -524,88 +678,7 @@
 
 /* =======================end Domestic & International Repatriation==================== */
 
-
-/* ==========================start Faqs Section========================== */
-.faq-section {
-  padding: 80px 20px;
-  background: #fff;
-  color: #0f172a;
-}
-
-#faqs-width {
-  max-width: 900px;
-  margin: auto;
-}
-
-.faq-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.faq-header h2 {
-  font-size: 32px;
-  margin-bottom: 16px;
-}
-
-.faq-header p {
-  font-size: 16px;
-  color: #6b7280;
-}
-
-.faq-list .faq-item {
-
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-
-.faq-question {
-  width: 100%;
-  text-align: left;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 16px 20px;
-  background: #f9fafb;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.faq-question:hover {
-  color: #3b82f6;
-}
-
-.arrow {
-  transition: transform 0.3s ease;
-}
-
-.arrow.open {
-  transform: rotate(180deg);
-}
-
-.faq-answer {
-  padding: 16px 20px;
-  font-size: 14px;
-  color: #6b7280;
-  line-height: 1.6;
-  background: #ffffff;
-}
-
-.faq-contact {
-  text-align: center;
-  margin-top: 40px;
-  color: #6b7280;
-}
-
-.faq-contact .contact-number {
-  font-weight: 600;
-  color: #3b82f6;
-  margin-top: 8px;
-}
-/* ==========================end Faqs Section========================== */
+/* Old FAQ rules removed (replaced by .hc-faq-*) */
 /* =================================start cta section========================== */
 /* CTA Section */
 .cta-section {
@@ -627,8 +700,7 @@
 
 .cta-section p {
   font-size: 16px;
-  color: 
-  #ffffff;
+  color: #ffffff;
   line-height: 1.6;
   margin-bottom: 30px;
 }

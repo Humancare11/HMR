@@ -3,6 +3,7 @@ import Servicessec from "../components/Homecomponents/Servicessec";
 import doctorImg from "../assets/Service-banner.jpg";
 import dentistImage from "../assets/banner.jpeg";
 import ContactUs from "../components/ContactUs";
+import "./Services.css";
 
 import {
   FaUserTie,
@@ -14,12 +15,13 @@ import {
   FaGlobeAmericas,
   FaChurch,
 } from "react-icons/fa";
+import { FiChevronDown } from "react-icons/fi";
 import { Helmet } from "react-helmet";
 const Servicespage = () => {
-  const [openIndex, setOpenIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   // ✅ Updated services with relevant icons
@@ -56,7 +58,8 @@ const Servicespage = () => {
 
   const faqs = [
     {
-      question: "1. What documents are required for a body transfer within India?",
+      question:
+        "1. What documents are required for a body transfer within India?",
       answer:
         " You will generally need a death certificate, embalming certificate, and police NOC. Our team helps arrange and verify all necessary paperwork.",
     },
@@ -94,31 +97,30 @@ const Servicespage = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Human Remains Transportation & Funeral Services in India</title>
 
-     <Helmet>
-      <title>Human Remains Transportation & Funeral Services in India</title>
+        <meta
+          name="description"
+          content="End-to-end Human Remains Corpse transportation services including ambulance, air cargo, train & road funeral transport across India."
+        />
 
-      <meta
-        name="description"
-        content="End-to-end Human Remains Corpse transportation services including ambulance, air cargo, train & road funeral transport across India."
-      />
-
-      <meta
-        name="keywords"
-        content="corpse transportation service,
+        <meta
+          name="keywords"
+          content="corpse transportation service,
         dead body transportation services,
         funeral transport services,
         deceased transportation services,
         dead body ambulance service,
         mortuary transport services
         "
-      />
+        />
         {/* Canonical URL */}
         <link
           rel="canonical"
           href="https://humanremainstransfer.com/services"
         />
-    </Helmet>
+      </Helmet>
       {/* ========================== Banner Section ======================== */}
       <section className="air-repatriation">
         <div className="container">
@@ -127,8 +129,9 @@ const Servicespage = () => {
             <div className="col-md-6 text-section">
               <h1>Cremation, Burial & Repatriation Services Made Simple</h1>
               <p>
-                We provide end-to-end support for human remains transfer, funeral
-                planning, and international documentation—anytime, anywhere.
+                We provide end-to-end support for human remains transfer,
+                funeral planning, and international documentation—anytime,
+                anywhere.
               </p>
               <a href="tel: +919833444040">
                 <button className="btn btn-danger">More Info</button>
@@ -216,27 +219,29 @@ const Servicespage = () => {
       </section>
 
       {/* ================= Expertise Section ======================= */}
-      <section className="services-section py-5">
-        <div className="container">
+      <section className="hc-services-section">
+        <div className="hc-services-container">
           {/* Section Header */}
-          <div className="section-header text-center mb-5">
-            <h2 className="mb-3">How We Support Families – Beyond Services</h2>
-            <p className="mx-auto" style={{ maxWidth: "700px" }}>
+          <div className="hc-services-header">
+            <h2 className="hc-services-title">
+              How We Support Families – Beyond Services
+            </h2>
+            <p className="hc-services-subtitle">
               We believe our role goes beyond just logistics. What makes us
               different is human touch and empathy.
             </p>
           </div>
 
           {/* Services Grid */}
-          <div className="row g-4">
+          <div className="hc-services-grid">
             {services.map((service, index) => (
-              <div key={index} className="col-lg-3 col-md-6 col-sm-12">
-                <div className="service-card h-100 text-center">
-                  <div className={`icon-box mx-auto ${service.color}`}>
+              <div key={index} className="hc-services-item">
+                <div className="hc-service-card">
+                  <div className={`hc-service-icon ${service.color}`}>
                     <service.icon size={32} />
                   </div>
-                  <h3>{service.title}</h3>
-                  <p>{service.description}</p>
+                  <h3 className="hc-service-title">{service.title}</h3>
+                  <p className="hc-service-desc">{service.description}</p>
                 </div>
               </div>
             ))}
@@ -259,37 +264,45 @@ const Servicespage = () => {
       </section>
 
       {/* ===================== FAQs Section ==================== */}
-      <section className="faq-section">
-        <div className="container" id="faqs-width">
-          <div className="faq-header">
-            <h2>Frequently Asked Questions</h2>
-            <p>
-              We understand you may have many questions during this difficult
-              time. Here are answers to the most common concerns families have
-              about our repatriation services.
-            </p>
-          </div>
+      <section className="hmr-faq-section">
+        <div className="hmr-faq-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            We understand you may have many questions during this difficult
+            time. Here are answers to the most common concerns families have.
+          </p>
+        </div>
 
-          <div className="faq-list">
-            {faqs.map((faq, index) => (
-              <div key={index} className="faq-item">
-                <button
-                  className="faq-question"
-                  onClick={() => toggleFAQ(index)}
-                >
-                  {faq.question}
-                  <span
-                    className={`arrow ${openIndex === index ? "open" : ""}`}
-                  >
-                    &#9660;
-                  </span>
-                </button>
-                {openIndex === index && (
-                  <div className="faq-answer">{faq.answer}</div>
-                )}
+        <div className="hmr-faq-container">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className={`hmr-faq-item ${
+                activeIndex === index ? "active" : ""
+              }`}
+            >
+              <div
+                className="hmr-faq-question"
+                onClick={() => toggleFAQ(index)}
+              >
+                <span className="hmr-faq-question">{faq.question}</span>
+
+                <FiChevronDown
+                  className={`hmr-faq-icon ${
+                    activeIndex === index ? "rotate" : ""
+                  }`}
+                />
               </div>
-            ))}
-          </div>
+
+              <div
+                className={`hmr-faq-answer ${
+                  activeIndex === index ? "show" : ""
+                }`}
+              >
+                <p>{faq.answer}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

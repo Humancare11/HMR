@@ -1,4 +1,3 @@
-
 /* ==================start hero section==================  */
 .air-repatriation {
   background-color: #01b7db; /* Dark Blue */
@@ -30,11 +29,15 @@
 }
 /* ==================end hero section==================  */
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
 
 /* ===================start why choose us section================== */
 .why-choose {
   background: #f5faff;
-  
 }
 
 .section-title {
@@ -61,7 +64,9 @@
   border-radius: 12px;
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
@@ -118,66 +123,132 @@
 }
 /* ===================end why choose us section================== */
 
-
 /* ===================start steps section================== */
-.process-section {
-  text-align: center;
-  background-color: #f8f9fa;
+
+/* ====================== HC Road Process Section ====================== */
+.hc-road-process-section {
+  background: #f8f9fa;
+  padding: 60px 20px;
 }
 
-.section-title {
-  font-weight: bold;
-  font-size: 2rem;
-  color: #000;
-}
-
-.section-subtitle {
-  color: #666;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-}
-
-.process-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.process-card {
-  flex: 1 1 calc(20% - 20px); /* 5 cards in a row */
-  max-width: 220px;
-  background: #fff;
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.process-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
-}
-
-.icon-wrapper {
-  background-color: #e9f7ff;
-  width: 70px;
-  height: 70px;
+.hc-road-container {
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 12px;
+}
+
+.hc-road-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.hc-road-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.hc-road-subtitle {
+  color: #6b7280;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.hc-road-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px 48px;
+  justify-items: center;
+}
+
+.hc-road-item {
+  width: 100%;
+  max-width: 425px;
+}
+
+.hc-road-card {
+  background: #e9e9e9;
+  border-radius: 12px;
+  padding: 26px 18px;
+  min-height: 220px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
+}
+
+.hc-road-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(16, 24, 40, 0.08);
+}
+
+.hc-road-icon-wrapper {
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
+  background: #eaf8ff;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 14px;
 }
 
-.step-number {
-  font-size: 22px;
-  font-weight: bold;
+.hc-road-step {
+  display: inline-block;
+  font-weight: 700;
   color: #01b7db;
+  font-size: 18px;
+}
+
+.hc-road-card-title {
+  font-weight: 700;
+  font-size: 15px;
+  margin: 10px 0 8px;
+  color: #0f172a;
+}
+
+.hc-road-card-desc {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hc-road-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hc-road-process-section {
+    padding: 40px 16px;
+  }
+  .hc-airoad-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .hc-road-item {
+    max-width: 420px;
+  }
+  .hc-road-card {
+    min-height: 180px;
+    padding: 20px;
+  }
+  .hc-road-title {
+    font-size: 22px;
+  }
 }
 
 /* ===================end steps section================== */
-
 
 /* ===================start health section================== */
 
@@ -225,7 +296,9 @@
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .stat-card:hover {
@@ -247,129 +320,143 @@
 /* ==========================end health section==================  */
 
 /* ===================start experties section================== */
-
-
-.services-section {
-  padding: 80px 20px;
+/* ====================== HC Road Services (cards) ====================== */
+.hc-road-services-section {
   background: #f9fafb;
+  padding: 25px 20px;
 }
 
-.container {
-  max-width: 1200px;
+.hc-road-services-container {
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 12px;
 }
 
-.section-header {
+.hc-road-services-header {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 }
 
-.section-header h2 {
-  font-size: 40px;
-  font-weight: bold;
-  color: #222;
-  margin-bottom: 15px;
+.hc-road-services-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
 }
-
-.divider {
-  width: 80px;
-  height: 4px;
-  background: #007bff;
-  margin: 0 auto 20px;
-  border-radius: 2px;
-}
-
-.section-header p {
-  font-size: 18px;
-  color: #555;
-  max-width: 700px;
+.hc-road-services-subtitle {
+  color: #6b7280;
+  max-width: 780px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
-.services-grid {
+.hc-road-services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  align-items: stretch;
 }
 
-.service-card {
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  transition: 0.3s ease;
-  border: 1px solid #eee;
+.hc-road-services-item {
+  display: flex;
 }
 
-.service-card:hover {
-  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+.hc-road-service-card {
+  background: #e9e9e9;
+  border-radius: 14px;
+  padding: 28px 20px;
+  box-shadow: 0 12px 28px rgba(16, 24, 40, 0.06);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition:
+    transform 0.28s ease,
+    box-shadow 0.28s ease;
 }
 
-.icon-box {
+.hc-road-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px rgba(16, 24, 40, 0.08);
+}
+
+.hc-road-service-icon {
   width: 64px;
   height: 64px;
-  border-radius: 16px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
-  background: rgba(0, 123, 255, 0.1);
-  transition: transform 0.3s ease;
+  margin-bottom: 16px;
+  color: #fff;
 }
 
-.service-card:hover .icon-box {
-  transform: scale(1.1);
+.hc-road-service-icon svg {
+  font-size: 20px;
+  color: #fff;
 }
 
-.icon-box.red svg { color: red; }
-.icon-box.blue svg { color: blue; }
-.icon-box.green svg { color: green; }
-.icon-box.purple svg { color: purple; }
-.icon-box.orange svg { color: orange; }
-.icon-box.teal svg { color: teal; }
-
-.service-card h3 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #222;
-  margin-bottom: 15px;
+.hc-color-red {
+  background: #ef4444;
+}
+.hc-color-blue {
+  background: #3b82f6;
+}
+.hc-color-green {
+  background: #22c55e;
+}
+.hc-color-purple {
+  background: #7c3aed;
 }
 
-.service-card p {
-  color: #666;
+.hc-road-service-title {
+  font-weight: 700;
+  color: #0f172a;
   font-size: 16px;
+  margin-bottom: 10px;
+}
+.hc-road-service-desc {
+  color: #6b7280;
+  font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
-.learn-btn {
-  background: none;
-  border: none;
-  color: #007bff;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: color 0.3s ease;
+@media (max-width: 1024px) {
+  .hc-road-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .hc-road-services-section {
+    padding: 48px 16px;
+  }
 }
 
-.learn-btn:hover {
-  color: #0056b3;
+@media (max-width: 640px) {
+  .hc-road-services-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .hc-road-services-section {
+    padding: 36px 12px;
+  }
+  .hc-road-service-card {
+    padding: 20px 14px;
+  }
+  .hc-road-service-icon {
+    width: 56px;
+    height: 56px;
+  }
+  .hc-road-service-title {
+    font-size: 15px;
+  }
+  .hc-road-service-desc {
+    font-size: 14px;
+  }
 }
-
-.learn-btn .arrow {
-  transition: transform 0.3s ease;
-}
-
-.learn-btn:hover .arrow {
-  transform: translateX(5px);
-}
-
-/* ===================end experties section================== */  
-   /* =======================end Domestic & International Repatriation==================== */
-
+/* ===================end experties section================== */
+/* =======================end Domestic & International Repatriation==================== */
 
 .custom-card {
   background: #fff;
@@ -410,10 +497,18 @@
   flex-shrink: 0;
 }
 
-.icon-box.blue { background: #3b82f6; }
-.icon-box.pink { background: #ec4899; }
-.icon-box.orange { background: #f97316; }
-.icon-box.green { background: #22c55e; }
+.icon-box.blue {
+  background: #3b82f6;
+}
+.icon-box.pink {
+  background: #ec4899;
+}
+.icon-box.orange {
+  background: #f97316;
+}
+.icon-box.green {
+  background: #22c55e;
+}
 
 .item-content strong {
   display: block;
@@ -429,90 +524,117 @@
 
 /* =======================end Domestic & International Repatriation==================== */
 
-
 /* ==========================start Faqs Section========================== */
-.faq-section {
-  padding: 80px 20px;
-  background: #fff;
-  color: #0f172a;
-}
-
-#faqs-width {
-  max-width: 900px;
-  margin: auto;
-}
-
-.faq-header {
+/* SECTION */
+.hmr-road-faq-section {
+  padding: 25px 20px;
+  background: #f4f6f9;
   text-align: center;
-  margin-bottom: 60px;
 }
 
-.faq-header h2 {
+.hmr-road-faq-header h2 {
   font-size: 32px;
-  margin-bottom: 16px;
-}
-
-.faq-header p {
-  font-size: 16px;
-  color: #6b7280;
-}
-
-.faq-list .faq-item {
-
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-
-.faq-question {
-  width: 100%;
-  text-align: left;
+  margin-bottom: 15px;
   font-weight: 600;
+  color: #1c1c1c;
+}
+
+.hmr-road-faq-header p {
+  max-width: 750px;
+  margin: 0 auto 50px auto;
   font-size: 16px;
-  padding: 16px 20px;
-  background: #f9fafb;
-  border: none;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.hmr-road-faq-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ITEM */
+.hmr-road-faq-item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 22px;
   cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.hmr-road-faq-item:hover {
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* QUESTION */
+.hmr-road-faq-question {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 500;
+  color: #0d1b2a;
 }
 
-.faq-question:hover {
-  color: #3b82f6;
-}
-
-.arrow {
+/* ICON */
+.hmr-road-faq-icon {
+  font-size: 20px;
   transition: transform 0.3s ease;
 }
 
-.arrow.open {
+.hmr-road-faq-icon.rotate {
   transform: rotate(180deg);
 }
 
-.faq-answer {
-  padding: 16px 20px;
+/* ANSWER (SMOOTH ANIMATION) */
+.hmr-road-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.hmr-road-faq-answer.show {
+  max-height: 300px;
+  margin-top: 15px;
+}
+
+.hmr-road-faq-question {
+  font-size: 18px;
+  color: #0d1b2a;
+}
+
+.hmr-road-faq-answer p {
   font-size: 14px;
-  color: #6b7280;
+  color: #555;
   line-height: 1.6;
-  background: #ffffff;
 }
 
-.faq-contact {
-  text-align: center;
-  margin-top: 40px;
-  color: #6b7280;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hmr-road-faq-header h2 {
+    font-size: 26px;
+  }
+
+  .hmr-road-faq-header p {
+    font-size: 14px;
+  }
+
+  .hmr-road-faq-item {
+    padding: 16px;
+  }
+
+  .hmr-road-faq-answer p {
+    font-size: 13px;
+  }
 }
 
-.faq-contact .contact-number {
-  font-weight: 600;
-  color: #3b82f6;
-  margin-top: 8px;
-}
 /* ==========================end Faqs Section========================== */
 /* =================================start cta section========================== */
-/* CTA Section */
+/* CTASection */
 .cta-section {
   background: #01b7db;
   padding: 80px 20px;
@@ -532,8 +654,7 @@
 
 .cta-section p {
   font-size: 16px;
-  color: 
-  #ffffff;
+  color: #ffffff;
   line-height: 1.6;
   margin-bottom: 30px;
 }

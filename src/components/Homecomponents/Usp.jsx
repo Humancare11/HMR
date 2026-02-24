@@ -6,7 +6,7 @@ import {
   FaFileAlt,
   FaHandsHelping,
   FaUserShield,
-  FaClock
+  FaClock,
 } from "react-icons/fa";
 
 const servicesData = [
@@ -19,8 +19,8 @@ const servicesData = [
       "Embassy coordination",
       "International permits",
       "Customs clearance",
-      "Flight arrangements"
-    ]
+      "Flight arrangements",
+    ],
   },
   {
     icon: <FaMapMarkedAlt size={28} />,
@@ -31,8 +31,8 @@ const servicesData = [
       "State-to-state transport",
       "Local permits",
       "Ground transportation",
-      "Facility coordination"
-    ]
+      "Facility coordination",
+    ],
   },
   {
     icon: <FaFileAlt size={28} />,
@@ -43,8 +43,8 @@ const servicesData = [
       "Death certificates",
       "Transit permits",
       "Embassy documents",
-      "Legal compliance"
-    ]
+      "Legal compliance",
+    ],
   },
   {
     icon: <FaHandsHelping size={28} />,
@@ -55,8 +55,8 @@ const servicesData = [
       "Counseling referrals",
       "Regular updates",
       "Travel guidance",
-      "Dedicated support staff"
-    ]
+      "Dedicated support staff",
+    ],
   },
   {
     icon: <FaUserShield size={28} />,
@@ -67,8 +67,8 @@ const servicesData = [
       "Government approvals",
       "Health regulations",
       "Customs compliance",
-      "Transport safety standards"
-    ]
+      "Transport safety standards",
+    ],
   },
   {
     icon: <FaClock size={28} />,
@@ -79,19 +79,21 @@ const servicesData = [
       "Immediate response",
       "Rapid documentation",
       "Priority transportation",
-      "After-hours assistance"
-    ]
-  }
+      "After-hours assistance",
+    ],
+  },
 ];
 
 const Usp = () => {
   return (
     <section className="services-section py-5">
       <div className="container text-center">
-        <h2 className="services-title">Comprehensive Human Remains Transfer Solutions
-</h2>
+        <h2 className="services-title">
+          Comprehensive Human Remains Transfer Solutions
+        </h2>
         <p className="services-subtitle mx-auto mt-3">
-          Professional assistance in Mortal Remains Transfer, cremation, burial, urn transfer, and funeral arrangements.
+          Professional assistance in Mortal Remains Transfer, cremation, burial,
+          urn transfer, and funeral arrangements.
         </p>
 
         <div className="row mt-5 g-4">
