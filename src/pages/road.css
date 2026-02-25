@@ -232,7 +232,7 @@
   .hc-road-process-section {
     padding: 40px 16px;
   }
-  .hc-airoad-grid {
+  .hc-road-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
