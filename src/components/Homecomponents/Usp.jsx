@@ -86,31 +86,34 @@ const servicesData = [
 
 const Usp = () => {
   return (
-    <section className="services-section py-5">
-      <div className="container text-center">
-        <h2 className="services-title">
+    <section className="hr-transfer-section">
+      <div className="hr-transfer-container">
+        <h2 className="hr-transfer-heading">
           Comprehensive Human Remains Transfer Solutions
         </h2>
-        <p className="services-subtitle mx-auto mt-3">
+
+        <p className="hr-transfer-subheading">
           Professional assistance in Mortal Remains Transfer, cremation, burial,
           urn transfer, and funeral arrangements.
         </p>
 
-        <div className="row mt-5 g-4">
-          {servicesData.map((service, index) => (
-            <div className="col-md-4" key={index}>
-              <div className="service-card p-4 text-start">
-                <div className="service-icon mb-3">{service.icon}</div>
-                <h5 className="fw-bold">{service.title}</h5>
-                <p>{service.description}</p>
-                <ul className="list-unstyled mt-3">
-                  {service.points.map((point, i) => (
-                    <li key={i} className="mb-1">
-                      <span className="bullet-dot"></span> {point}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+        <div className="hr-transfer-grid">
+          {servicesData.map((item, idx) => (
+            <div className="hr-transfer-card" key={idx}>
+              <div className="hr-transfer-icon-wrapper">{item.icon}</div>
+
+              <h5 className="hr-transfer-card-title">{item.title}</h5>
+
+              <p className="hr-transfer-card-description">{item.description}</p>
+
+              <ul className="hr-transfer-list">
+                {item.points.map((point, i) => (
+                  <li key={i} className="hr-transfer-list-item">
+                    <span className="hr-transfer-bullet"></span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
