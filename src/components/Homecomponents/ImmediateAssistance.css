@@ -3,3 +3,11 @@
   background: linear-gradient(135deg, #01b7db, #accbd1);
   border-radius: 15px;
 }
+.btn-immediate {
+  background-color: #0f0f0f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}

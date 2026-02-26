@@ -33,16 +33,12 @@ const Banner = () => {
         </div> */}
         <div className="d-flex gap-3 flex-wrap justify-content-center">
           
-          <a href="tel: +919833444040" className="btn-custom">
- +919833444040
-</a>
-
+          <a href="tel: +919833444040" className="btn-custom"> Call Now </a>
           {/* <button className="btn-outline-custom">
             Learn About Our Services
           </button> */}
         </div>
-        <h4 className="hero-subtitle">
-Call for Immediate Assistance         </h4>
+        <h4 className="hero-subtitle"> Call for Immediate Assistance         </h4>
       </div>
     </section>
   );

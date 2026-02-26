@@ -57,8 +57,8 @@ const Header = () => {
 
           {/* Call Now Button */}
           <div className="desktop-only">
-            <a href="tel:+919833444040" className="cta-button">
-              Call Now
+            <a href="tel:+919833444040" className="cta-button" aria-label="Call Human Remains Transfer">
+              Call Now 
             </a>
           </div>
 
@@ -110,6 +110,7 @@ const Header = () => {
                 href="tel:+919833444040"
                 className="mobile-cta-button"
                 onClick={() => setIsMenuOpen(false)}
+                aria-label="Call Human Remains Transfer"
               >
                 Call Now
               </a>

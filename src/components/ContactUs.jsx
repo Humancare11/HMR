@@ -79,7 +79,7 @@ const ContactUs = () => {
                 <div className="icon"><FiPhone /></div>
                 <div>
                   <h6>24/7 Emergency Line</h6>
-                  <p><a href="tel: +919833444040" style={{ textDecoration: 'none', color: 'inherit' }}> +919833444040</a></p>
+                  <p><a href="tel: +919833444040" style={{ textDecoration: 'none', color: 'inherit' }} > +919833444040</a></p>
                   <small>Available 24/7</small>
                 </div>
               </div>

@@ -96,7 +96,7 @@ export default function Footer() {
    
 
  <div className="sticky-buttons">
-  <a href="tel:+919833444040" className="sticky-btn call-btn">
+  <a href="tel:+919833444040" className="sticky-btn call-btn"   aria-label="Call Human Remains Transfer">
     <FiPhone size={22} />
   </a>
 
@@ -105,7 +105,7 @@ href="https://wa.me/+919833444040"
 target="_blank"
 rel="noopener noreferrer"
 className="sticky-btn whatsapp-btn"
-
+ aria-label="Chat on WhatsApp with Human Remains Transfer"
 >
 
 

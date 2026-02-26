@@ -1,5 +1,5 @@
 .footer-section {
-  background-color: #01b7db;
+  background-color: #05afd1;
 }
 
 .footer-section a {
@@ -8,6 +8,7 @@
 }
 
 .footer-section a:hover {
+  color: #000000;
   text-decoration: underline;
 }
 

@@ -50,7 +50,7 @@
 }
 
 .btn-custom:hover {
-  background-color: #01b7db;
+  background-color: #077c94;
 }
 
 .btn-outline-custom {
@@ -80,12 +80,10 @@
   }
 }
 
-
 .hero-section {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
+  background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   
 }
-

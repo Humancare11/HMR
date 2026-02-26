@@ -14,7 +14,7 @@ export default function ImmediateAssistance() {
         <div className="d-flex justify-content-center gap-2 mt-3">
           {/* <button className="btn btn-light px-4">
     Call Now          </button> */}
-    <a href="tel: +919833444040" className="btn btn-light px-4">
+    <a href="tel: +919833444040" className="btn-immediate">
     24/7 Helpline
 </a>
           {/* <input
