@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./air.css";
-import doctorImg from "../assets/Byair.png";
-import dentistImage from "../assets/Private-plne.jpg";
+import doctorImg from "../assets/Byair.webp";
+import dentistImage from "../assets/Private-plne.webp";
 import {
   FaClock,
   FaGlobe,

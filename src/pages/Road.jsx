@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./road.css";
-import doctorImg from "../assets/road-1.jpg";
-import dentistImage from "../assets/road-2.jpg";
+import doctorImg from "../assets/road-1.webp";
+import dentistImage from "../assets/road-2.webp";
 import {
   FaAmbulance,
   FaRupeeSign,

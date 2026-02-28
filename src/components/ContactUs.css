@@ -41,12 +41,12 @@ a {
   font-weight: 500;
 }
 .send-btn:hover {
-  background: #01b7db;
+  background: #01687c;
 }
 
 /* Emergency Box */
 .emergency-box {
-  background: linear-gradient(90deg, #01b7db, #79bfcd);
+  background: linear-gradient(90deg, #0088a3, #0088a3);
   color: white;
   border-radius: 10px;
   padding: 20px;

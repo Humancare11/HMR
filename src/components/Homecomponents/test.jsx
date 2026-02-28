@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./air.css";
-import doctorImg from "../assets/banner.jpeg";
-import dentistImage from "../assets/banner.jpeg";
+import doctorImg from "../assets/banner.webp";
+import dentistImage from "../assets/banner.webp";
 import ContactUs from '../components/ContactUs';
 
 import { 

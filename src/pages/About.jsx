@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import doctorImg from "../assets/About-page.jpg";
+import doctorImg from "../assets/About-page.webp";
 import {
   FaHeart,
   FaShieldAlt,

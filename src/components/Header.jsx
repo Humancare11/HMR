@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import logo from '../assets/HMR- Logo.png';
+import logo from '../assets/HMR- Logo.webp';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

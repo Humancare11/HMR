@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="col-md-3 mb-4">
             <h5 className="fw-bold">Human Remains Transfer</h5>
             <p>
-             Human Remains Transfer, a Humancare World Wide Holdings company, provides funeral planning, urn transfer, cremation, and burial services for the repatriation of mortal remains both domestically and internationally. Certified, compliant, and compassionate, we support families around the world—24/7.
+              Human Remains Transfer, a Humancare World Wide Holdings company, provides funeral planning, urn transfer, cremation, and burial services for the repatriation of mortal remains both domestically and internationally. Certified, compliant, and compassionate, we support families around the world—24/7.
             </p>
             {/* <div className="d-flex gap-3 mt-3">
               <a href="#" className="social-icon"><FaFacebookF /></a>
@@ -29,7 +29,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="col-md-3 mb-4">
-            <h5  className="fw-bold">Quick Links</h5 >
+            <h5 className="fw-bold">Quick Links</h5 >
             <ul className="list-unstyled mt-3">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
@@ -43,12 +43,12 @@ export default function Footer() {
           <div className="col-md-3 mb-4">
             <h5 className="fw-bold">Our Services</h5>
             <ul className="list-unstyled mt-3">
-              <li><a href="tel:+919833444040"style={{ textDecoration: 'none', color: 'inherit' }}>International Transfers</a></li>
-              <li><a href="tel:+919833444040"style={{ textDecoration: 'none', color: 'inherit' }}>Domestic Transportation</a></li>
-              <li><a href="tel:+919833444040"style={{ textDecoration: 'none', color: 'inherit' }}>Documentation Support</a></li>
-              <li><a href="tel:+919833444040"style={{ textDecoration: 'none', color: 'inherit' }}>Embalming Services</a></li>
-              <li><a href="tel:+919833444040"style={{ textDecoration: 'none', color: 'inherit' }}>Emergency Services</a></li>
-              <li><a href="tel:+919833444040"style={{ textDecoration: 'none', color: 'inherit' }}>Family Support</a></li>
+              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>International Transfers</a></li>
+              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Domestic Transportation</a></li>
+              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Documentation Support</a></li>
+              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Embalming Services</a></li>
+              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Emergency Services</a></li>
+              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Family Support</a></li>
             </ul>
           </div>
 
@@ -57,21 +57,21 @@ export default function Footer() {
             <h5 className="fw-bold">Contact Information</h5>
             <ul className="list-unstyled mt-3">
               <li>
-  <a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>
-    <BsTelephoneFill className="me-2" />
-    <strong>+919833444040</strong>
-  </a>
-  {/* <div className="small">24/7 Emergency Line</div> */}
-</li>
-<li className="mt-3">
-  <a href="mailto:ops@humancareworldwide.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-    <MdEmail className="me-2" />
-    <strong>ops@humancareworldwide.com</strong>
-  </a>
-</li>
+                <a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <BsTelephoneFill className="me-2" />
+                  <strong>+919833444040</strong>
+                </a>
+                {/* <div className="small">24/7 Emergency Line</div> */}
+              </li>
+              <li className="mt-3">
+                <a href="mailto:ops@humancareworldwide.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                  <MdEmail className="me-2" />
+                  <strong>ops@humancareworldwide.com</strong>
+                </a>
+              </li>
 
               <li className="mt-3">
-                <MdLocationOn className="me-2" /> 
+                <MdLocationOn className="me-2" />
                 G-30, Dheeraj Haritage, S. V. Road, Junction, Milan Subway, Santacruz (West), Mumbai, Maharashtra 400054
               </li>
             </ul>
@@ -92,32 +92,32 @@ export default function Footer() {
           </div> */}
         </div>
       </div>
-       <div>
-   
-
- <div className="sticky-buttons">
-  <a href="tel:+919833444040" className="sticky-btn call-btn"   aria-label="Call Human Remains Transfer">
-    <FiPhone size={22} />
-  </a>
-
-<a
-href="https://wa.me/+919833444040"
-target="_blank"
-rel="noopener noreferrer"
-className="sticky-btn whatsapp-btn"
- aria-label="Chat on WhatsApp with Human Remains Transfer"
->
+      <div>
 
 
-<FaWhatsapp size={22} />
+        <div className="sticky-buttons">
+          <a href="tel:+919833444040" className="sticky-btn call-btn" aria-label="Call Human Remains Transfer">
+            <FiPhone size={22} />
+          </a>
+
+          <a
+            href="https://wa.me/+919833444040"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sticky-btn whatsapp-btn"
+            aria-label="Chat on WhatsApp with Human Remains Transfer"
+          >
 
 
-  </a>
-</div>
+            <FaWhatsapp size={22} />
+
+
+          </a>
+        </div>
 
 
 
-       </div>
+      </div>
     </footer>
   );
 }

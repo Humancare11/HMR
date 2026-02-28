@@ -13,10 +13,10 @@ import "./Home.css";
 import ContactUs from "../components/ContactUs";
 import { Helmet } from "react-helmet";
 
-import serv1 from "../assets/serv1.png";
-import serv2 from "../assets/serv2.png";
-import serv3 from "../assets/serv3.png";
-import serv4 from "../assets/serv4.png";
+import serv1 from "../assets/serv1.webp";
+import serv2 from "../assets/serv2.webp";
+import serv3 from "../assets/serv3.webp";
+import serv4 from "../assets/serv4.webp";
 
 function Home() {
   return (

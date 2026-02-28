@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import "./air.css";
 import "./TransferByLocation.css";
-import doctorImg from "../assets/Location.jpg";
-import dentistImage from "../assets/Indiamap.png";
+import doctorImg from "../assets/Location.webp";
+import dentistImage from "../assets/Indiamap.webp";
 import {
   FaTooth,
   FaClock,

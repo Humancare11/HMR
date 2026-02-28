@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Servicessec from "../components/Homecomponents/Servicessec";
-import doctorImg from "../assets/Service-banner.jpg";
-import dentistImage from "../assets/banner.jpeg";
+import doctorImg from "../assets/Service-banner.webp";
+import dentistImage from "../assets/banner.webp";
 import ContactUs from "../components/ContactUs";
 import "./Services.css";
 

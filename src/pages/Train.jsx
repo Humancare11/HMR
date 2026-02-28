@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Train.css";
-import doctorImg from "../assets/Train-1.jpg";
-import dentistImage from "../assets/Train-2.jpg";
+import doctorImg from "../assets/Train-1.webp";
+import dentistImage from "../assets/Train-2.webp";
 import {
   FaTrain,
   FaRupeeSign,

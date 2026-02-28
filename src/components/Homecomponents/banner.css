@@ -1,6 +1,6 @@
 .hero-section {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-    url('your-image.jpg') center/cover no-repeat;
+    url('banner.webp') center/cover no-repeat;
   height: 90vh;
   padding: 0 20px;
 }
@@ -81,9 +81,9 @@
 }
 
 .hero-section {
-  background-image:linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5)), url('../../assets/banner.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
 }
