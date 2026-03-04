@@ -1,8 +1,53 @@
-.hero-section {
+/* .hero-section {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
-    url('banner.webp') center/cover no-repeat;
+    url('../../assets/banner.webp') center/cover no-repeat;
   height: 90vh;
   padding: 0 20px;
+} */
+ .hero-section {
+  height: 90vh;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.btn-custom {
+  background-color: #01b7db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-custom:hover {
+  background-color: #077c94;
+}
+
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 50px 20px;
+  }
 }
 
 .hero-content {
