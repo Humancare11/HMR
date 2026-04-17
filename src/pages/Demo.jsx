@@ -16,7 +16,7 @@ import {
 
 } from "lucide-react";
 import "./demo.css";
-import serv1 from "../assets/serv1.webp";
+import serv3 from "../assets/serv3.webp";
 import ContactUs from '../components/ContactUs';
 
 
@@ -230,7 +230,7 @@ function Demo() {
 
           {/* Rigth Image */}
           <div className="demo-section-two-image">
-            <img src={serv1} alt="transport" />
+            <img src={serv3} alt="transport" />
           </div>
         </div>
       </section>
@@ -295,13 +295,7 @@ function Demo() {
           </p>
 
           <div className="demo-services-grid">
-            {/* {services.map((service, index) => (
-              <div className="demo-service-card" key={index}>
-                <div className="icon-box">{service.icon}</div>
-                <h3>{service.title}</h3>
-                <p>{service.desc}</p>
-              </div>
-            ))} */}
+            
             <div className="demo-services-grid">
 
               {/* Card 1 */}
