@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HMRuae from './pages/HMRuae';
 
+import Demo from './pages/Demo';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -40,8 +41,10 @@ function App() {
         <Route path="/transfer-by-mode/road" element={<Road />} />
         <Route path="/transfer-by-location" element={<TransferByLocation />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/dead-body-transfer" element={<Demo />} />
 
                 <Route path="/hmruae" element={<HMRuae />} />
+
 
       </Routes>
 

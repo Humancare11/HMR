@@ -95,7 +95,7 @@ export default function Footer() {
       <div>
 
 
-        <div className="sticky-buttons">
+        <div className="footer-sticky-buttons">
           <a href="tel:+919833444040" className="sticky-btn call-btn" aria-label="Call Human Remains Transfer">
             <FiPhone size={22} />
           </a>
@@ -112,7 +112,7 @@ export default function Footer() {
             <FaWhatsapp size={22} />
 
 
-          </a>
+          </a> 
         </div>
 
 

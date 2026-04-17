@@ -68,11 +68,11 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="col-lg-6">
-          <div className="emergency-box p-4 mb-4">
+          {/* <div className="emergency-box p-4 mb-4">
             <h4>Emergency Services</h4>
-            <p>For urgent transfer needs, call our 24/7 emergency line immediately. Our team is standing by to provide immediate assistance.</p>
+            <p>For urgent transfer needs, call our 24/7 emergency line immediately. Our team is standing by to provide immediate assistance.</p> */}
             {/* <a href="tel: +919833444040"><button className="call-btn">Call Emergency Line</button></a> */}
-          </div>
+          {/* </div> */}
           <div className="row">
             <div className="col-md-6 mb-3">
               <div className="info-box">
