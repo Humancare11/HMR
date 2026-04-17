@@ -1237,7 +1237,7 @@ demo-services-section {
 /* Cities Grid */
 .demo-cities-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   justify-items: center;
   gap: 12px;
   margin-bottom: 25px;
@@ -1268,7 +1268,7 @@ demo-services-section {
 /* International Routes */
 .demo-international-routes {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
   gap: 12px;
   margin-bottom: 30px;
@@ -1287,6 +1287,8 @@ demo-services-section {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .international-badge:hover {
@@ -1407,7 +1409,9 @@ demo-services-section {
   .demo-international-routes {
     gap: 8px;
     margin-bottom: 15px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 5px 0;
   }
 
   .international-badge {

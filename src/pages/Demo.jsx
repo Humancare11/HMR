@@ -134,7 +134,7 @@ function Demo() {
     { name: "Kolkata", icon: "📍" },
     { name: "Ahmedabad", icon: "📍" },
     { name: "Jaipur", icon: "📍" },
-    { name: "Lucknow", icon: "📍" },
+    // { name: "Lucknow", icon: "📍" },
   ];
 
   const international = [
