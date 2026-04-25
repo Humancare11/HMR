@@ -9,9 +9,11 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   --primary: #01b7db;
 }
+
 p {
-  font-size: 18px!important;
+  font-size: 18px !important;
 }
+
 .keyword-section {
   background-color: #f8f9fa;
   padding: 60px 0;
@@ -58,8 +60,98 @@ p {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive utilities */
+@media (max-width: 1440px) {
+  p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1024px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 15px;
+  }
+
+  .keyword-section {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-size: 14px;
+  }
+
+  .keyword-section {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+    margin-bottom: 15px;
   }
 }

@@ -1,7 +1,32 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   --primary: #01b7db;
+  --transition-smooth: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-fast: all 0.2s ease-out;
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 p {
   font-size: 18px;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+button {
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }

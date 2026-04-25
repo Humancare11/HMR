@@ -5,11 +5,13 @@
 .footer-section a {
   color: #ffffff;
   text-decoration: none;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .footer-section a:hover {
   color: #000000;
   text-decoration: underline;
+  opacity: 0.8;
 }
 
 .social-icon {
@@ -20,10 +22,12 @@
   align-items: center;
   justify-content: center;
   color: white;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .social-icon:hover {
   background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-3px) scale(1.1);
 }
 
 .footer-links a {

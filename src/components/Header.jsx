@@ -22,6 +22,7 @@ const Header = () => {
       ]
     },
     { name: 'Transfer by Location', path: '/transfer-by-location' },
+    { name: 'Blog', path:'/blog'},
     { name: 'Contact Us', path: '/contact' },
     
   ];
