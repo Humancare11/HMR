@@ -1,14 +1,15 @@
-const blog1 = {
-  id: 1,
-  title: "How to Transfer Human Remains in India",
-  description: "Step-by-step guide for transporting deceased bodies.",
-  content: (
-    <>
-      <p>This is full blog content...</p>
-      <p>Write everything in JSX.</p>
-    </>
-  ),
-  image: "/images/blog1.jpg",
+import BlogLayout from "./BlogLayout";
+
+const Blog1 = () => {
+  return (
+    <BlogLayout
+      title="How to Transfer Human Remains in India"
+      image="/images/blog1.jpg"
+    >
+      <p>This is full content of blog 1...</p>
+      <p>Step-by-step guide...</p>
+    </BlogLayout>
+  );
 };
 
-export default blog1;
+export default Blog1;

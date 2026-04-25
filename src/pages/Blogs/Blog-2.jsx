@@ -1,14 +1,15 @@
-const blog2 = {
-  id: 2,
-  title: "Understanding the Legal Aspects of Body Disposal",
-  description: "A comprehensive guide to the legal procedures surrounding the disposal of human remains.",
-  content: (
-    <>
-      <p>This is full blog content...</p>
-      <p>Write everything in JSX.</p>
-    </>
-  ),
-  image: "/images/blog1.jpg",
+import BlogLayout from "./BlogLayout";
+
+const Blog2 = () => {
+  return (
+    <BlogLayout
+      title="Air Ambulance Services Guide"
+      image="/images/blog2.jpg"
+    >
+      <p>This is full content of blog 2...</p>
+      <p>Everything you need to know...</p>
+    </BlogLayout>
+  );
 };
 
-export default blog2;
+export default Blog2;

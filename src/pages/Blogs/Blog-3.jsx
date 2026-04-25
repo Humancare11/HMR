@@ -1,15 +1,15 @@
-const blog3 = {
-  id: 3,
-  title: "The Importance of Proper Body Handling in Funeral Services",
-  description: "Exploring the significance of respectful and hygienic practices in funeral arrangements.",
-  content: (
-    <>
-      <p>This is full blog content...</p>
-      <p>Write everything in JSX.</p>
-    </>
-  ),
-  image: "/images/blog1.jpg",
+import BlogLayout from "./BlogLayout";
+
+const Blog3 = () => {
+  return (
+    <BlogLayout
+      title="Air Ambulance Services Guide"
+      image="/images/blog2.jpg"
+    >
+      <p>This is full content of blog 2...</p>
+      <p>Everything you need to know...</p>
+    </BlogLayout>
+  );
 };
 
-export default blog3
-;
+export default Blog3;

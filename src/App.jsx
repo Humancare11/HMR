@@ -13,9 +13,11 @@ import Road from './pages/Road';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HMRuae from './pages/HMRuae';
-import Blogs from './pages/Blogs/BlogMain';
-import BlogPage from "./pages/Blogs/Blog-page";
-import Bloghome from "./pages/Blogs/Blog-home";
+
+// =======================================================
+
+
+import Blogs from "./pages/Blogs/Blogs";
 import Blog1 from "./pages/Blogs/Blog-1";
 import Blog2 from "./pages/Blogs/Blog-2";
 import Blog3 from "./pages/Blogs/Blog-3";
@@ -49,12 +51,12 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/dead-body-transfer" element={<Demo />} />
         <Route path="/hmruae" element={<HMRuae />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blog-page" element={<BlogPage />} />
-        <Route path="/blog-home" element={<Bloghome />} />
-        <Route path="/blog-1" element={<Blog1 />} />
-        <Route path="/blog-2" element={<Blog2 />} />
-        <Route path="/blog-3" element={<Blog3 />} />
+
+
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/blog-1" element={<Blog1 />} />
+        <Route path="/blog/blog-2" element={<Blog2 />} />
+        <Route path="/blog/blog-3" element={<Blog3 />} />
       </Routes>
 
       <Footer />
