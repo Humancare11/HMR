@@ -37,7 +37,7 @@ body {
 .demo-hero-title {
   display: block;
   color: #ffff;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 700;
 }
 
@@ -48,15 +48,15 @@ body {
 
 /* SUBTITLE */
 .demo-hero-subtitle {
-  font-size: 34px;
+  font-size: 30px;
   color: #ffffff;
   margin-top: 12px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* DESCRIPTION */
 .demo-hero-desc {
-  max-width: 680px;
+  max-width: 1200px;
   margin: 18px auto;
   font-size: 16px;
   color: #bec2c7;
@@ -248,7 +248,7 @@ body {
 .demo-section-two-image img {
   margin-top: 10px;
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   border-radius: 20px;
 }
 
@@ -307,9 +307,9 @@ body {
 }
 
 .demo-emergency h2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
-  color: #0a3d62;
+  color: #000000;
   margin-bottom: 15px;
 }
 
@@ -325,6 +325,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   align-items: center;
+  
 }
 
 .card {
@@ -334,6 +335,8 @@ body {
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
+  width: 300px;
+  height: 300px;
 }
 
 .card:hover {
@@ -383,8 +386,8 @@ body {
 }
 
 /* section 4: SERVICES */
-demo-services-section {
-  padding: 80px 20px;
+.demo-services-section {
+  padding: 60px 20px;
   background: #f8f9fb;
 }
 
@@ -407,7 +410,7 @@ demo-services-section {
 .demo-service-main-heading {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .demo-description {
@@ -428,7 +431,7 @@ demo-services-section {
   border-radius: 15px;
   padding: 30px 20px;
   width: 300px;
-  height: 300px;
+  height: 350px;
   text-align: left;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   transition: 0.3s ease;
@@ -456,6 +459,7 @@ demo-services-section {
 .demo-service-card h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  text-align: center;
 
 
 }
@@ -566,7 +570,7 @@ demo-services-section {
 /* section 5: why */
 .demo-why-section {
   background: #f5f7fa;
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -680,7 +684,7 @@ demo-services-section {
 
 .process-tag {
   display: inline-block;
-  background: #ffffff;
+  background: #0d6efd42;
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 13px;
@@ -1199,172 +1203,314 @@ demo-services-section {
 .demo-coverage-section {
   background: #0f1729;
   padding: 80px 20px;
+  overflow: hidden;
 }
 
 .demo-coverage-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   text-align: center;
 }
 
+/* ---------------- TAG ---------------- */
+
 .coverage-tag {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #ffffff;
-  padding: 6px 12px;
-  border-radius: 20px;
+  color: #000;
+  padding: 6px 14px;
+  border-radius: 999px;
   font-size: 12px;
-  color: #000000;
-  letter-spacing: 2px;
-  font-weight: 600;
-  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 18px;
 }
 
+/* ---------------- TITLE ---------------- */
+
 .demo-coverage-title {
-  font-size: 48px;
+  font-size: clamp(28px, 5vw, 52px);
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 15px;
-  line-height: 1.3;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 18px;
 }
 
 .demo-coverage-subtitle {
-  font-size: 16px;
+  max-width: 850px;
+  margin: 0 auto 50px;
+  font-size: clamp(14px, 2vw, 17px);
+  line-height: 1.7;
   color: #cbd5e1;
-  margin-bottom: 50px;
-  line-height: 1.6;
 }
 
-/* Cities Grid */
+/* =========================================================
+   CITIES GRID
+========================================================= */
+
 .demo-cities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  justify-items: center;
-  gap: 12px;
-  margin-bottom: 25px;
-  padding: 10px 0;
+
+  /* AUTO RESPONSIVE */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+  gap: 16px;
+  margin-bottom: 35px;
 }
+
+/* ---------------- CITY BADGE ---------------- */
+
+/* CITIES WRAPPER */
+
+.demo-cities-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 42px;
+}
+
+/* CITY BADGES */
 
 .city-badge {
-  background: transparent;
-  border: 1px solid #475569;
-  color: #e2e8f0;
-  padding: 10px 18px;
-  border-radius: 24px;
-  font-size: 14px;
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  min-height: 56px;
+
+  padding: 0 24px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,255,255,0.06),
+      rgba(255,255,255,0.02)
+    );
+
+  border: 1px solid rgba(255,255,255,0.14);
+
+  border-radius: 999px;
+
+  color: #ffffff;
+
+  font-size: 15px;
   font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 8px 20px rgba(0,0,0,0.18);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    border-color .3s ease,
+    background .3s ease;
+
+  overflow: hidden;
 }
+
+/* GLOW EFFECT */
+
+.city-badge::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(255,255,255,0.08),
+      transparent
+    );
+
+  transform: translateX(-120%);
+
+  transition: transform .7s ease;
+}
+
+.city-badge:hover::before {
+  transform: translateX(120%);
+}
+
+/* HOVER */
 
 .city-badge:hover {
-  border-color: #e63946;
-  color: #fff;
-  background: rgba(230, 57, 70, 0.2);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.25);
+  transform: translateY(-6px);
+
+  border-color: rgba(255,91,46,0.8);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,91,46,0.16),
+      rgba(255,91,46,0.05)
+    );
+
+  box-shadow:
+    0 18px 40px rgba(255,91,46,0.18),
+    inset 0 1px 0 rgba(255,255,255,0.08);
 }
 
-/* International Routes */
+/* =========================================================
+   INTERNATIONAL ROUTES
+========================================================= */
 .demo-international-routes {
   display: flex;
-  flex-wrap: nowrap;
+
+  flex-wrap: wrap;
+
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 30px;
+
+  gap: 16px;
+
+  margin-bottom: 55px;
 }
 
 .international-badge {
-  background: rgba(15, 23, 41, 0.8);
-  border: 1.5px solid #e63946;
-  color: #ffffff;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  position: relative;
+
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  white-space: nowrap;
-  flex-shrink: 0;
+  justify-content: center;
+  gap: 8px;
+
+  min-height: 52px;
+
+  padding: 0 22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,91,46,0.12),
+      rgba(255,91,46,0.03)
+    );
+
+  border: 1px solid rgba(255,91,46,0.65);
+
+  border-radius: 999px;
+
+  color: #fff;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  backdrop-filter: blur(10px);
+
+  box-shadow:
+    0 10px 25px rgba(255,91,46,0.12);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    background .3s ease;
 }
 
 .international-badge:hover {
-  background: rgba(230, 57, 70, 0.15);
-  color: #fff;
-  border-color: #ff6b7b;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
+  transform: translateY(-5px);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255,91,46,0.22),
+      rgba(255,91,46,0.08)
+    );
+
+  box-shadow:
+    0 18px 40px rgba(255,91,46,0.22);
 }
 
-/* Coverage Note */
+/* =========================================================
+   NOTE
+========================================================= */
+
 .demo-coverage-note {
+  color: #94a3b8;
   font-size: 14px;
-  color: #a1a5b8;
-  margin: 0;
+  line-height: 1.6;
   font-weight: 500;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .demo-coverage-section {
-    padding: 60px 20px;
-  }
+/* =========================================================
+   TABLET
+========================================================= */
 
-  .demo-coverage-title {
-    font-size: 40px;
+@media (max-width: 992px) {
+  .demo-coverage-section {
+    padding: 70px 18px;
   }
 
   .demo-cities-grid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
   }
 }
 
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 768px) {
   .demo-coverage-section {
-    padding: 40px 15px;
-  }
-
-  .coverage-tag {
-    font-size: 11px;
-    padding: 5px 10px;
-  }
-
-  .demo-coverage-title {
-    font-size: 32px;
-    margin-bottom: 10px;
+    padding: 55px 16px;
   }
 
   .demo-coverage-subtitle {
-    font-size: 14px;
-    margin-bottom: 30px;
-    line-height: 1.5;
+    margin-bottom: 35px;
   }
 
   .demo-cities-grid {
-    gap: 10px;
-    margin-bottom: 20px;
-    padding: 8px 0;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
   }
 
-  .city-badge {
+  .city-badge,
+  .international-badge {
     font-size: 13px;
-    padding: 8px 14px;
-    border-radius: 20px;
+    padding: 10px 14px;
   }
 
   .demo-international-routes {
     gap: 10px;
-    margin-bottom: 20px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+  .demo-coverage-section {
+    padding: 45px 12px;
+  }
+
+  .demo-cities-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .city-badge {
+    min-height: 48px;
+    font-size: 12px;
+    padding: 10px;
   }
 
   .international-badge {
-    font-size: 13px;
-    padding: 8px 14px;
-    border-radius: 20px;
+    font-size: 12px;
+    padding: 8px 12px;
   }
 
   .demo-coverage-note {
@@ -1372,55 +1518,17 @@ demo-services-section {
   }
 }
 
-@media (max-width: 480px) {
-  .demo-coverage-section {
-    padding: 30px 10px;
-  }
+/* =========================================================
+   EXTRA SMALL DEVICES
+========================================================= */
 
-  .coverage-tag {
-    font-size: 10px;
-    padding: 4px 8px;
-  }
-
-  .demo-coverage-title {
-    font-size: 24px;
-    margin-bottom: 8px;
-  }
-
-  .demo-coverage-subtitle {
-    font-size: 13px;
-    margin-bottom: 20px;
-  }
-
+@media (max-width: 360px) {
   .demo-cities-grid {
-    gap: 8px;
-    margin-bottom: 15px;
-    padding: 6px 0;
     grid-template-columns: 1fr;
   }
 
-  .city-badge {
-    font-size: 11px;
-    padding: 6px 12px;
-    border-radius: 16px;
-    min-width: auto;
-  }
-
-  .demo-international-routes {
-    gap: 8px;
-    margin-bottom: 15px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 5px 0;
-  }
-
+  .city-badge,
   .international-badge {
-    font-size: 11px;
-    padding: 6px 12px;
-    border-radius: 16px;
-  }
-
-  .demo-coverage-note {
-    font-size: 11px;
+    width: 100%;
   }
 }

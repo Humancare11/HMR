@@ -17,12 +17,18 @@ import HMRuae from './pages/HMRuae';
 // =======================================================
 
 
-import Blogs from "./pages/Blogs/Blogs";
-import Blog1 from "./pages/Blogs/Blog-1";
-import Blog2 from "./pages/Blogs/Blog-2";
-import Blog3 from "./pages/Blogs/Blog-3";
+import Blogs from "./Blogs/Blogs";
+import Blog1 from "./Blogs/Blog-1";
+import Blog2 from "./Blogs/Blog-2";
+import Blog3 from "./Blogs/Blog-3";
 
-import Demo from './pages/Demo';
+
+
+// ------------------ADS
+import Demo from './ads/Demo';
+import DAir from './ads/DAir';
+
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -49,14 +55,21 @@ function App() {
         <Route path="/transfer-by-mode/road" element={<Road />} />
         <Route path="/transfer-by-location" element={<TransferByLocation />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/dead-body-transfer" element={<Demo />} />
         <Route path="/hmruae" element={<HMRuae />} />
+
+        {/* --------------------- */}
+        <Route path="/dead-body-transfer-road" element={<Demo />} />
+        <Route path="/dead-body-transfer-air" element={<DAir />} />
+
+
 
 
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog/blog-1" element={<Blog1 />} />
         <Route path="/blog/blog-2" element={<Blog2 />} />
         <Route path="/blog/blog-3" element={<Blog3 />} />
+
+
       </Routes>
 
       <Footer />

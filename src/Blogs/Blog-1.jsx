@@ -1,14 +1,16 @@
 import BlogLayout from "./BlogLayout";
-import blog1 from "../../assets/blog1.jpg";
+import "./blogs.css"
+// import blog1 from "../../assets/blog1.jpg";
 
 const Blog1 = () => {
   return (
     <BlogLayout
       title="How Are Dead Bodies Transported by Plane?"
-      image={blog1}
+      // image={blog1}
     >
-      <p>This is full content of blog 1...</p>
-      <p>Step-by-step guide...</p>
+      <p>Introduction</p>
+      <p>Losing a loved one is one of the most painful experiences in life. 
+</p>
     </BlogLayout>
   );
 };
