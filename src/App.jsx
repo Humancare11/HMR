@@ -13,6 +13,7 @@ import Road from './pages/Road';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HMRuae from './pages/HMRuae';
+import Privacypolicy from './pages/Privacypolicy';
 
 // =======================================================
 
@@ -56,6 +57,7 @@ function App() {
         <Route path="/transfer-by-location" element={<TransferByLocation />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/hmruae" element={<HMRuae />} />
+        <Route path="/privacy-policy" element={<Privacypolicy />} />
 
         {/* --------------------- */}
         <Route path="/dead-body-transfer-road" element={<Demo />} />
