@@ -27,6 +27,8 @@ import Blog3 from "./Blogs/Blog-3";
 // ------------------ADS
 import Demo from './ads/Demo';
 import DAir from './ads/DAir';
+import Dcost from './ads/Dcost';
+import DMain from './ads/DMain'
 
 
 
@@ -57,9 +59,11 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/hmruae" element={<HMRuae />} />
 
-        {/* --------------------- */}
+        {/* ---------ads------------ */}
         <Route path="/dead-body-transfer-road" element={<Demo />} />
         <Route path="/dead-body-transfer-air" element={<DAir />} />
+        <Route path="/dead-body-transfer-cost" element={<Dcost />} />
+        <Route path="/dead-body-transfer" element={<DMain />} />
 
 
 
