@@ -6,113 +6,113 @@ import {
   Plane,
   Globe,
   FileText,
-  CreditCard,
+//   CreditCard,    
   AlertCircle,
   Ambulance,
-  Truck,
+//   Truck,
   Check,
   Settings,
-  Star
+  Star,
+  Map
 
 } from "lucide-react";
 import "./demo.css";
 import serv3 from "../assets/serv3.webp";
 import ContactUs from '../components/ContactUs';
 
-
-function Demo() {
+function Dcost() {
 
   const data = [
     {
+      icon: <Plane />,
+      title: "Confusing Airline Cargo Charges",
+      desc: "Different airlines have different pricing structures for human remains air cargo and deceased transportation.",
+    },
+    {
+      icon: <Ambulance />,
+      title: "Interstate Road Transfer Expenses",
+      desc: "Long-distance dead body ambulance charges vary based on distance, route, and preservation requirements.",
+    },
+    {
       icon: <FileText />,
-      title: "Finding Immediate Ambulance Support",
-      desc: "Many families struggle to arrange a reliable dead body ambulance service quickly during emergencies.",
-    },
-    {
-      icon: <Clock />,
-      title: "Long-Distance Transportation Challenges",
-      desc: "Transporting deceased from state to state requires proper route planning and safe preservation arrangements.",
-    },
-    {
-      icon: <CreditCard />,
-      title: "Unclear Charges & Vehicle Quality",
-      desc: "Families often receive confusing pricing or poorly maintained ambulance vehicles.",
+      title: "Hidden Documentation Costs",
+      desc: "Embalming, coffin box, airport clearance, and paperwork charges are often not explained clearly.",
     },
     {
       icon: <AlertCircle />,
-      title: "Coordination Between Cities & States",
-      desc: "Managing permits, drivers, ambulance support, and final delivery can become stressful without experienced assistance.",
+      title: "International Repatriation Complexity",
+      desc: "Shipping deceased bodies internationally involves embassy approvals, customs clearance, and cargo handling costs.",
     },
   ];
 
 // 
   const features = [
     {
-      title: "Quick Ambulance Dispatch",
-      desc: "Our team arranges dead body ambulance support quickly for urgent transportation requirements.",
+      title: "Transparent Cost Breakdown",
+      desc: "We explain every transportation charge clearly before starting the process.",
     },
     {
-      title: "Experienced Interstate Coordination",
-      desc: "We manage transporting deceased from state to state with proper planning and route coordination.",
+      title: "No Hidden Fees",
+      desc: "Families receive proper guidance without unexpected expenses later.",
     },
     {
-      title: "Clean & Well-Equipped Vehicles",
-      desc: "Our ambulances are maintained for safe, hygienic, and respectful transportation.",
+      title: "Domestic & International Expertise",
+      desc: "Support for both interstate and international deceased transportation cost planning.",
     },
     {
-      title: "Transparent Pricing",
-      desc: "Clear guidance on dead body transport charges without hidden costs.",
+      title: "Quick Pricing Assistance",
+      desc: "Receive estimated transportation costs within minutes based on your requirements.",
     },
     {
-      title: "24/7 Emergency Assistance",
-      desc: "Available day and night for immediate road ambulance support.",
+      title: "24/7 Emergency Availability",
+      desc: "Available anytime for urgent cost guidance and transportation coordination.",
     },
     {
-      title: "Safe & Respectful Handling",
-      desc: "Every deceased transfer is managed with dignity and professionalism.",
+      title: "Experienced Coordination Team",
+      desc: "Our specialists understand airline cargo pricing and interstate ambulance logistics.",
     },
     {
-      title: "Pan India Coverage",
-      desc: "Road transportation services available across major cities and states in India.",
+      title: "Customized Transport Solutions",
+      desc: "Charges depend on the route, urgency, and transport mode required.",
     },
     {
-      title: "Dedicated Support Coordinator",
-      desc: "One coordinator manages the transportation process from pickup to final destination.",
+      title: "Compassionate Support",
+      desc: "We guide families patiently and respectfully throughout the process.",
     },
   ];
   // steps
   const steps = [
     {
       icon: <Phone size={22} />,
-      title: "Call or WhatsApp",
-      desc: "Share pickup location, destination, and transportation requirements.",
+      title: "Share Transport Details",
+      desc: "Provide pickup location, destination, and preferred transport method.",
       step: "1",
     },
     {
       icon: <FileText size={22} />,
-      title: " Get Ambulance & Cost Details",
-      desc: "Our team explains the process, vehicle options, and estimated charges.",
+      title: "Get Cost Estimate",
+      desc: "Our team explains the estimated dead body transport charges and required procedures.",
       step: "2",
     },
     {
       icon: <Settings size={22} />,
-      title: "Ambulance Arrangement & Coordination",
-      desc: "We arrange the ambulance, freezer box (if required), and transportation planning.",
+      title: "Documentation & Coordination",
+      desc: "We assist with embalming, paperwork, cargo booking, or ambulance arrangements.",
       step: "3",
     },
     {
       icon: <Plane size={22} />,
-      title: "Safe Transfer to Destination",
-      desc: "The deceased is transported respectfully and safely to the hometown or destination.",
+      title: "Safe & Dignified Transportation",
+      desc: "The deceased is transported safely to the destination with complete coordination.",
       step: "4",
     },
   ];
   // stat
   const stats = [
-    { number: "2200+", label: "Road transportation cases handled" },
-    { number: "21+ Years", label: "Experience in interstate dead body transfer" },
+    { number: "2200+", label: "Transportation cases coordinated" },
+    { number: "21+ Years", label: "Emergency support available" },
     { number: "24/7", label: "Emergency support available" },
-    { number: "100%", label: "Dignified & respectful handling" },
+    { number: "100%", label: "Transparent pricing guidance" },
   ];
   // testimonial
   const testimonials = [
@@ -126,7 +126,7 @@ function Demo() {
     },
   ];
   const cities = [
-    { name: "Mumbai", icon: "📍" },
+    { name: "Mumbai ", icon: "📍" },
     { name: "Delhi", icon: "📍" },
     { name: "Bangalore", icon: "📍" },
     { name: "Hyderabad", icon: "📍" },
@@ -139,15 +139,16 @@ function Demo() {
   ];
 
   const international = [
-    { route: "Karnataka ", icon: "📍" },
-    { route: "Maharashtra ", icon: "📍" },
-    { route: "Gujarat ", icon: "📍" },
-    { route: "Tamil Nadu", icon: "📍" },
-    { route: "Uttar Pradesh", icon: "📍" },
-    { route: "Bihar", icon: "📍" },
-    { route: "Rajasthan ", icon: "📍" },
-    { route: "Telangana", icon: "📍" },
+    { route: "Dubai ", icon: "📍" },
+    { route: "Canada ", icon: "📍" },
+    { route: "UK ", icon: "📍" },
+    { route: " UAE", icon: "📍" },
+    { route: "Singapore", icon: "📍" },
+    { route: "Australia", icon: "📍" },
+    // { route: "Rajasthan ", icon: "📍" },
+    // { route: "Telangana", icon: "📍" },
   ];
+
   return (
     <>
       {/* section 1: Banner */}
@@ -160,23 +161,23 @@ function Demo() {
 
         {/* Heading */}
         <h1 className="demo-hero-title">
-          Dead Body Transport by Road – <br /> <span> Safe & Reliable Interstate Ambulance Services</span>
+          Dead Body Transport Cost – <br /> <span> Air, Road & Interstate Charges</span>
         </h1>
         <p className="demo-hero-desc">
-          24/7 Dead Body Ambulance Service for Local & State-to-State Transfer
+         Get Transparent Pricing for Dead Body Transport Across India & Internationally
         </p>
 
-        <h2 className="demo-hero-subtitle"> Dead Body Transport by Road | Private Dead Body Ambulance | Interstate Human Remains Transfer </h2>
+        <h2 className="demo-hero-subtitle"> Dead Body Transport by Air Cost | Interstate Ambulance Charges | Human Remains Shipping Cost </h2>
 
         {/* Description */}
         <p className="demo-hero-desc">
-          We provide professional dead body transport by road with fully coordinated ambulance support for local, interstate, and long-distance transfers across India. From hospital pickup to safe delivery at the hometown, our experienced team ensures respectful and timely transportation with complete assistance.
+         We provide clear and professional guidance for deceased body transportation cost, including domestic air cargo, interstate ambulance transfer, and international human remains repatriation. Our team helps families understand the complete process and estimated charges without hidden costs or confusion.
         </p>
 
         {/* CTA Buttons */}
         <div className="demo-hero-buttons">
           <button className="demo-btn call" onClick={() => window.location.href = 'tel:+919833444040'}>
-            <Phone size={18} /> Call Immediately
+            <Phone size={18} /> Get Cost Details
           </button>
 
           <button className="demo-btn whatsapp" onClick={() => window.open('https://wa.me/+919833444040', '_blank')}>
@@ -189,25 +190,25 @@ function Demo() {
           <div className="demo-feature-card">
             <Clock />
             <div>
-              <h4>Fast Pickup Support </h4>
-              <p>Ambulance arranged within 30–60 minutes </p>
+              <h4> Quick Cost Estimate </h4>
+              <p> Get pricing guidance within minutes </p>
 
             </div>
           </div>
 
           <div className="demo-feature-card">
-            <Truck />
+            <Plane />
             <div>
-              <h4>State-to-State Transfer</h4>
-              <p>Reliable long-distance dead body transportation</p>
+              <h4>Transparent Charges</h4>
+              <p>No hidden fees or surprise costs</p>
             </div>
           </div>
 
           <div className="demo-feature-card">
             <Globe />
             <div>
-              <h4>24/7 Availability </h4>
-              <p>Available across India anytime</p>
+              <h4>24/7 Support </h4>
+              <p>Available anytime for urgent assistance</p>
             </div>
           </div>
         </div>
@@ -219,23 +220,22 @@ function Demo() {
           <div className="section-two-content">
 
             <h2>
-              Trusted Dead Body Ambulance Service Across India
+             Understanding Dead Body Transport Charges Made Simple
 
             </h2>
 
             <p className="desc">
-              During emotional situations, arranging transportation for a deceased loved one can become stressful and confusing. Families often struggle with finding a reliable dead body ambulance service, understanding interstate transfer procedures, and coordinating long-distance transportation safely.<br />
-              Our team provides complete assistance for dead body transport by road, including ambulance arrangements, documentation guidance, freezer box support, and state-to-state transportation coordination.<br />
-              Whether you require a local dead body ambulance, private ambulance for deceased transport, or transferring a dead body to another state, we handle the process professionally with dignity and care.<br />
-              We provide services across major cities including Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Kolkata, Pune, Ahmedabad, Jaipur, Patna, and surrounding regions.<br />
-            </p>
+             During emotional situations, families often struggle to understand the actual cost to transport a body to another state or the charges involved in international air cargo transfer. Airline fees, ambulance costs, documentation requirements, and embalming charges can make the process confusing. <br /><br />
 
-            {/* <ul>
-              <li> Quick response within 10–30 minutes </li>
-              <li> Available for dead body transport by air in India & Mumbai </li>
-              <li> Trusted for human remains transportation & repatriation of human remains</li>
-              <li> 24/7 response — we answer every call </li>
-            </ul> */}
+            Our experienced team provides complete guidance for:
+            </p> 
+
+            <ul>
+              <li> • Quick response within 10–30 minutes </li>
+              <li> • Available for dead body transport by air in India & Mumbai </li>
+              <li> • Trusted for human remains transportation & repatriation of human remains</li>
+              <li> • 24/7 response — we answer every call </li>
+            </ul>
           </div>
 
           {/* Rigth Image */}
@@ -243,15 +243,17 @@ function Demo() {
             <img src={serv3} alt="transport" />
           </div>
         </div>
+
+        <p className='desc-1'> We believe families deserve clear information and fair pricing during difficult times. That is why we explain every cost factor transparently before beginning the transportation process. </p>
       </section>
 
       {/* section 2  urgent*/}
       <div className="urgent-strip">
 
-        <h3>Need Immediate Dead Body Ambulance Assistance? </h3>
+        <h3>Need Immediate Cost Information for Dead Body Transport? </h3>
         <p>
           <strong>
-            24/7 dead body transport by road available for local and interstate transfers.
+            Get transparent pricing support for domestic and international transportation services.
           </strong>
         </p>
 
@@ -271,11 +273,10 @@ function Demo() {
         <div className="demo-emergency-container">
           <span className="emergency-tag"> 24/7 Emergency Service  </span>
           <h2>
-            During emergencies, families should not have to manage transportation stress alone.
+           Families often face confusion and inflated quotations during emergencies.
           </h2>
           <p className="demo-emergency-subtitle">
-            Transporting deceased individuals by road requires proper coordination, suitable ambulance vehicles, and timely support. Delays or poor arrangements can create unnecessary difficulties for grieving families.
-
+          The cost of transporting a deceased loved one depends on several important factors. Without proper guidance, many families receive unclear estimates or incomplete information.
           </p>
 
           <div className="demo-emergency-card-grid">
@@ -297,7 +298,7 @@ function Demo() {
           <span className="service-tag">What We Offer</span>
 
           <h2 className="demo-service-main-heading">
-            Complete Dead Body Transport by Road Services
+            Cost Guidance for Every Type of Dead Body Transport
           </h2>
           {/* <p className="demo-description">
             Every mode of transport, every destination. We handle it with respect
@@ -313,13 +314,13 @@ function Demo() {
                 <div className="demo-services-icon-box">
                   <Plane size={32} />
                 </div>
-                <h3>DEAD BODY AMBULANCE SERVICE</h3>
+                <h3> DEAD BODY TRANSPORT BY AIR COST </h3>
                 <ul>
-                  <li>• 24/7 ambulance support for deceased transportation</li>
-                  <li>• Private dead body ambulance arrangements</li>
-                  <li>• Private dead body ambulance arrangements</li>
-                  <li>• Local hospital-to-home transportation</li>
-                  <li>• Immediate pickup coordination</li>
+                  <li>• Domestic air cargo pricing assistance</li>
+                  <li>• International human remains transport charges </li>
+                  <li>• Airline cargo fee guidance </li>
+                  <li>• Airport handling and clearance cost support </li>
+                  {/* <li>• Immediate pickup coordination</li> */}
                 </ul>
               </div>
 
@@ -328,27 +329,27 @@ function Demo() {
                 <div className="demo-services-icon-box">
                   <Ambulance size={32} />
                 </div>
-                <h3>STATE-TO-STATE DEAD BODY TRANSFER</h3>
+                <h3>INTERSTATE ROAD TRANSPORT CHARGES</h3>
                 <ul>
-                  <li>• Safe interstate dead body transport by road</li>
-                  <li>• Long-distance ambulance coordination</li>
-                  <li>• Transfer from one state to another</li>
-                  <li>• Transfer from one state to another</li>
-                  <li>• Door-to-door transportation support</li>
+                  <li>• Cost to transport body to another state</li>
+                  <li>• Dead body ambulance service pricing </li>
+                  <li>• Private ambulance charges for deceased transport </li>
+                  <li>• Long-distance road transportation estimates </li>
+                  {/* <li>• Door-to-door transportation support</li> */}
                 </ul>
               </div>
 
               {/* Card 3 */}
               <div className="demo-service-card">
                 <div className="demo-services-icon-box">
-                  <Truck size={32} />
+                  <Map size={32} />
                 </div>
-                <h3>FREEZER BOX & PRESERVATION SUPPORT</h3>
+                <h3>INTERNATIONAL SHIPPING COST SUPPORT </h3>
                 <ul>
-                  <li>• Freezer box ambulance arrangements</li>
-                  <li>• Body preservation assistance during long-distance travel</li>
-                  <li>• Hygienic and secure transportation</li>
-                  <li>• Professional handling throughout the journey</li>
+                  <li>• Cost to ship deceased body from abroad to India </li>
+                  <li>• Repatriation pricing assistance </li>
+                  <li>• Embassy and documentation cost guidance </li>
+                  <li>• Human remains cargo handling charges </li>
 
                 </ul>
               </div>
@@ -358,12 +359,12 @@ function Demo() {
                 <div className="demo-services-icon-box">
                   <Globe size={32} />
                 </div>
-                <h3>CITY-TO-CITY TRANSPORT SERVICES</h3>
+                <h3>AIRLINE-SPECIFIC COST GUIDANCE</h3>
                 <ul>
-                  <li>• Dead body transport service Bangalore</li>
-                  <li>• Mumbai to hometown transfer</li>
-                  <li>• Interstate ambulance services across India</li>
-                  <li>• Rural and remote location transportation support</li>
+                  <li>• Indigo dead body transport charges </li>
+                  <li>• Domestic airline cargo support </li>
+                  <li>• Flight booking coordination </li>
+                  <li>• Air cargo documentation assistance </li>
 
                 </ul>
               </div>
@@ -378,7 +379,7 @@ function Demo() {
         <div className="demo-why-container">
           <span className="why-tag">Why choose Us</span>
           <h2 className="demo-main-heading">
-            Professional & Compassionate Dead Body Road Transport Services
+            Honest Pricing Support During Difficult Times
           </h2>
 
           <div className="demo-why-grid">
@@ -403,12 +404,12 @@ function Demo() {
           <span className="process-tag">How It Works</span>
 
           <h2 className="demo-process-main-heading">
-            Simple 4-Step Dead Body Transport Process
+           Simple 4-Step Cost & Transport Process
           </h2>
 
-          <p className="demo-process-description">
+          {/* <p className="demo-process-description">
            Share pickup location, destination, and transportation requirements.
-          </p>
+          </p> */}
 
           <div className="demo-process-grid">
             {steps.map((item, index) => (
@@ -432,7 +433,7 @@ function Demo() {
           <span className="demo-stats-tag">Our Track Record</span>
 
           <h2 className="demo-stats-heading">
-           Trusted by Families for Reliable Interstate Dead Body Transport
+           Trusted for Fair & Transparent Deceased Transportation Pricing
           </h2>
 
           {/* Stats */}
@@ -470,12 +471,11 @@ function Demo() {
           <span className="pricing-tag"> Pricing </span>
 
           <h2 className="demo-pricing-title">
-           What Does Dead Body Transport by Road Cost?
+          What Affects Dead Body Transportation Cost?
           </h2>
 
           <p className="demo-pricing-subtitle">
-            Every case is different. We provide a transparent, tailored estimate within <br />
-            10 minutes of your call.
+           Every transportation case is different, and pricing depends on several important factors.
           </p>
 
           <div className="demo-pricing-card">
@@ -486,25 +486,26 @@ function Demo() {
             <h3 className="pricing-card-title">Cost Depends On Several Factors</h3>
 
             <div className="pricing-factors">
-              <span className="factor-badge">📍 Distance & Route</span>
-              <span className="factor-badge">✈ Mode (Air / Road / Ambulan)
+              <span className="factor-badge">📍 Domestic or international transfer</span>
+              <span className="factor-badge">🌍 Air cargo or road ambulance service
               </span>
-              <span className="factor-badge">⏰ Urgency Level</span>
-              <span className="factor-badge">📄 Documentation Required</span>
-              <span className="factor-badge">⚕ Embalming Needed</span>
-              <span className="factor-badge">🌍 Domestic vs International</span>
+              <span className="factor-badge">🗺️ Distance and destination</span>
+              <span className="factor-badge"> ✈ Airline cargo charges</span>
+              <span className="factor-badge">⚕ Embalming and coffin requirements</span>
+              <span className="factor-badge">📄 Airport clearance and documentation</span>
+              <span className="factor-badge">🚨 Emergency or same-day arrangements</span>
             </div>
 
             <div className="pricing-warning">
               <AlertCircle size={20} />
               <div>
-                <h4>Beware of Inflated Quotes</h4>
-                <p>Families in grief are sometimes exploited. We offer fair, fixed pricing with complete transparency from the very first call.</p>
+                <h4>Avoid Misleading Emergency Quotes</h4>
+                <p>Families are often unaware of actual transportation costs during emergencies. We provide transparent guidance and detailed explanations from the beginning.</p>
               </div>
             </div>
 
             <p className="pricing-cta">
-              Call us right now — our expert will give you a detailed cost breakdown, free and with no obligation, in under 10 minutes.
+              Need pricing for another city or country? Our team provides customized estimates based on your transportation requirement.
             </p>
 
             <button className="pricing-btn" onClick={() => window.location.href = 'tel:+919833444040'}>
@@ -520,12 +521,11 @@ function Demo() {
           <span className="coverage-tag">WE SERVE</span>
 
           <h2 className="demo-coverage-title">
-            Pan India Coverage + International
+         Dead Body Transport Cost Support Across India & Internationally
           </h2>
 
           <p className="demo-coverage-subtitle">
-            Wherever you are, we can reach. Wherever your loved one needs to go,<br />
-            we will ensure they get there.
+          We provide transportation pricing guidance for domestic and international transfers.
           </p>
 
           <div className="demo-cities-grid">
@@ -545,7 +545,7 @@ function Demo() {
           </div>
 
           <p className="demo-coverage-note">
-            📍 Don't see your city? Call us — we cover 200+ cities across India.
+          Need pricing for another city or country? Our team provides customized estimates based on your transportation requirement.
           </p>
         </div>
       </section>
@@ -554,7 +554,7 @@ function Demo() {
 
 
     </>
-  )
-}
+  );
+};
 
-export default Demo
+export default Dcost;
