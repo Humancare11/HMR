@@ -28,7 +28,8 @@ import Blog3 from "./Blogs/Blog-3";
 import Demo from './ads/Demo';
 import DAir from './ads/DAir';
 import Dcost from './ads/Dcost';
-import DMain from './ads/DMain'
+import DMain from './ads/DMain';
+import DMumbai from './ads/DMumbai';
 
 
 
@@ -63,7 +64,8 @@ function App() {
         <Route path="/dead-body-transfer-road" element={<Demo />} />
         <Route path="/dead-body-transfer-air" element={<DAir />} />
         <Route path="/dead-body-transfer-cost" element={<Dcost />} />
-        <Route path="/dead-body-transfer" element={<DMain />} />
+        <Route path="/dead-body-transfer" element={<DMain />} />\
+        <Route path="/dead-body-transfer-mumbai" element={<DMumbai />} />
 
 
 

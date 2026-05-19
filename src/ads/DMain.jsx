@@ -256,7 +256,7 @@ function DMain() {
             <div className="urgent-strip">
 
                 <h3>Need Immediate Repatriation or Funeral Transport Assistance?
-</h3>
+                </h3>
                 <p>
                     <strong>
                         24/7 support for human remains transport and burial transfer services.
@@ -386,7 +386,7 @@ function DMain() {
                 <div className="demo-why-container">
                     <span className="why-tag">Why choose Us</span>
                     <h2 className="demo-main-heading">
-                       Compassionate & Professional Repatriation Support
+                        Compassionate & Professional Repatriation Support
                     </h2>
 
                     <div className="demo-why-grid">
@@ -411,7 +411,7 @@ function DMain() {
                     <span className="process-tag">How It Works</span>
 
                     <h2 className="demo-process-main-heading">
-                       Simple & Respectful 4-Step Process
+                        Simple & Respectful 4-Step Process
                     </h2>
 
                     {/* <p className="demo-process-description">
@@ -440,7 +440,7 @@ function DMain() {
                     <span className="demo-stats-tag">Our Track Record</span>
 
                     <h2 className="demo-stats-heading">
-                        Trusted for Professional Human Remains Transportation   
+                        Trusted for Professional Human Remains Transportation
                     </h2>
 
                     {/* Stats */}
@@ -478,12 +478,11 @@ function DMain() {
                     <span className="pricing-tag"> Pricing </span>
 
                     <h2 className="demo-pricing-title">
-                        What Affects Dead Body Transportation Cost?What Does Repatriation & Funeral Transportation Cost?
-
+                        What Does Repatriation & Funeral Transportation Cost?
                     </h2>
 
                     <p className="demo-pricing-subtitle">
-                       Every transportation case is unique. Costs depend on the distance, transportation method, documentation requirements, and destination country or state.
+                        Every transportation case is unique. Costs depend on the distance, transportation method, documentation requirements, and destination country or state.
 
                     </p>
 
@@ -530,11 +529,11 @@ function DMain() {
                     <span className="coverage-tag">We Serve</span>
 
                     <h2 className="demo-coverage-title">
-                       Domestic & International Repatriation Coverage
+                        Domestic & International Repatriation Coverage
                     </h2>
 
                     <p className="demo-coverage-subtitle">
-                       We provide human remains transport services across India and worldwide destinations.
+                        We provide human remains transport services across India and worldwide destinations.
                     </p>
 
                     <div className="demo-cities-grid">
@@ -554,7 +553,7 @@ function DMain() {
                     </div>
 
                     <p className="demo-coverage-note">
-                       Need transportation assistance for another city or country? Our team coordinates transfers worldwide.
+                        Need transportation assistance for another city or country? Our team coordinates transfers worldwide.
                     </p>
                 </div>
             </section>
