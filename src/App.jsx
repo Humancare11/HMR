@@ -31,6 +31,7 @@ import DAir from './ads/DAir';
 import Dcost from './ads/Dcost';
 import DMain from './ads/DMain';
 import DMumbai from './ads/DMumbai';
+import DelhiAds from './ads/DelhiAds';
 
 
 
@@ -68,6 +69,7 @@ function App() {
         <Route path="/dead-body-transfer-cost" element={<Dcost />} />
         <Route path="/dead-body-transfer" element={<DMain />} />\
         <Route path="/dead-body-transfer-mumbai" element={<DMumbai />} />
+        <Route path='/dead-body-transfer-delhi' element={<DelhiAds/>} />
 
 
 
