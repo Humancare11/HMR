@@ -515,7 +515,7 @@ function DelhiAds() {
                             Need pricing for another city or country? Our team provides customized estimates based on your transportation requirement.
                         </p>
 
-                        <button className="pricing-btn" onClick={() => window.location.href = 'tel:+919833444040'}>
+                        <button className="pricing-btn" onClick={() => window.location.href = 'tel:+919619159990'}>
                             <Phone size={18} /> Get Cost in 10 Minutes
                         </button>
                     </div>
