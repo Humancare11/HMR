@@ -32,6 +32,7 @@ import Dcost from './ads/Dcost';
 import DMain from './ads/DMain';
 import DMumbai from './ads/DMumbai';
 import DelhiAds from './ads/DelhiAds';
+import Hyderebad from './ads/HydAds';
 
 
 
@@ -70,6 +71,7 @@ function App() {
         <Route path="/dead-body-transfer" element={<DMain />} />\
         <Route path="/dead-body-transfer-mumbai" element={<DMumbai />} />
         <Route path='/dead-body-transfer-delhi' element={<DelhiAds/>} />
+        <Route path="/dead-body-transfer-hyderabad" element={<Hyderebad />} />
 
 
 
