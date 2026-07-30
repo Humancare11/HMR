@@ -4,20 +4,20 @@ import doctorImg from "../assets/banner.webp";
 import dentistImage from "../assets/banner.webp";
 import ContactUs from '../components/ContactUs';
 
-import { 
-  FaPlane, 
-  FaGlobe, 
-  FaMapMarkerAlt, 
-  FaBuilding, 
-  FaHeart, 
-  FaFileAlt, 
-  FaUsers, 
-  FaHeadset, 
-  FaHandsHelping, 
-  FaShieldAlt, 
-  FaClock, 
-  FaAmbulance, 
-  FaBookDead 
+import {
+  FaPlane,
+  FaGlobe,
+  FaMapMarkerAlt,
+  FaBuilding,
+  FaHeart,
+  FaFileAlt,
+  FaUsers,
+  FaHeadset,
+  FaHandsHelping,
+  FaShieldAlt,
+  FaClock,
+  FaAmbulance,
+  FaBookDead
 } from "react-icons/fa";
 
 const TransferByLocation = () => {

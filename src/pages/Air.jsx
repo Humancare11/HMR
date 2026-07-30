@@ -369,7 +369,7 @@ const Air = () => {
           <div className="row g-4">
             {/* Domestic */}
             <div className="col-md-6">
-              <div className="card custom-card h-100">
+              <div className="card custom-card">
                 <h2>Domestic Dead Body Transport by Air</h2>
                 {/* <p className="sub">Respectful, end-to-end coordination within India</p> */}
                 <ul className="list-unstyled list">

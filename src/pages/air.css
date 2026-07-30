@@ -121,12 +121,15 @@
 .feature-box .icon.blue {
   background: #5aa9ff;
 }
+
 .feature-box .icon.pink {
   background: #ff6fae;
 }
+
 .feature-box .icon.orange {
   background: #ff9b42;
 }
+
 .feature-box .icon.green {
   background: #4caf50;
 }
@@ -157,6 +160,7 @@
   width: 100%;
   height: auto;
 }
+
 /* ===================end why choose us section================== */
 
 /* ===================start steps section================== */
@@ -240,7 +244,8 @@
 }
 
 .hc-faq-answer.open {
-  max-height: 240px; /* enough for typical answers */
+  max-height: 240px;
+  /* enough for typical answers */
   opacity: 1;
 }
 
@@ -258,12 +263,15 @@
   .hc-faq-section {
     padding: 40px 14px;
   }
+
   .hc-faq-title {
     font-size: 24px;
   }
+
   .hc-faq-question-btn {
     padding: 14px 16px;
   }
+
   .hc-faq-answer.open {
     max-height: 400px;
   }
@@ -336,6 +344,7 @@
   margin: 0;
   font-size: 0.95rem;
 }
+
 /* ==========================end health section==================  */
 
 /* ===================start experties section================== */
@@ -455,17 +464,21 @@
   .hc-air-process-section {
     padding: 40px 16px;
   }
+
   .hc-air-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
+
   .hc-air-item {
     max-width: 420px;
   }
+
   .hc-air-card {
     min-height: 180px;
     padding: 20px;
   }
+
   .hc-air-title {
     font-size: 22px;
   }
@@ -496,6 +509,7 @@
   color: #0f172a;
   margin-bottom: 8px;
 }
+
 .hc-air-services-subtitle {
   color: #6b7280;
   max-width: 780px;
@@ -553,12 +567,15 @@
 .hc-color-red {
   background: #ef4444;
 }
+
 .hc-color-blue {
   background: #3b82f6;
 }
+
 .hc-color-green {
   background: #22c55e;
 }
+
 .hc-color-purple {
   background: #7c3aed;
 }
@@ -569,6 +586,7 @@
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .hc-air-service-desc {
   color: #6b7280;
   font-size: 14px;
@@ -581,6 +599,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
   .hc-air-services-section {
     padding: 48px 16px;
   }
@@ -591,19 +610,24 @@
     grid-template-columns: 1fr;
     gap: 18px;
   }
+
   .hc-air-services-section {
     padding: 36px 12px;
   }
+
   .hc-air-service-card {
     padding: 20px 14px;
   }
+
   .hc-air-service-icon {
     width: 56px;
     height: 56px;
   }
+
   .hc-air-service-title {
     font-size: 15px;
   }
+
   .hc-air-service-desc {
     font-size: 14px;
   }
@@ -617,6 +641,10 @@
   border-radius: 14px;
   padding: 24px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  height: auto !important;
+  /* overrides h-100 / any inherited fixed height so the box always grows to fit every list item */
+  display: flex;
+  flex-direction: column;
 }
 
 .custom-card h2 {
@@ -654,12 +682,15 @@
 .icon-box.blue {
   background: #3b82f6;
 }
+
 .icon-box.pink {
   background: #ec4899;
 }
+
 .icon-box.orange {
   background: #f97316;
 }
+
 .icon-box.green {
   background: #22c55e;
 }
@@ -755,4 +786,5 @@
     font-size: 14px;
   }
 }
+
 /* =================================end cta section========================== */

@@ -65,13 +65,13 @@ function App() {
         <Route path="/privacy-policy" element={<Privacypolicy />} />
 
         {/* ---------ads------------ */}
-        <Route path="/dead-body-transfer-road" element={<Demo />} />
-        <Route path="/dead-body-transfer-air" element={<DAir />} />
+        <Route path="/dead-body-transfer-by-road" element={<Demo />} />
+        <Route path="/dead-body-transfer-by-air" element={<DAir />} />
         <Route path="/dead-body-transfer-cost" element={<Dcost />} />
         <Route path="/dead-body-transfer" element={<DMain />} />\
-        <Route path="/dead-body-transfer-mumbai" element={<DMumbai />} />
-        <Route path='/dead-body-transfer-delhi' element={<DelhiAds/>} />
-        <Route path="/dead-body-transfer-hyderabad" element={<Hyderebad />} />
+        <Route path="/dead-body-transfer-in-mumbai" element={<DMumbai />} />
+        <Route path='/dead-body-transfer-in-delhi' element={<DelhiAds />} />
+        <Route path="/dead-body-transfer-in-telangana-and-andhra-pradesh" element={<Hyderebad />} />
 
 
 

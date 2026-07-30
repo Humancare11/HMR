@@ -47,7 +47,7 @@ export default function Footer() {
               <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Domestic Transportation</a></li>
               <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Documentation Support</a></li>
               <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Embalming Services</a></li>
-              <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Emergency Services</a></li>
+              {/* <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Emergency Services</a></li> */}
               <li><a href="tel:+919833444040" style={{ textDecoration: 'none', color: 'inherit' }}>Family Support</a></li>
             </ul>
           </div>
@@ -112,7 +112,7 @@ export default function Footer() {
             <FaWhatsapp size={22} />
 
 
-          </a> 
+          </a>
         </div>
 
 

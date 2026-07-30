@@ -1,567 +1,350 @@
 import React from "react";
 import {
-    Phone,
-    MessageCircle,
-    Clock,
-    Plane,
-    Globe,
-    FileText,   
-    // CreditCard,
-    AlertCircle,
-    Ambulance,
-    Truck,
-    Check,
-    Settings,
-    Star,
-    Map
-
+  Phone, MessageCircle, Clock, Plane, Globe, FileText,
+  AlertCircle, Ambulance, Truck, Check, Settings, Star, Shield, Map
 } from "lucide-react";
-import "./demo.css";
+import "./dmain.css";
 import serv3 from "../assets/serv3.webp";
+import heroCoffin from "../assets/Dead-Body-Transfer.jpeg";
 import ContactUs from '../components/ContactUs';
 
 function DelhiAds() {
+  const [testimonialIndex, setTestimonialIndex] = React.useState(0);
 
-    const data = [
-        {
-            icon: <Ambulance />,
-            title: "Difficulty Finding Dead Body Ambulance Near You",
-            desc: "Families often struggle to arrange immediate dead body ambulance services during emergencies.",
-        },
-        {
-            icon: <Map />,
-            title: "Challenges in Transporting Body to Another State",
-            desc: "Interstate transportation requires experienced drivers, route coordination, and proper handling arrangements.",
-        },
-        {
-            icon: <Plane />,
-            title: "Air Cargo & Flight Coordination Stress",
-            desc: "Dead body by air transportation involves documentation, embalming, and airline cargo approvals.",
-        },
-        {
-            icon: <Truck />,
-            title: "Confusion Between Ambulance Types",
-            desc: "Many families search for body ambulance, mortuary ambulance, or ICU ambulance service near me without understanding which service is suitable.",
-        },
-    ];
+  const data = [
+    { icon: <Ambulance />, title: "Difficulty Finding Dead Body Ambulance Near You", desc: "Families often struggle to arrange immediate dead body ambulance services during emergencies." },
+    { icon: <Map />, title: "Challenges in Transporting Body to Another State", desc: "Interstate transportation requires experienced drivers, route coordination, and proper handling arrangements." },
+    { icon: <Plane />, title: "Air Cargo & Flight Coordination Stress", desc: "Dead body by air transportation involves documentation, embalming, and airline cargo approvals." },
+    { icon: <Truck />, title: "Confusion Between Ambulance Types", desc: "Many families search for body ambulance, mortuary ambulance, or ICU ambulance service near me without understanding which service is suitable." },
+  ];
 
-    // why 
-    const features = [
-        {
-            title: "Quick Emergency Response",
-            desc: "Our team arranges dead body ambulance support quickly across Delhi and nearby areas.",
-        },
-        {
-            title: "Experienced Air & Road Transfer Team",
-            desc: "Professional coordination for dead body by air and interstate transport services.",
-        },
-        {
-            title: "24/7 Ambulance Availability",
-            desc: "Emergency support available day and night for urgent transportation requirements.",
-        },
-        {
-            title: "Clean & Well-Maintained Vehicles",
-            desc: "Mortuary ambulance and body ambulance vehicles are maintained for safe transportation.",
-        },
-        {
-            title: "Transparent Coordination",
-            desc: "Families receive clear guidance on procedures, documentation, and transportation arrangements.",
-        },
-        {
-            title: "Safe & Dignified Handling",
-            desc: "Every deceased body transport case is managed respectfully and professionally.",
-        },
-        {
-            title: "Pan India Transportation Support",
-            desc: "We help transport body to another state anywhere in India.",
-        },
-        {
-            title: "Dedicated Family Assistance",
-            desc: "One experienced coordinator manages the transportation process from start to finish.",
-        },
-    ];
-    // steps
-    const steps = [
-        {
-            icon: <Phone size={22} />,
-            title: " Contact Our Team",
-            desc: "Call or WhatsApp and share pickup location, destination, and transportation requirement.",
-            step: "1",
-        },
-        {
-            icon: <FileText size={22} />,
-            title: "Ambulance & Transport Planning ",
-            desc: "We explain available transportation options, ambulance type, and estimated arrangements.",
-            step: "2",
-        },
-        {
-            icon: <Settings size={22} />,
-            title: " Documentation & Coordination",
-            desc: "Our team handles ambulance dispatch, embalming guidance, and airline or interstate coordination. ",
-            step: "3",
-        },
-        {
-            icon: <Plane size={22} />,
-            title: " Safe & Respectful Transfer",
-            desc: "The deceased is transported safely to the destination with complete support. ",
-            step: "4",
-        },
-    ];
-    // stat
-    const stats = [
-        { number: "2200+", label: "Transportation cases coordinated" },
-        { number: "21+ Years", label: "Experience in deceased body transport" },
-        { number: "24/7", label: "Emergency ambulance support" },
-        { number: "100%", label: "Safe & dignified handling" },
-    ];
-    // testimonial
-    const testimonials = [
-        {
-            text: "During the most difficult time of our lives, the team handled my father’s transport from Delhi to Bangalore seamlessly. We didn't have to worry about a single document. Deeply grateful.",
-            name: "Rahul S., Bangalore",
-        },
-        {
-            text: "The repatriation from Dubai was something we were dreading, but they managed customs and embassy paperwork so efficiently. Very professional and compassionate service.",
-            name: "Priya M., Mumbai",
-        },
-    ];
+  const features = [
+    { title: "Quick Response", desc: "Our team arranges dead body ambulance support quickly across Delhi and nearby areas." },
+    { title: "Experienced Air & Road Transfer Team", desc: "Professional coordination for dead body by air and interstate transport services." },
+    { title: "24/7 Ambulance Availability", desc: "Support available day and night for urgent transportation requirements." },
+    { title: "Clean & Well-Maintained Vehicles", desc: "Mortuary ambulance and body ambulance vehicles are maintained for safe transportation." },
+    { title: "Transparent Coordination", desc: "Families receive clear guidance on procedures, documentation, and transportation arrangements." },
+    { title: "Safe & Dignified Handling", desc: "Every deceased body transport case is managed respectfully and professionally." },
+    { title: "Pan India Transportation Support", desc: "We help transport body to another state anywhere in India." },
+    { title: "Dedicated Family Assistance", desc: "One experienced coordinator manages the transportation process from start to finish." },
+  ];
 
-    const cities = [
-        { name: "Delhi", icon: "📍" },
-        { name: "Noida", icon: "📍" },
-        { name: "Gurgaon", icon: "📍" },
-        { name: "Ghaziabad", icon: "📍" },
-        { name: "Faridabad", icon: "📍" },
-        { name: "Rohini", icon: "📍" },
-        { name: "Dwarka", icon: "📍" },
-        { name: "Karol Bagh", icon: "📍" },
-        { name: "Saket", icon: "📍" },
-        { name: "Lajpat Nagar", icon: "📍" },
-    ];
+  const steps = [
+    { icon: <Phone size={22} />, title: "Contact Our Team", desc: "Call or WhatsApp and share pickup location, destination, and transportation requirement.", step: "1" },
+    { icon: <FileText size={22} />, title: "Ambulance & Transport Planning", desc: "We explain available transportation options, ambulance type, and estimated arrangements.", step: "2" },
+    { icon: <Settings size={22} />, title: "Documentation & Coordination", desc: "Our team handles ambulance dispatch, embalming guidance, and airline or interstate coordination.", step: "3" },
+    { icon: <Plane size={22} />, title: "Safe & Respectful Transfer", desc: "The deceased is transported safely to the destination with complete support.", step: "4" },
+  ];
 
-    const international = [
-        { route: "Mumbai", icon: "📍" },
-        { route: "Banglauru ", icon: "📍" },
-        { route: "Hyderabad ", icon: "📍" },
-        { route: "Chennai", icon: "📍" },
-        { route: "Kolkata", icon: "📍" },
-        { route: "Ahmedabad", icon: "📍" },
-        { route: "Pune ", icon: "📍" },
-        { route: "Jaipur", icon: "📍" },
-        { route: "Patna", icon: "📍" },
-    ];
+  const stats = [
+    { number: "2200+", label: "Transportation cases coordinated" },
+    { number: "21+ Years", label: "Experience in deceased body transport" },
+    { number: "24/7", label: "Ambulance support" },
+    { number: "100%", label: "Safe & dignified handling" },
+  ];
 
-    return (
-        <>
-            {/* section 1: Banner */}
-            <section className="demo-hero">
-                {/* Top Tags */}
-                <div className="demo-hero-tags">
-                    <span><Clock size={14} /> 24/7 Available</span>
-                    <span>📍 Pan India & International </span>
-                </div>
+  const testimonials = [
+    { text: "During the most difficult time of our lives, the team handled my father's transport from Delhi to Bangalore seamlessly. We didn't have to worry about a single document. Deeply grateful.", name: "Rahul S., Bangalore" },
+    { text: "The repatriation from Dubai was something we were dreading, but they managed customs and embassy paperwork so efficiently. Very professional and compassionate service.", name: "Priya M., Mumbai" },
+    { text: "Excellent service provided by Human Remains Transfer for my uncle's body repatriation from Canada to Hyderabad. They handled airline clearances, embassy NOCs, and ambulance transport with absolute dignity.", name: "Kiran K., Hyderabad" },
+    { text: "We needed immediate dead body transport from Mumbai to Pune at midnight. Their coordinator answered the call instantly and arranged a fully equipped hearse van for dignified transfer.", name: "Amit P., Pune" },
+    { text: "Outstanding coordination and transparency in pricing. Transferred my grandmother's remains from Delhi to Chennai. No hidden charges, and documentation assistance was superb.", name: "Srinivasan R., Chennai" },
+  ];
 
-                {/* Heading */}
-                <h1 className="demo-hero-title">
-                    Professional Human Remains Transport in Delhi-<br /> <span>  24/7 Ambulance, Air & Interstate Transport </span>
-                </h1>
-                <p className="demo-hero-desc">
-                    Professional Dead Body Transport Services Across Delhi & India
-                </p>
+  React.useEffect(() => {
+    const interval = setInterval(() => setTestimonialIndex((prev) => (prev + 1) % testimonials.length), 5000);
+    return () => clearInterval(interval);
+  }, [testimonials.length]);
 
-                <h2 className="demo-hero-subtitle"> Dead Body Ambulance | Deceased Body Transport | Dead Body by Air | Interstate Body Transfer </h2>
+  const cities = [
+    { name: "Delhi", icon: "📍" }, { name: "Noida", icon: "📍" }, { name: "Gurgaon", icon: "📍" },
+    { name: "Ghaziabad", icon: "📍" }, { name: "Faridabad", icon: "📍" }, { name: "Rohini", icon: "📍" },
+    { name: "Dwarka", icon: "📍" }, { name: "Karol Bagh", icon: "📍" }, { name: "Saket", icon: "📍" },
+    { name: "Lajpat Nagar", icon: "📍" },
+  ];
 
-                {/* Description */}
-                <p className="demo-hero-desc">
-                    We provide reliable and compassionate dead body transfer services in Delhi with complete support for dead body ambulance booking, deceased body transport by air, mortuary ambulance services, and interstate transportation across India. Our experienced team ensures safe, respectful, and timely transportation during difficult situations.
-                </p>
+  const international = [
+    { route: "Mumbai", icon: "📍" }, { route: "Bangalore", icon: "📍" }, { route: "Hyderabad", icon: "📍" },
+    { route: "Chennai", icon: "📍" }, { route: "Kolkata", icon: "📍" }, { route: "Ahmedabad", icon: "📍" },
+    { route: "Pune", icon: "📍" }, { route: "Jaipur", icon: "📍" }, { route: "Patna", icon: "📍" },
+  ];
 
-                {/* CTA Buttons */}
-                <div className="demo-hero-buttons">
-                    <button className="demo-btn call" onClick={() => window.location.href = 'tel:+919619159990'}>
-                        <Phone size={18} /> Call Immediately
-                    </button>
+  return (
+    <div className="dmain-wrapper">
 
-                    <button className="demo-btn whatsapp" onClick={() => window.open('https://wa.me/+919619159990', '_blank')}>
-                        <MessageCircle size={18} /> WhatsApp Now
-                    </button>
-                </div>
+      {/* Hero */}
+      <section className="dmain-hero">
+        <div className="dmain-hero-image">
+          <img src={heroCoffin} alt="Dead body transport ambulance services Delhi" />
+          <div className="dmain-hero-image-tint"></div>
+        </div>
 
-                {/* Feature Cards */}
-                <div className="demo-hero-features">
-                    <div className="demo-feature-card">
-                        <Clock />
-                        <div>
-                            <h4> 24/7 Emergency Support </h4>
-                            <p> Immediate dead body ambulance assistance in Delhi </p>
-
-                        </div>
-                    </div>
-
-                    <div className="demo-feature-card">
-                        <Plane />
-                        <div>
-                            <h4>Air & Road Transportation</h4>
-                            <p>Dead body by air and interstate transfer support</p>
-                        </div>
-                    </div>
-
-                    <div className="demo-feature-card">
-                        <Globe />
-                        <div>
-                            <h4>Quick Ambulance Dispatch </h4>
-                            <p> Fast response across Delhi NCR </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* INTRODUCTION */}
-                <div className="demo-section-two-container">
-
-                    {/* LEFT Content */}
-                    <div className="section-two-content">
-
-                        <h2>
-                            Trusted Dead Body Transport Services in Delhi
-                        </h2>
-
-                        <p className="desc">
-                            Arranging transportation for a deceased loved one can become emotionally exhausting, especially during emergencies. Families often struggle to find a reliable dead body ambulance near me, manage airline procedures, or arrange safe transport body to another state. <br />
-
-                            Our team specializes in dead body transport services in Delhi with complete assistance for: <br />
-                        </p>
-                        <ul>
-                            <li> • Dead body ambulance services </li>
-                            <li> • Deceased body transport </li>
-                            <li> • Dead body by air within India </li>
-                            <li> • Interstate dead body transport </li>
-                            <li> • Mortuary ambulance arrangements </li>
-                            <li> • Body ambulance support for hospitals and homes </li>
-                        </ul>
-                    </div>
-
-                    {/* Rigth Image */}
-                    <div className="demo-section-two-image">
-                        <img src={serv3} alt="transport" />
-                    </div>
-                </div>
-
-                <p className='desc-1'> 
-                    Whether you require local transportation within Delhi NCR, emergency ambulance assistance, or long-distance transfer to another state, our trained coordination team manages every step professionally and respectfully.<br /> <br />
-
-                    We work with hospitals, airports, mortuaries, and local authorities to ensure safe and smooth transportation without delays.<br />
-                </p>
-            </section>
-
-            {/* section 2  urgent*/}
-            <div className="urgent-strip">
-
-                <h3>Need Immediate Dead Body Ambulance Assistance in Delhi?
-                </h3>
-                <p>
-                    <strong>
-                        24/7 support for dead body transport, mortuary ambulance, and interstate transfer services.
-                    </strong>
-                </p>
-
-                <div className="demo-hero-buttons">
-                    <button className="demo-btn call" onClick={() => window.location.href = 'tel:+919619159990'}>
-                        <Phone size={18} /> Call Immediately
-                    </button>
-
-                    <button className="demo-btn whatsapp" onClick={() => window.open('https://wa.me/+919619159990', '_blank')}>
-                        <MessageCircle size={18} /> WhatsApp Now
-                    </button>
-                </div>
+        <div className="dmain-hero-container">
+          <div className="dmain-hero-left">
+            <div className="dmain-badge-group">
+              <span className="dmain-badge"><Clock size={14} /> 24/7 Available</span>
+              <span className="dmain-badge">📍 Pan India & International</span>
             </div>
 
-            {/* section 3: Emergency*/}
-            <section className="demo-emergency">
-                <div className="demo-emergency-container">
-                    <span className="emergency-tag"> 24/7 Emergency Service  </span>
-                    <h2>
-                        Families deserve quick and compassionate transportation support during emergencies.
-                    </h2>
-                    <p className="demo-emergency-subtitle">
-                        Finding an emergency ambulance near me or arranging deceased body transport at the last moment can become extremely stressful. Delays in ambulance availability or transportation coordination can create additional emotional pressure.
+            <h1 className="dmain-hero-title">
+              Professional Human Remains Transport in Delhi –<br />
+              <span>24/7 Ambulance, Air & Interstate Transport</span>
+            </h1>
 
-                    </p>
+            <h2 className="dmain-hero-subtitle">
+              24×7 Dead Body Ambulance | Deceased Body Transport | Dead Body by Air | Interstate Body Transfer
+            </h2>
 
-                    <div className="demo-emergency-card-grid">
-                        {data.map((item, index) => (
-                            <div className="card" key={index}>
-                                <div className="icon">{item.icon}</div>
-                                <h3>{item.title}</h3>
-                                <p>{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <div className="dmain-rating-bar">
+              <div className="dmain-stars">
+                {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="#fbbf24" color="#fbbf24" />)}
+              </div>
+              <span className="dmain-rating-text">
+                2200+ Transfers &nbsp;|&nbsp; 21+ Years Experience &nbsp;|&nbsp; Pan India & Worldwide
+              </span>
+            </div>
 
-            {/* section 4 SERVICES*/}
-            <section className="demo-services-section">
-                <div className="demo-services-container">
+            <div className="dmain-btn-group">
+              <button className="dmain-btn-double dmain-btn-double-red" onClick={() => window.open('tel:+919619159990', '_blank')}>
+                <Phone size={24} />
+                <div className="dmain-btn-double-text"><span>Call Our Team</span><span>Available 24/7</span></div>
+              </button>
+              <button className="dmain-btn-double dmain-btn-double-green" onClick={() => window.open('https://wa.me/+919619159990', '_blank')}>
+                <MessageCircle size={24} />
+                <div className="dmain-btn-double-text"><span>WhatsApp Now</span><span>Get Instant Assistance</span></div>
+              </button>
+            </div>
 
-                    <span className="service-tag">What We Offer</span>
+            <div className="dmain-hero-bullets">
+              <span className="dmain-bullet-item">⚡ Response within 2 Minutes</span>
+              <span className="dmain-bullet-item"><Shield size={16} /> No Hidden Charges</span>
+              <span className="dmain-bullet-item"><FileText size={16} /> Documentation Assistance</span>
+            </div>
+          </div>
+        </div>
 
-                    <h2 className="demo-service-main-heading">
-                        Complete Dead Body Transport Services in Delhi
-                    </h2>
-                    {/* <p className="demo-description">
-            Every mode of transport, every destination. We handle it with respect
-            and efficiency.
-          </p> */}
+        <div className="dmain-hero-bottom-cards-container">
+          <div className="dmain-hero-bottom-cards">
+            <div className="dmain-bottom-card"><div className="dmain-bottom-card-icon"><Clock size={22} /></div><div className="dmain-bottom-card-text"><h4>24/7 Support</h4><p>Immediate dead body ambulance assistance in Delhi</p></div></div>
+            <div className="dmain-bottom-card"><div className="dmain-bottom-card-icon"><Plane size={22} /></div><div className="dmain-bottom-card-text"><h4>Air & Road Transportation</h4><p>Dead body by air and interstate transfer support</p></div></div>
+            <div className="dmain-bottom-card"><div className="dmain-bottom-card-icon"><Globe size={22} /></div><div className="dmain-bottom-card-text"><h4>Quick Ambulance Dispatch</h4><p>Fast response across Delhi NCR</p></div></div>
+            <div className="dmain-bottom-card"><div className="dmain-bottom-card-icon"><Shield size={22} /></div><div className="dmain-bottom-card-text"><h4>Safe & Dignified Handling</h4><p>Every transfer managed with respect</p></div></div>
+          </div>
+        </div>
+      </section>
 
-                    <div className="demo-services-grid">
+      {/* Introduction */}
+      <section className="dmain-section-intro">
+        <div className="dmain-intro-container">
+          <div className="dmain-intro-left">
+            <h2>Trusted Dead Body Transport Services in Delhi</h2>
+            <p className="desc">
+              Arranging transportation for a deceased loved one can become emotionally exhausting, especially during emergencies. Families often struggle to find a reliable dead body ambulance near me, manage airline procedures, or arrange safe transport body to another state.<br /><br />
+              Our team specializes in dead body transport services in Delhi with complete assistance for ambulance services, deceased body transport, dead body by air within India, interstate dead body transport, mortuary ambulance arrangements, and body ambulance support for hospitals and homes.<br /><br />
+              We work with hospitals, airports, mortuaries, and local authorities to ensure safe and smooth transportation without delays.
+            </p>
+          </div>
+          <div className="dmain-intro-right">
+            <div className="dmain-intro-image-wrapper">
+              <img src={serv3} alt="Dead body transport services Delhi" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-                        <div className="demo-services-grid">
+      {/* Urgent Strip */}
+      <section className="dmain-urgent-strip">
+        <div className="dmain-urgent-container">
+          <h3>Need Immediate Dead Body Ambulance Assistance in Delhi?</h3>
+          <p>24/7 support for dead body transport, mortuary ambulance, and interstate transfer services.</p>
+          <div className="dmain-btn-group">
+            <button className="dmain-btn dmain-btn-danger" onClick={() => window.open('tel:+919619159990', '_blank')}><Phone size={18} /> Call Immediately</button>
+            <button className="dmain-btn dmain-btn-success" onClick={() => window.open('https://wa.me/+919619159990', '_blank')}><MessageCircle size={18} /> WhatsApp Now</button>
+          </div>
+        </div>
+      </section>
 
-                            {/* Card 1 */}
-                            <div className="demo-service-card">
-                                <div className="demo-services-icon-box">
-                                    <Plane size={32} />
-                                </div>
-                                <h3>DEAD BODY AMBULANCE SERVICE</h3>
-                                <ul>
-                                    <li>• 24/7 dead body ambulance in Delhi</li>
-                                    <li>• Mortuary ambulance arrangements</li>
-                                    <li>• Body ambulance for hospital and home transfer</li>
-                                    <li>• Immediate pickup and transportation support   </li>
-                                    {/* <li>• Immediate pickup coordination</li> */}
-                                </ul>
-                            </div>
+      {/* Pain Points */}
+      <section className="dmain-emergency-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">24/7 Service</span>
+          <h2>Families deserve quick and compassionate transportation support during emergencies.</h2>
+          <p>Finding an ambulance near me or arranging deceased body transport at the last moment can become extremely stressful. Delays in ambulance availability can create additional emotional pressure.</p>
+        </div>
+        <div className="dmain-grid-4">
+          {data.map((item, index) => (
+            <div className="dmain-card" key={index}>
+              <div className="dmain-card-icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-                            {/* Card 2 */}
-                            <div className="demo-service-card">
-                                <div className="demo-services-icon-box">
-                                    <Ambulance size={32} />
-                                </div>
-                                <h3>DEAD BODY BY AIR</h3>
-                                <ul>
-                                    <li>• Domestic dead body by air coordination </li>
-                                    <li>• Airline cargo booking assistance </li>
-                                    <li>• Airport clearance support </li>
-                                    <li>• Fast deceased body transport by flight </li>
-                                    {/* <li>• Door-to-door transportation support</li> */}
-                                </ul>
-                            </div>
+      {/* Services */}
+      <section className="dmain-services-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">What We Offer</span>
+          <h2>Complete Dead Body Transport Services in Delhi</h2>
+        </div>
+        <div className="dmain-services-grid">
+          <div className="dmain-service-card">
+            <div className="dmain-service-icon"><Plane size={24} /></div>
+            <h3>DEAD BODY AMBULANCE SERVICE</h3>
+            <ul className="dmain-service-list">
+              <li>24/7 dead body ambulance in Delhi</li>
+              <li>Mortuary ambulance arrangements</li>
+              <li>Body ambulance for hospital and home transfer</li>
+              <li>Immediate pickup and transportation support</li>
+            </ul>
+          </div>
+          <div className="dmain-service-card">
+            <div className="dmain-service-icon"><Ambulance size={24} /></div>
+            <h3>DEAD BODY BY AIR</h3>
+            <ul className="dmain-service-list">
+              <li>Domestic dead body by air coordination</li>
+              <li>Airline cargo booking assistance</li>
+              <li>Airport clearance support</li>
+              <li>Fast deceased body transport by flight</li>
+            </ul>
+          </div>
+          <div className="dmain-service-card">
+            <div className="dmain-service-icon"><Map size={24} /></div>
+            <h3>INTERSTATE DECEASED BODY TRANSPORT</h3>
+            <ul className="dmain-service-list">
+              <li>Transport body to another state safely</li>
+              <li>Long-distance road ambulance services</li>
+              <li>State-to-state deceased transportation</li>
+              <li>Door-to-door transportation assistance</li>
+            </ul>
+          </div>
+          <div className="dmain-service-card">
+            <div className="dmain-service-icon"><Globe size={24} /></div>
+            <h3>ICU AMBULANCE SUPPORT</h3>
+            <ul className="dmain-service-list">
+              <li>ICU ambulance service near me</li>
+              <li>Ambulance near me assistance</li>
+              <li>Patient and deceased transfer coordination</li>
+              <li>Ambulance support across Delhi NCR</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-                            {/* Card 3 */}
-                            <div className="demo-service-card">
-                                <div className="demo-services-icon-box">
-                                    <Map size={32} />
-                                </div>
-                                <h3>INTERSTATE DECEASED BODY TRANSPORT </h3>
-                                <ul>
-                                    <li>• Transport body to another state safely </li>
-                                    <li>• Long-distance road ambulance services </li>
-                                    <li>• State-to-state deceased transportation  </li>
-                                    <li>• Door-to-door transportation assistance </li>
+      {/* Why Choose Us */}
+      <section className="dmain-why-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">Why Choose Us</span>
+          <h2>Reliable & Respectful Dead Body Transport in Delhi</h2>
+        </div>
+        <div className="dmain-why-grid">
+          {features.map((item, index) => (
+            <div className="dmain-why-card" key={index}>
+              <div className="dmain-why-check"><Check size={16} /></div>
+              <div className="dmain-why-text"><h3>{item.title}</h3><p>{item.desc}</p></div>
+            </div>
+          ))}
+        </div>
+      </section>
 
-                                </ul>
-                            </div>
+      {/* Process */}
+      <section className="dmain-process-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">How It Works</span>
+          <h2>Simple 4-Step Transportation Process</h2>
+        </div>
+        <div className="dmain-process-grid">
+          {steps.map((item, index) => (
+            <div className="dmain-process-card" key={index}>
+              <div className="dmain-process-circle">{item.icon}<span className="step-num">{item.step}</span></div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
-                            {/* Card 4 */}
-                            <div className="demo-service-card">
-                                <div className="demo-services-icon-box">
-                                    <Globe size={32} />
-                                </div>
-                                <h3>EMERGENCY & ICU AMBULANCE SUPPORT </h3>
-                                <ul>
-                                    <li>• ICU ambulance service near me</li>
-                                    <li>• Emergency ambulance near me assistance </li>
-                                    <li>• Patient and deceased transfer coordination  </li>
-                                    <li>• Ambulance support across Delhi NCR  </li>
+      {/* Stats & Testimonials */}
+      <section className="dmain-stats-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">Our Track Record</span>
+          <h2>Trusted for Dead Body Ambulance & Transport Services in Delhi</h2>
+        </div>
+        <div className="dmain-stats-grid">
+          {stats.map((item, index) => (
+            <div className="dmain-stat-card" key={index}><h2>{item.number}</h2><p>{item.label}</p></div>
+          ))}
+        </div>
+        <div className="dmain-testimonial-slider-container">
+          <div className="dmain-testimonial-card dmain-active-testimonial">
+            <div className="dmain-testimonial-stars">
+              {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="#fbbf24" color="#fbbf24" />)}
+            </div>
+            <p className="dmain-testimonial-text">"{testimonials[testimonialIndex].text}"</p>
+            <div className="dmain-testimonial-author">
+              <h4>— {testimonials[testimonialIndex].name}</h4>
+              <span className="dmain-gmb-verified">✓ Verified Google Review</span>
+            </div>
+          </div>
+          <div className="dmain-slider-dots">
+            {testimonials.map((_, index) => (
+              <button key={index} className={`dmain-slider-dot ${index === testimonialIndex ? 'active' : ''}`} onClick={() => setTestimonialIndex(index)} aria-label={`Go to review ${index + 1}`} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-                                </ul>
-                            </div>
+      {/* Pricing */}
+      <section className="dmain-pricing-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">Pricing</span>
+          <h2>What Is the Cost of Dead Body Transport in Delhi?</h2>
+          <p>Transportation cost depends on the ambulance type, transfer distance, and mode of transportation required.</p>
+        </div>
+        <div className="dmain-pricing-card">
+          <div className="dmain-pricing-badge">No Hidden Charges · Upfront Estimate</div>
+          <h3>COST FACTORS:</h3>
+          <div className="dmain-factors-grid">
+            <div className="dmain-factor-badge">🚑 Dead body ambulance requirement</div>
+            <div className="dmain-factor-badge">📍 Interstate transportation distance</div>
+            <div className="dmain-factor-badge">✈️ Dead body by air cargo charges</div>
+            <div className="dmain-factor-badge">📄 Mortuary ambulance or freezer box support</div>
+            <div className="dmain-factor-badge">📍 Destination city or state</div>
+            <div className="dmain-factor-badge">🚨 Emergency transportation timing</div>
+          </div>
+          <div className="dmain-pricing-warning">
+            <AlertCircle size={24} />
+            <div>
+              <h4>Transparent Transportation Guidance</h4>
+              <p>Families searching for emergency ambulance near me or dead body transport services often face confusion regarding pricing. We provide clear support and honest estimates.</p>
+            </div>
+          </div>
+          <button className="dmain-btn dmain-btn-danger" style={{ width: 'auto', padding: '16px 36px' }} onClick={() => window.open('tel:+919619159990', '_blank')}>
+            <Phone size={18} /> Get Cost in 10 Minutes
+          </button>
+        </div>
+      </section>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+      {/* Coverage */}
+      <section className="dmain-coverage-section">
+        <div className="dmain-section-header">
+          <span className="dmain-section-tag">Coverage Area</span>
+          <h2>Dead Body Ambulance & Transport Services Across Delhi NCR</h2>
+          <p>We provide deceased body transport and emergency ambulance support across Delhi and nearby regions.</p>
+        </div>
+        <div className="dmain-badge-grid">
+          {cities.map((city, index) => (<span key={index} className="dmain-pill-badge">{city.icon} {city.name}</span>))}
+        </div>
+        <div className="dmain-badge-grid">
+          {international.map((intl, index) => (<span key={index} className="dmain-pill-badge" style={{ backgroundColor: '#f1f5f9' }}>{intl.icon} {intl.route}</span>))}
+        </div>
+        <p className="dmain-coverage-note">Need transportation from another city or hospital? Our network supports domestic transfer services across India.</p>
+      </section>
 
-            {/* section 5 : why  */}
-            <section className="demo-why-section">
-                <div className="demo-why-container">
-                    <span className="why-tag">Why choose Us</span>
-                    <h2 className="demo-main-heading">
-                        Reliable & Respectful Dead Body Transport in Delhi
-                    </h2>
-
-                    <div className="demo-why-grid">
-                        {features.map((item, index) => (
-                            <div className="demo-why-card" key={index}>
-                                <div className="check-icon">
-                                    <Check size={18} />
-                                </div>
-                                <div>
-                                    <h3>{item.title}</h3>
-                                    <p>{item.desc}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* section 6: Process */}
-            <section className="demo-process-section">
-                <div className="demo-process-container">
-                    <span className="process-tag">How It Works</span>
-
-                    <h2 className="demo-process-main-heading">
-                        Simple 4-Step Transportation Process
-                    </h2>
-
-                    {/* <p className="demo-process-description">
-           Share pickup location, destination, and transportation requirements.
-          </p> */}
-
-                    <div className="demo-process-grid">
-                        {steps.map((item, index) => (
-                            <div className="demo-process-card" key={index}>
-                                <div className="demo-circle">
-                                    {item.icon}
-                                    <span className="step">{item.step}</span>
-                                </div>
-
-                                <h3>{item.title}</h3>
-                                <p>{item.desc}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* section 7: Stats & testimonals */}
-            <section className="demo-stats-section">
-                <div className="demo-container">
-                    <span className="demo-stats-tag">Our Track Record</span>
-
-                    <h2 className="demo-stats-heading">
-                        Trusted for Dead Body Ambulance & Transport Services in Delhi
-                    </h2>
-
-                    {/* Stats */}
-                    <div className="demo-stats-grid">
-                        {stats.map((item, index) => (
-                            <div className="demo-stat-card" key={index}>
-                                <h2>{item.number}</h2>
-                                <p>{item.label}</p>
-                            </div>
-                        ))}
-                    </div>
-
-                    {/* Testimonials */}
-                    <div className="demo-testimonial-grid">
-                        {testimonials.map((item, index) => (
-                            <div className="demo-testimonial-card" key={index}>
-                                <div className="stars">
-                                    {[...Array(5)].map((_, i) => (
-                                        <Star key={i} size={16} fill="#f59e0b" color="#f59e0b" />
-                                    ))}
-                                </div>
-
-                                <p className="testimonial-text">"{item.text}"</p>
-                                <h4>— {item.name}</h4>
-                            </div>
-                        ))}
-                    </div>
-
-                </div>
-            </section>
-
-            {/* section 8: Pricing */}
-            <section className="demo-pricing-section">
-                <div className="demo-pricing-container">
-                    <span className="pricing-tag"> Pricing </span>
-
-                    <h2 className="demo-pricing-title">
-                       What Is the Cost of Dead Body Transport in Delhi?
-                    </h2>
-
-                    <p className="demo-pricing-subtitle">
-                        Transportation cost depends on the ambulance type, transfer distance, and mode of transportation required.
-                    </p>
-
-                    <div className="demo-pricing-card">
-                        <div className="pricing-badge">
-                            No Hidden Charges · Upfront Estimate
-                        </div>
-
-                        <h3 className="pricing-card-title">COST FACTORS:</h3>
-
-                        <div className="pricing-factors">
-                            <span className="factor-badge">🚑 Dead body ambulance requirement </span>
-                            <span className="factor-badge">📍 Interstate transportation distance </span>
-                            <span className="factor-badge">✈️ Dead body by air cargo charges</span>
-                            <span className="factor-badge">📄 Mortuary ambulance or freezer box support</span>
-                            <span className="factor-badge">📍 Destination city or state </span>
-                            <span className="factor-badge">🚨 Emergency transportation timing </span>
-                            {/* <span className="factor-badge">Emergency or same-day arrangements</span> */}
-                        </div>
-
-                        <div className="pricing-warning">
-                            <AlertCircle size={20} />
-                            <div>
-                                <h4>Transparent Transportation Guidance</h4>
-                                <p>Families searching for emergency ambulance near me or dead body transport services often face confusion regarding pricing. We provide clear support and honest estimates.</p>
-                            </div>
-                        </div>
-
-                        <p className="pricing-cta">
-                            Need pricing for another city or country? Our team provides customized estimates based on your transportation requirement.
-                        </p>
-
-                        <button className="pricing-btn" onClick={() => window.location.href = 'tel:+919619159990'}>
-                            <Phone size={18} /> Get Cost in 10 Minutes
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            {/* section 9: Coverage */}
-            <section className="demo-coverage-section">
-                <div className="demo-coverage-container">
-                    <span className="coverage-tag">Coverage Area</span>
-
-                    <h2 className="demo-coverage-title">
-                       Dead Body Ambulance & Transport Services Across Delhi NCR
-                    </h2>
-
-                    <p className="demo-coverage-subtitle">
-                        We provide deceased body transport and emergency ambulance support across Delhi and nearby regions.
-                    </p>
-
-                    <div className="demo-cities-grid">
-                        {cities.map((city, index) => (
-                            <button key={index} className="city-badge">
-                                {city.icon} {city.name}
-                            </button>
-                        ))}
-                    </div>
-
-                    <div className="demo-international-routes">
-                        {international.map((intl, index) => (
-                            <button key={index} className="international-badge">
-                                {intl.icon} {intl.route}
-                            </button>
-                        ))}
-                    </div>
-
-                    <p className="demo-coverage-note">
-                        Need transportation from another city or hospital? Our network supports domestic transfer services across India.
-                    </p>
-                </div>
-            </section>
-
-            <ContactUs />
-
-
-        </>
-    );
-};
+      <ContactUs />
+    </div>
+  );
+}
 
 export default DelhiAds;
