@@ -86,8 +86,8 @@ function Dcost() {
             </div>
 
             <h1 className="dmain-hero-title">
-              Dead Body Transport Cost –<br />
-              <span>Air, Road & Interstate Charges</span>
+              How Much Does Dead Body Transport Cost by <br />
+              <span>Air, Road & Interstate Charges?</span>
             </h1>
 
             <h2 className="dmain-hero-subtitle">
@@ -154,7 +154,7 @@ function Dcost() {
       {/* Urgent Strip */}
       <section className="dmain-urgent-strip">
         <div className="dmain-urgent-container">
-          <h3>Need Immediate Cost Information for Dead Body Transport?</h3>
+          <h3>Looking for Immediate Cost Information for Dead Body Transport?</h3>
           <p>Get transparent pricing support for domestic and international transportation services.</p>
           <div className="dmain-btn-group">
             <button className="dmain-btn dmain-btn-danger" onClick={() => window.open('tel:+919833444040', '_blank')}><Phone size={18} /> Call Immediately</button>

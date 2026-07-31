@@ -93,8 +93,8 @@ function HydAds() {
             </div>
 
             <h1 className="dmain-hero-title">
-              Dead Body Transport Services in<br />
-              <span>Telangana & Andhra Pradesh</span>
+              Need Dead Body Transport Services in<br />
+              <span>Telangana & Andhra Pradesh ?</span>
             </h1>
 
             <h2 className="dmain-hero-subtitle">
@@ -160,7 +160,7 @@ function HydAds() {
       {/* Urgent Strip */}
       <section className="dmain-urgent-strip">
         <div className="dmain-urgent-container">
-          <h3>Need Immediate Dead Body Ambulance Assistance?</h3>
+          <h3>Looking for Professional Human Remains Transport in Telangana or Andhra Pradesh?</h3>
           <p>Our team is available 24/7 for dead body transport services across Telangana and Andhra Pradesh.</p>
           <div className="dmain-btn-group">
             <button className="dmain-btn dmain-btn-danger" onClick={() => window.open("tel:+919833444040", '_blank')}><Phone size={18} /> Call Immediately</button>

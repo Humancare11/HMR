@@ -88,8 +88,8 @@ function DAir() {
             </div>
 
             <h1 className="dmain-hero-title">
-              Dead Body Transport by Air –<br />
-              <span>International & Domestic Human Remains Cargo</span>
+              Need Dead Body Transport by Air for <br />
+              <span>International & Domestic Transfer?</span>
             </h1>
 
             <h2 className="dmain-hero-subtitle">
@@ -174,7 +174,7 @@ function DAir() {
       {/* Urgent Strip */}
       <section className="dmain-urgent-strip">
         <div className="dmain-urgent-container">
-          <h3>Need Urgent Human Remains Air Cargo Assistance?</h3>
+          <h3>Looking for Urgent Human Remains Air Cargo Assistance?</h3>
           <p>Dead body transport by air available 24/7 for domestic and international transfers.</p>
           <div className="dmain-btn-group">
             <button className="dmain-btn dmain-btn-danger" onClick={() => window.open('tel:+919833444040', '_blank')}><Phone size={18} /> Call Immediately</button>

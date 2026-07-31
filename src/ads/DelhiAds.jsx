@@ -87,8 +87,8 @@ function DelhiAds() {
             </div>
 
             <h1 className="dmain-hero-title">
-              Professional Human Remains Transport in Delhi –<br />
-              <span>24/7 Ambulance, Air & Interstate Transport</span>
+              Need Professional Human Remains Transport in Delhi –<br />
+              <span>24/7 Ambulance, Air & Interstate Transport?</span>
             </h1>
 
             <h2 className="dmain-hero-subtitle">
@@ -155,7 +155,7 @@ function DelhiAds() {
       {/* Urgent Strip */}
       <section className="dmain-urgent-strip">
         <div className="dmain-urgent-container">
-          <h3>Need Immediate Dead Body Ambulance Assistance in Delhi?</h3>
+          <h3>Looking for Professional Human Remains Transport in Delhi?</h3>
           <p>24/7 support for dead body transport, mortuary ambulance, and interstate transfer services.</p>
           <div className="dmain-btn-group">
             <button className="dmain-btn dmain-btn-danger" onClick={() => window.open('tel:+919619159990', '_blank')}><Phone size={18} /> Call Immediately</button>

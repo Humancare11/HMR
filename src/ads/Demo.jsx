@@ -1,10 +1,11 @@
 import React from 'react';
 import {
   Phone, MessageCircle, Clock, Plane, Globe, FileText, CreditCard,
-  AlertCircle, Ambulance, Truck, Check, Settings, Star
+  AlertCircle, Ambulance, Truck, Check, Settings, Star, Shield
 } from "lucide-react";
 import "./dmain.css";
 import serv3 from "../assets/serv3.webp";
+import heroCoffin from "../assets/Dead-Body-Transfer.jpeg";
 import ContactUs from '../components/ContactUs';
 
 function Demo() {
@@ -72,77 +73,106 @@ function Demo() {
     <div className="dmain-wrapper">
       {/* Hero */}
       <section className="dmain-hero">
+
+        {/* Background hero image */}
+        <div className="dmain-hero-image">
+          <img src={heroCoffin} alt="Dead body road transport ambulance services" />
+          <div className="dmain-hero-image-tint"></div>
+        </div>
+
         <div className="dmain-hero-container">
           <div className="dmain-hero-left">
-            <div className="dmain-hero-tags">
-              <span><Clock size={14} /> 24/7 Available</span>
-              <span>📍 Pan India & International</span>
+            <div className="dmain-badge-group">
+              <span className="dmain-badge"><Clock size={14} /> 24/7 Available</span>
+              <span className="dmain-badge">📍 Pan India & International</span>
             </div>
             <h1 className="dmain-hero-title">
-              Dead Body Transport by Road –<br />
-              <span className="dmain-hero-highlight">Safe & Reliable Interstate Ambulance Services</span>
+              Need Dead Body Transport by Road –<br />
+              <span>Safe & Reliable Interstate Ambulance Services</span>
             </h1>
-            <p className="dmain-hero-subtitle">Dead Body Transport by Road | Private Dead Body Ambulance | Interstate Human Remains Transfer</p>
-            <p className="dmain-hero-desc">We provide professional dead body transport by road with fully coordinated ambulance support for local, interstate, and long-distance transfers across India. From hospital pickup to safe delivery at the hometown, our experienced team ensures respectful and timely transportation.</p>
-            <div className="dmain-hero-rating">
-              {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="#fbbf24" color="#fbbf24" />)}
-              <span>4.9/5 · Trusted by 2200+ Families</span>
+            <h2 className="dmain-hero-subtitle">
+              Dead Body Transport by Road | Private Dead Body Ambulance | Interstate Human Remains Transfer
+            </h2>
+            <div className="dmain-rating-bar">
+              <div className="dmain-stars">
+                {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="#fbbf24" color="#fbbf24" />)}
+              </div>
+              <span className="dmain-rating-text">4.9/5 · Trusted by 2200+ Families</span>
             </div>
-            <div className="dmain-hero-buttons">
-              <button className="dmain-btn dmain-btn-danger" onClick={() => window.location.href = 'tel:+919833444040'}>
-                <Phone size={18} /><span><strong>Call Our Team</strong><small>Available 24/7</small></span>
+            <div className="dmain-btn-group">
+              <button className="dmain-btn-double dmain-btn-double-red" onClick={() => window.location.href = 'tel:+919833444040'}>
+                <Phone size={24} />
+                <div className="dmain-btn-double-text">
+                  <span>Call Our Team</span>
+                  <span>Available 24/7</span>
+                </div>
               </button>
-              <button className="dmain-btn dmain-btn-success" onClick={() => window.open('https://wa.me/+919833444040', '_blank')}>
-                <MessageCircle size={18} /><span><strong>WhatsApp Now</strong><small>Get Instant Assistance</small></span>
+              <button className="dmain-btn-double dmain-btn-double-green" onClick={() => window.open('https://wa.me/+919833444040', '_blank')}>
+                <MessageCircle size={24} />
+                <div className="dmain-btn-double-text">
+                  <span>WhatsApp Now</span>
+                  <span>Get Instant Assistance</span>
+                </div>
               </button>
             </div>
-            <div className="dmain-hero-trust-pills">
-              <span>⚡ Response within 2 Minutes</span>
-              <span>🛡️ No Hidden Charges</span>
-              <span>📄 Documentation Assistance</span>
-            </div>
-          </div>
-          <div className="dmain-hero-right">
-            <div className="dmain-emergency-badge">
-              <Clock size={28} color="#ef4444" />
-              <div><h3>24/7 SUPPORT</h3><p style={{ color: '#ef4444', fontWeight: 600, fontSize: '13px', marginTop: '4px' }}>Road Transport Specialists</p></div>
+            <div className="dmain-hero-bullets">
+              <span className="dmain-bullet-item">⚡ Response within 2 Minutes</span>
+              <span className="dmain-bullet-item"><Shield size={16} /> No Hidden Charges</span>
+              <span className="dmain-bullet-item"><FileText size={16} /> Documentation Assistance</span>
             </div>
           </div>
         </div>
-        <div className="dmain-hero-bottom-cards">
-          <div className="dmain-hero-card"><Clock size={22} /><div><h4>Fast Pickup Support</h4><p>Ambulance arranged within 30–60 minutes</p></div></div>
-          <div className="dmain-hero-card"><Truck size={22} /><div><h4>State-to-State Transfer</h4><p>Reliable long-distance dead body transportation</p></div></div>
-          <div className="dmain-hero-card"><Globe size={22} /><div><h4>24/7 Availability</h4><p>Available across India anytime</p></div></div>
-          <div className="dmain-hero-card"><Check size={22} /><div><h4>Safe & Dignified Handling</h4><p>Every transfer managed with respect</p></div></div>
+
+        {/* Bottom 4 Cards */}
+        <div className="dmain-hero-bottom-cards-container">
+          <div className="dmain-hero-bottom-cards">
+            <div className="dmain-bottom-card">
+              <div className="dmain-bottom-card-icon"><Clock size={22} /></div>
+              <div className="dmain-bottom-card-text"><h4>Fast Pickup Support</h4><p>Ambulance arranged within 30–60 minutes</p></div>
+            </div>
+            <div className="dmain-bottom-card">
+              <div className="dmain-bottom-card-icon"><Truck size={22} /></div>
+              <div className="dmain-bottom-card-text"><h4>State-to-State Transfer</h4><p>Reliable long-distance dead body transportation</p></div>
+            </div>
+            <div className="dmain-bottom-card">
+              <div className="dmain-bottom-card-icon"><Globe size={22} /></div>
+              <div className="dmain-bottom-card-text"><h4>24/7 Availability</h4><p>Available across India anytime</p></div>
+            </div>
+            <div className="dmain-bottom-card">
+              <div className="dmain-bottom-card-icon"><Shield size={22} /></div>
+              <div className="dmain-bottom-card-text"><h4>Safe & Dignified Handling</h4><p>Every transfer managed with respect</p></div>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Introduction */}
       <section className="dmain-section-intro">
-        <div className="dmain-intro-grid">
+        <div className="dmain-intro-container">
           <div className="dmain-intro-left">
-            <span className="dmain-section-tag">About Our Service</span>
             <h2>Trusted Dead Body Ambulance Service Across India</h2>
-            <p>During emotional situations, arranging transportation for a deceased loved one can become stressful and confusing. Families often struggle with finding a reliable dead body ambulance service, understanding interstate transfer procedures, and coordinating long-distance transportation safely.</p>
-            <p>Our team provides complete assistance for dead body transport by road, including ambulance arrangements, documentation guidance, freezer box support, and state-to-state transportation coordination across major cities including Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Kolkata, Pune, Ahmedabad, Jaipur, and Patna.</p>
+            <p className="desc">During emotional situations, arranging transportation for a deceased loved one can become stressful and confusing. Families often struggle with finding a reliable dead body ambulance service, understanding interstate transfer procedures, and coordinating long-distance transportation safely.<br /><br />
+              Our team provides complete assistance for dead body transport by road, including ambulance arrangements, documentation guidance, freezer box support, and state-to-state transportation coordination across major cities including Bangalore, Mumbai, Delhi, Chennai, Hyderabad, Kolkata, Pune, Ahmedabad, Jaipur, and Patna.</p>
           </div>
-          <div className="dmain-intro-image-wrapper">
-            <img src={serv3} alt="Dead body road transport ambulance services" />
+          <div className="dmain-intro-right">
+            <div className="dmain-intro-image-wrapper">
+              <img src={serv3} alt="Dead body road transport ambulance services" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Urgent Strip */}
-      <div className="dmain-urgent-strip">
-        <div className="dmain-urgent-content">
-          <h3>Need Immediate Dead Body Ambulance Assistance?</h3>
-          <p><strong>24/7 dead body transport by road available for local and interstate transfers.</strong></p>
+      <section className="dmain-urgent-strip">
+        <div className="dmain-urgent-container">
+          <h3>How Can You Arrange Immediate Repatriation or Funeral Transport?</h3>
+          <p>24/7 dead body transport by road available for local and interstate transfers.</p>
+          <div className="dmain-btn-group">
+            <button className="dmain-btn dmain-btn-danger" onClick={() => window.location.href = 'tel:+919833444040'}><Phone size={18} /> Call Immediately</button>
+            <button className="dmain-btn dmain-btn-success" onClick={() => window.open('https://wa.me/+919833444040', '_blank')}><MessageCircle size={18} /> WhatsApp Now</button>
+          </div>
         </div>
-        <div className="dmain-urgent-buttons">
-          <button className="dmain-btn dmain-btn-danger" onClick={() => window.location.href = 'tel:+919833444040'}><Phone size={18} /> Call Immediately</button>
-          <button className="dmain-btn dmain-btn-success" onClick={() => window.open('https://wa.me/+919833444040', '_blank')}><MessageCircle size={18} /> WhatsApp Now</button>
-        </div>
-      </div>
+      </section>
 
       {/* Pain Points */}
       <section className="dmain-emergency-section">
@@ -163,10 +193,10 @@ function Demo() {
           <h2>Complete Dead Body Transport by Road Services</h2>
         </div>
         <div className="dmain-services-grid">
-          <div className="dmain-service-card"><div className="dmain-service-icon"><Plane size={32} /></div><h3>DEAD BODY AMBULANCE SERVICE</h3><ul><li>• 24/7 ambulance support for deceased transportation</li><li>• Private dead body ambulance arrangements</li><li>• Local hospital-to-home transportation</li><li>• Immediate pickup coordination</li></ul></div>
-          <div className="dmain-service-card"><div className="dmain-service-icon"><Ambulance size={32} /></div><h3>STATE-TO-STATE DEAD BODY TRANSFER</h3><ul><li>• Safe interstate dead body transport by road</li><li>• Long-distance ambulance coordination</li><li>• Transfer from one state to another</li><li>• Door-to-door transportation support</li></ul></div>
-          <div className="dmain-service-card"><div className="dmain-service-icon"><Truck size={32} /></div><h3>FREEZER BOX & PRESERVATION SUPPORT</h3><ul><li>• Freezer box ambulance arrangements</li><li>• Body preservation assistance during long-distance travel</li><li>• Hygienic and secure transportation</li><li>• Professional handling throughout the journey</li></ul></div>
-          <div className="dmain-service-card"><div className="dmain-service-icon"><Globe size={32} /></div><h3>CITY-TO-CITY TRANSPORT SERVICES</h3><ul><li>• Dead body transport service Bangalore</li><li>• Mumbai to hometown transfer</li><li>• Interstate ambulance services across India</li><li>• Rural and remote location transportation support</li></ul></div>
+          <div className="dmain-service-card"><div className="dmain-service-icon"><Plane size={32} /></div><h3>DEAD BODY AMBULANCE SERVICE</h3><ul className="dmain-service-list"><li>24/7 ambulance support for deceased transportation</li><li>Private dead body ambulance arrangements</li><li>Local hospital-to-home transportation</li><li>Immediate pickup coordination</li></ul></div>
+          <div className="dmain-service-card"><div className="dmain-service-icon"><Ambulance size={32} /></div><h3>STATE-TO-STATE DEAD BODY TRANSFER</h3><ul className="dmain-service-list"><li>Safe interstate dead body transport by road</li><li>Long-distance ambulance coordination</li><li>Transfer from one state to another</li><li>Door-to-door transportation support</li></ul></div>
+          <div className="dmain-service-card"><div className="dmain-service-icon"><Truck size={32} /></div><h3>FREEZER BOX & PRESERVATION SUPPORT</h3><ul className="dmain-service-list"><li>Freezer box ambulance arrangements</li><li>Body preservation assistance during long-distance travel</li><li>Hygienic and secure transportation</li><li>Professional handling throughout the journey</li></ul></div>
+          <div className="dmain-service-card"><div className="dmain-service-icon"><Globe size={32} /></div><h3>CITY-TO-CITY TRANSPORT SERVICES</h3><ul className="dmain-service-list"><li>Dead body transport service Bangalore</li><li>Mumbai to hometown transfer</li><li>Interstate ambulance services across India</li><li>Rural and remote location transportation support</li></ul></div>
         </div>
       </section>
 
@@ -177,7 +207,7 @@ function Demo() {
           <h2>Professional & Compassionate Dead Body Road Transport Services</h2>
         </div>
         <div className="dmain-why-grid">
-          {features.map((item, index) => (<div className="dmain-why-card" key={index}><div className="dmain-check-icon"><Check size={18} /></div><div><h3>{item.title}</h3><p>{item.desc}</p></div></div>))}
+          {features.map((item, index) => (<div className="dmain-why-card" key={index}><div className="dmain-why-check"><Check size={16} /></div><div className="dmain-why-text"><h3>{item.title}</h3><p>{item.desc}</p></div></div>))}
         </div>
       </section>
 

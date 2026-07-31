@@ -1277,3 +1277,309 @@
 .dmain-slider-dot.active {
   background-color: var(--dmain-accent);
 }
+
+/* =====================================================
+   ALIASES: class names used in Demo.jsx that differ
+   from the original CSS class names above.
+   ===================================================== */
+
+/* Hero tags row (24/7 Available + Pan India) */
+.dmain-hero-tags {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.dmain-hero-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Hero rating row */
+.dmain-hero-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  font-size: 14px;
+  color: #e2e8f0;
+  font-weight: 500;
+}
+
+/* Hero CTA buttons wrapper */
+.dmain-hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Hero trust pills row */
+.dmain-hero-trust-pills {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.dmain-hero-trust-pills span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Emergency badge (right column of hero) */
+.dmain-emergency-badge {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--dmain-radius-md);
+  padding: 24px 28px;
+  backdrop-filter: blur(8px);
+}
+
+.dmain-emergency-badge h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+/* Hero bottom info cards (below hero container) */
+.dmain-hero-bottom-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 100%;
+  background: rgba(255, 255, 255, 0.04);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 48px;
+}
+
+.dmain-hero-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 24px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--dmain-text-light);
+  transition: background 0.2s ease;
+}
+
+.dmain-hero-card:last-child {
+  border-right: none;
+}
+
+.dmain-hero-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.dmain-hero-card svg {
+  color: #ef4444;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.dmain-hero-card h4 {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.dmain-hero-card p {
+  margin: 0;
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+/* Intro section grid (About Our Service) */
+.dmain-intro-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.dmain-intro-left h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 800;
+  color: var(--dmain-text-dark);
+  line-height: 1.25;
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+}
+
+.dmain-intro-left p {
+  font-size: 16px;
+  color: var(--dmain-text-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* Urgent strip layout */
+.dmain-urgent-content {
+  flex: 1;
+}
+
+.dmain-urgent-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 48px 60px;
+  text-align: left;
+}
+
+.dmain-urgent-strip h3 {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #fca5a5;
+}
+
+.dmain-urgent-strip p {
+  font-size: 15px;
+  margin: 0;
+  color: #fecaca;
+}
+
+.dmain-urgent-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* Why-section check icon */
+.dmain-check-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #dcfce7;
+  color: var(--dmain-success);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Process step number badge */
+.dmain-step-number {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: var(--dmain-accent);
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+}
+
+/* Pricing CTA text */
+.dmain-pricing-cta {
+  font-size: 15px;
+  color: var(--dmain-text-muted);
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.dmain-pricing-card-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--dmain-text-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 24px;
+}
+
+/* Section subtitle text under h2 */
+.dmain-section-subtitle {
+  font-size: 16px;
+  color: var(--dmain-text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive adjustments for new classes */
+@media (max-width: 1024px) {
+  .dmain-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .dmain-hero-bottom-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dmain-hero-card {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .dmain-urgent-strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 24px;
+  }
+
+  .dmain-urgent-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .dmain-hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .dmain-hero-buttons .dmain-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .dmain-hero-trust-pills {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dmain-hero-tags {
+    justify-content: center;
+  }
+
+  .dmain-hero-rating {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .dmain-hero-bottom-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .dmain-hero-card {
+    border-right: none;
+  }
+}

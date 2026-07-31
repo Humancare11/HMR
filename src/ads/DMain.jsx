@@ -312,7 +312,7 @@ function DMain() {
             {/* section 2: Urgent Strip */}
             <section className="dmain-urgent-strip">
                 <div className="dmain-urgent-container">
-                    <h3>Need Immediate Repatriation or Funeral Transport Assistance?</h3>
+                    <h3>Get Immediate Repatriation or Funeral Transport Assistance</h3>
                     <p>24/7 support for human remains transport and burial transfer services.</p>
 
                     <div className="dmain-btn-group">
