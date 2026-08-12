@@ -20,14 +20,22 @@
   --dmain-radius-sm: 8px;
   --dmain-radius-md: 16px;
   --dmain-radius-lg: 24px;
-  --dmain-shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-  --dmain-shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
-  --dmain-shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  --dmain-shadow-sm:
+    0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --dmain-shadow-md:
+    0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+  --dmain-shadow-lg:
+    0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
 }
 
 /* Global Reset Scoped to Landing Page */
 .dmain-wrapper {
-  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  font-family:
+    "Outfit",
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
   color: var(--dmain-text-dark);
   background-color: var(--dmain-bg-light);
   line-height: 1.6;
@@ -95,11 +103,23 @@
      Two gradients + mask-composite:intersect = fades in both directions at once. */
   -webkit-mask-image:
     linear-gradient(to right, transparent 0%, black 42%),
-    linear-gradient(to bottom, transparent 0%, black 10%, black 82%, transparent 100%);
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 82%,
+      transparent 100%
+    );
   -webkit-mask-composite: source-in, source-in;
   mask-image:
     linear-gradient(to right, transparent 0%, black 42%),
-    linear-gradient(to bottom, transparent 0%, black 10%, black 82%, transparent 100%);
+    linear-gradient(
+      to bottom,
+      transparent 0%,
+      black 10%,
+      black 82%,
+      transparent 100%
+    );
   mask-composite: intersect;
 }
 
@@ -109,14 +129,15 @@
 .dmain-hero-image-tint {
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg,
-      rgba(10, 20, 40, 0.65) 0%,
-      rgba(15, 31, 61, 0.35) 30%,
-      rgba(15, 31, 61, 0.12) 55%,
-      rgba(30, 58, 138, 0.1) 100%);
+  background: linear-gradient(
+    120deg,
+    rgba(10, 20, 40, 0.65) 0%,
+    rgba(15, 31, 61, 0.35) 30%,
+    rgba(15, 31, 61, 0.12) 55%,
+    rgba(30, 58, 138, 0.1) 100%
+  );
   mix-blend-mode: multiply;
 }
-
 
 @media (min-width: 1025px) {
   .dmain-hero-image {
@@ -125,7 +146,6 @@
 }
 
 @media (max-width: 1024px) {
-
   /* Hide the photo layer on tablets/phones: a masked 55-65% wide image
      has no room to read once the layout stacks to a single column. */
   .dmain-hero-image {
@@ -208,7 +228,9 @@
   border: none;
   cursor: pointer;
   text-align: left;
-  transition: transform 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
   min-width: 250px;
 }
 
@@ -305,8 +327,6 @@
   color: #fbbf24;
   /* Gold/Yellow icons from reference */
 }
-
-
 
 .dmain-illust-badge-icon {
   background: none;
@@ -689,7 +709,7 @@
 }
 
 .dmain-service-list li::before {
-  content: '•';
+  content: "•";
   color: var(--dmain-accent);
   font-weight: bold;
 }
@@ -879,7 +899,7 @@
 }
 
 .dmain-testimonial-card::before {
-  content: '“';
+  content: "“";
   position: absolute;
   top: 10px;
   left: 20px;
@@ -1066,7 +1086,7 @@
 .dmain-hero-bottom-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 
 .dmain-bottom-card {
@@ -1080,7 +1100,9 @@
   border: 1px solid var(--dmain-border);
   color: var(--dmain-text-dark);
   text-align: left;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .dmain-bottom-card:hover {
@@ -1201,7 +1223,6 @@
 }
 
 @media (max-width: 600px) {
-
   .dmain-hero-bottom-cards {
     grid-template-columns: 1fr;
   }
@@ -1359,7 +1380,7 @@
 .dmain-hero-bottom-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  gap: 24px;
   max-width: 100%;
   background: rgba(255, 255, 255, 0.04);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
