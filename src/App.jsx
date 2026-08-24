@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import HMRuae from './pages/HMRuae';
 import Privacypolicy from './pages/Privacypolicy';
+import NotFound from './pages/NotFound';
 
 // =======================================================
 
@@ -81,7 +82,8 @@ function App() {
         <Route path="/blog/blog-2" element={<Blog2 />} />
         <Route path="/blog/blog-3" element={<Blog3 />} />
 
-
+        {/* 404 Page (Wildcard Route) */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
 
       <Footer />
