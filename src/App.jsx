@@ -16,13 +16,11 @@ import HMRuae from './pages/HMRuae';
 import Privacypolicy from './pages/Privacypolicy';
 import NotFound from './pages/NotFound';
 
-// =======================================================
-
-
-import Blogs from "./Blogs/Blogs";
-import Blog1 from "./Blogs/Blog-1";
-import Blog2 from "./Blogs/Blog-2";
-import Blog3 from "./Blogs/Blog-3";
+// ─── Blogs ────────────────────────────────────────────────
+import BlogMain from './pages/Blogs/BlogMain';
+import Blog1 from './pages/Blogs/DeadBodyTransportIndia';
+import Blog2 from './pages/Blogs/DeadBodyAmbulanceService';
+import Blog3 from './pages/Blogs/HowtoTransportDeadBody';
 
 
 
@@ -65,6 +63,12 @@ function App() {
         <Route path="/hmruae" element={<HMRuae />} />
         <Route path="/privacy-policy" element={<Privacypolicy />} />
 
+        {/* ─── Blog Routes ─────────────────────────── */}
+        <Route path="/blogs" element={<BlogMain />} />
+        <Route path="/blogs/dead-body-transport-india" element={<Blog1 />} />
+        <Route path="/blogs/dead-body-ambulance-service" element={<Blog2 />} />
+        <Route path="/blogs/dead-body-transport-one-city-to-another" element={<Blog3 />} />
+
         {/* ---------ads------------ */}
         <Route path="/dead-body-transfer-by-road" element={<Demo />} />
         <Route path="/dead-body-transfer-by-air" element={<DAir />} />
@@ -77,12 +81,7 @@ function App() {
 
 
 
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/blog/blog-1" element={<Blog1 />} />
-        <Route path="/blog/blog-2" element={<Blog2 />} />
-        <Route path="/blog/blog-3" element={<Blog3 />} />
-
-        {/* 404 Page (Wildcard Route) */}
+        {/* 404 Page  */}
         <Route path="*" element={<NotFound />} />
       </Routes>
 
