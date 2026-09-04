@@ -418,7 +418,10 @@
   border-radius: 14px;
   padding: 32px 36px;
   text-align: center;
-  margin: 0 100px;
+  margin: 36px auto 0;
+  max-width: 820px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .bi-cta-strip h3 {
@@ -509,7 +512,23 @@
   }
 
   .bi-cta-strip {
-    padding: 28px 20px;
+    margin: 28px auto 0;
+    padding: 24px 18px;
+    border-radius: 12px;
+  }
+
+  .bi-cta-strip h3 {
+    font-size: 1.15rem;
+  }
+
+  .bi-cta-strip p {
+    font-size: 0.88rem !important;
+    margin-bottom: 16px;
+  }
+
+  .bi-cta-btn {
+    padding: 10px 22px;
+    font-size: 0.85rem;
   }
 }
 
@@ -533,6 +552,30 @@
   .bi-article-intro {
     font-size: 0.97rem !important;
     padding: 10px 12px;
+  }
+
+  .bi-cta-strip {
+    margin: 22px auto 0;
+    padding: 20px 14px;
+    border-radius: 10px;
+  }
+
+  .bi-cta-strip h3 {
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+
+  .bi-cta-strip p {
+    font-size: 0.84rem !important;
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+
+  .bi-cta-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 11px 16px;
+    font-size: 0.85rem;
   }
 }
 

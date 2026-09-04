@@ -15,16 +15,17 @@ const Header = () => {
       name: 'Transfer by Mode',
       // path: '/transferbymode',
       submenu: [
-       
+
         { name: 'Air', path: '/transfer-by-mode/air' },
         { name: 'Road', path: '/transfer-by-mode/road' },
-         { name: 'Train', path: '/transfer-by-mode/train' }
+        { name: 'Train', path: '/transfer-by-mode/train' }
       ]
     },
     { name: 'Transfer by Location', path: '/transfer-by-location' },
     // { name: 'Blog', path:'/blog'},
+    { name: 'Blog', path: '/blogs' },
     { name: 'Contact Us', path: '/contact' },
-    
+
   ];
 
   return (
@@ -59,7 +60,7 @@ const Header = () => {
           {/* Call Now Button */}
           <div className="desktop-only">
             <a href="tel:+919833444040" className="cta-button" aria-label="Call Human Remains Transfer">
-              Call Now 
+              Call Now
             </a>
           </div>
 
@@ -84,8 +85,8 @@ const Header = () => {
                     onClick={() =>
                       item.submenu
                         ? setActiveSubmenu(
-                            activeSubmenu === item.path ? null : item.path
-                          )
+                          activeSubmenu === item.path ? null : item.path
+                        )
                         : setIsMenuOpen(false)
                     }
                   >

@@ -2,7 +2,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { BiInfoCircle } from "react-icons/bi";
 import { MdEmail, MdLocationOn } from "react-icons/md";
 import { BsTelephoneFill } from "react-icons/bs";
@@ -34,7 +34,7 @@ export default function Footer() {
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
               <li><a href="/services">Services</a></li>
-              {/* <li><a href="/documentation">Documentation</a></li> */}
+              <li><a href="/blogs">Blogs</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
@@ -81,15 +81,30 @@ export default function Footer() {
         <hr className="mt-4 mb-3" />
 
         {/* Bottom Bar */}
-        {/* <div className="d-flex flex-column flex-md-row justify-content-between small text-center"> */}
-        <div className="d-flex flex-column justify-content-center align-items-center small text-center">
-
-          <div>© 2025 Human Remains Transfer. All rights reserved.</div>
-          {/* <div className="footer-links">
-            <a href="#">Privacy Policy</a> | 
-            <a href="#"> Terms of Service</a> | 
-            <a href="#"> Legal Compliance</a>
-          </div> */}
+        <div className="d-flex flex-column flex-md-row justify-content-between align-items-center small text-center text-md-start">
+          <div className="mb-3 mb-md-0">
+            © 2025 Human Remains Transfer. All rights reserved.
+          </div>
+          <div className="d-flex gap-3 align-items-center">
+            <a
+              href="https://www.linkedin.com/company/122284598/admin/dashboard/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn size={16} />
+            </a>
+            <a
+              href="https://www.instagram.com/humanremainstransfer/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={16} />
+            </a>
+          </div>
         </div>
       </div>
       <div>
