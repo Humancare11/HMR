@@ -5,16 +5,18 @@ import "./blogsMain.css";
 
 // Assets
 import heroBg from "../../assets/hero-dead-body-transfer.jpg";
-import card1Img from "../../assets/blog1.jpg";
-import card2Img from "../../assets/Byair.webp";
-import card3Img from "../../assets/Train-1.webp";
-
+import card1Img from "../../assets/BlogImg/dead-body-transport-in-india.webp";
+import card2Img from "../../assets/BlogImg/dead-body-ambulance-service.webp";
+import card3Img from "../../assets/BlogImg/mortury-van.webp";
+import card4Img from "../../assets/BlogImg/dead-body-transport-cost-india.webp";
+import card5Img from "../../assets/BlogImg/mortal-remains.webp";
+import card6Img from "../../assets/BlogImg/remains-transfer.webp";
 const blogs = [
   {
     id: 1,
     path: "/blogs/dead-body-transport-india",
     category: "International",
-    date: "July 31, 2025",
+    date: "July 31, 2026",
     readTime: "8 min read",
     title: "Dead Body Transport in India: Complete Guide to Moving Human Remains Safely and Legally",
     description:
@@ -25,7 +27,7 @@ const blogs = [
     id: 2,
     path: "/blogs/dead-body-ambulance-service",
     category: "Air Transfer",
-    date: "August 31, 2025",
+    date: "August 31, 2026",
     readTime: "7 min read",
     title: "Dead Body Ambulance Service: How It Works, When You Need It & What to Expect",
     description:
@@ -36,13 +38,47 @@ const blogs = [
     id: 3,
     path: "/blogs/dead-body-transport-one-city-to-another",
     category: "Domestic Transfer",
-    date: "September 04, 2025",
+    date: "September 04, 2026",
     readTime: "9 min read",
     title: "How to Transport a Dead Body from One City to Another in India",
     description:
       "When someone passes away in a city away from their hometown, the family may need to bring the deceased back for the final funeral rites. ",
     image: card3Img,
   },
+  {
+    id: 4,
+    path: "/blogs/dead-body-transport-cost-india",
+    category: "Domestic Transfer",
+    date: "September 08, 2026",
+    readTime: "9 min read",
+    title: "Dead Body Transport Cost in India: Complete Price Guide for Road, Train & Air",
+    description:
+      "When a loved one passes away away from home, arranging their transportation to another city or state becomes an important responsibility for the family. ",
+    image: card4Img,
+  },
+  {
+    id: 5,
+    path: "/blogs/dead-body-transport-hospital-to-home",
+    category: "Domestic Transfer",
+    date: "September 11, 2026",
+    readTime: "9 min read",
+    title: "Dead Body Transport Hospital to Home: Complete Guide",
+    description:
+      "When a loved one passes away away from home, arranging their transportation to another city or state becomes an important responsibility for the family. ",
+    image: card5Img,
+  },
+  {
+    id: 6,
+    path: "/blogs/dead-body-ambulance-vs-regular-ambulance",
+    category: "Domestic Transfer",
+    date: "September 15, 2026",
+    readTime: "9 min read",
+    title: "Dead Body Ambulance vs Regular Ambulance: What Is the Difference?",
+    description:
+      "Choosing between a dead body ambulance and a regular ambulance for transporting human remains? Here’s what you need to know about the differences in services, features, and suitability for safe transportation.",
+    image: card6Img,
+  },
+
 ];
 
 const BlogMain = () => {

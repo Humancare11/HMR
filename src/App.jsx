@@ -21,9 +21,9 @@ import BlogMain from './pages/Blogs/BlogMain';
 import Blog1 from './pages/Blogs/DeadBodyTransportIndia';
 import Blog2 from './pages/Blogs/DeadBodyAmbulanceService';
 import Blog3 from './pages/Blogs/HowtoTransportDeadBody';
-
-
-
+import Blog4 from './pages/Blogs/DeadBodyTransportCostIndia';
+import Blog5 from './pages/Blogs/DeadBodyTransportHospitalToHome';
+import Blog6 from './pages/Blogs/DeadBodyAmbulanceVsRegularAmbulance'
 // ------------------ADS
 import Demo from './ads/Demo';
 import DAir from './ads/DAir';
@@ -68,12 +68,14 @@ function App() {
         <Route path="/blogs/dead-body-transport-india" element={<Blog1 />} />
         <Route path="/blogs/dead-body-ambulance-service" element={<Blog2 />} />
         <Route path="/blogs/dead-body-transport-one-city-to-another" element={<Blog3 />} />
-
+        <Route path="/blogs/dead-body-transport-cost-india" element={<Blog4 />} />
+        <Route path="/blogs/dead-body-transport-hospital-to-home" element={<Blog5 />} />
+        <Route path="/blogs/dead-body-ambulance-vs-regular-ambulance" element={<Blog6 />} />
         {/* ---------ads------------ */}
         <Route path="/dead-body-transfer-by-road" element={<Demo />} />
         <Route path="/dead-body-transfer-by-air" element={<DAir />} />
         <Route path="/dead-body-transfer-cost" element={<Dcost />} />
-        <Route path="/dead-body-transfer" element={<DMain />} />\
+        <Route path="/dead-body-transfer" element={<DMain />} />
         <Route path="/dead-body-transfer-in-mumbai" element={<DMumbai />} />
         <Route path='/dead-body-transfer-in-delhi' element={<DelhiAds />} />
         <Route path="/dead-body-transfer-in-telangana-and-andhra-pradesh" element={<Hyderebad />} />
